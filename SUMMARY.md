@@ -25,3 +25,4 @@
 * [Rootless](rootless.md)
 * [RUNC](RUNC.md)
 * [Stream Processors](stream_processors.md)
+* [Tracing](tracing.md)
