@@ -6,9 +6,26 @@
   * [Crictl](cri/crictl.md)
   * [Decryption](cri/decryption.md)
   * [Installation](cri/installation.md)
-  * [Proposal](cri/proposal.md)
   * [Registry](cri/registry.md)
   * [Testing](cri/testing.md)
+- Historical
+  - Cri
+    * [Proposal](historical/cri/proposal.md)
+  - Reports
+    * [2017 01 13](historical/reports/2017-01-13.md)
+    * [2017 01 20](historical/reports/2017-01-20.md)
+    * [2017 01 27](historical/reports/2017-01-27.md)
+    * [2017 02 10](historical/reports/2017-02-10.md)
+    * [2017 02 24](historical/reports/2017-02-24.md)
+    * [2017 03 10](historical/reports/2017-03-10.md)
+    * [2017 03 17](historical/reports/2017-03-17.md)
+    * [2017 03 24](historical/reports/2017-03-24.md)
+    * [2017 04 28](historical/reports/2017-04-28.md)
+    * [2017 05 05](historical/reports/2017-05-05.md)
+    * [2017 05 19](historical/reports/2017-05-19.md)
+    * [2017 05 26](historical/reports/2017-05-26.md)
+    * [2017 06 09](historical/reports/2017-06-09.md)
+    * [2017 06 23](historical/reports/2017-06-23.md)
 - Man
   * [containerd-config.8](man/containerd-config.8.md)
   * [containerd-config.toml.5](man/containerd-config.toml.5.md)
