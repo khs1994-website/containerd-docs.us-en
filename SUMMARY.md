@@ -11,6 +11,12 @@
 - Historical
   - Cri
     * [Proposal](historical/cri/proposal.md)
+  - Design
+    * [Architecture](historical/design/architecture.md)
+    * [Data Flow](historical/design/data-flow.md)
+    * [Lifecycle](historical/design/lifecycle.md)
+    * [Mounts](historical/design/mounts.md)
+    * [Snapshots](historical/design/snapshots.md)
   - Reports
     * [2017 01 13](historical/reports/2017-01-13.md)
     * [2017 01 20](historical/reports/2017-01-20.md)
@@ -29,6 +35,8 @@
 - Man
   * [containerd-config.8](man/containerd-config.8.md)
   * [containerd-config.toml.5](man/containerd-config.toml.5.md)
+- [Snapshotters](snapshotters/README.md)
+  * [Devmapper](snapshotters/devmapper.md)
 * [Client Opts](client-opts.md)
 * [Content Flow](content-flow.md)
 * [Garbage Collection](garbage-collection.md)
