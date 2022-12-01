@@ -44,6 +44,7 @@
 * [Hosts](hosts.md)
 * [Managed Opt](managed-opt.md)
 * [Namespaces](namespaces.md)
+* [NRI](NRI.md)
 * [Ops](ops.md)
 * [PLUGINS](PLUGINS.md)
 * [Remote Snapshotter](remote-snapshotter.md)
