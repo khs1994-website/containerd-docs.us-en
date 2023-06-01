@@ -1,0 +1,1158 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>containerd-config.toml.5 · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../snapshotters/" />
+    
+    
+    <link rel="prev" href="containerd-config.8.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../cri/architecture.html">
+            
+                <a href="../cri/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../cri/config.html">
+            
+                <a href="../cri/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../cri/crictl.html">
+            
+                <a href="../cri/crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../cri/decryption.html">
+            
+                <a href="../cri/decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../cri/installation.html">
+            
+                <a href="../cri/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../cri/registry.html">
+            
+                <a href="../cri/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../cri/testing.html">
+            
+                <a href="../cri/testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../historical/cri/proposal.html">
+            
+                <a href="../historical/cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../historical/design/architecture.html">
+            
+                <a href="../historical/design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../historical/design/data-flow.html">
+            
+                <a href="../historical/design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../historical/design/lifecycle.html">
+            
+                <a href="../historical/design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../historical/design/mounts.html">
+            
+                <a href="../historical/design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../historical/design/snapshots.html">
+            
+                <a href="../historical/design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../historical/reports/2017-01-13.html">
+            
+                <a href="../historical/reports/2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../historical/reports/2017-01-20.html">
+            
+                <a href="../historical/reports/2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../historical/reports/2017-01-27.html">
+            
+                <a href="../historical/reports/2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../historical/reports/2017-02-10.html">
+            
+                <a href="../historical/reports/2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../historical/reports/2017-02-24.html">
+            
+                <a href="../historical/reports/2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="../historical/reports/2017-03-10.html">
+            
+                <a href="../historical/reports/2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="../historical/reports/2017-03-17.html">
+            
+                <a href="../historical/reports/2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="../historical/reports/2017-03-24.html">
+            
+                <a href="../historical/reports/2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="../historical/reports/2017-04-28.html">
+            
+                <a href="../historical/reports/2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="../historical/reports/2017-05-05.html">
+            
+                <a href="../historical/reports/2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="../historical/reports/2017-05-19.html">
+            
+                <a href="../historical/reports/2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="../historical/reports/2017-05-26.html">
+            
+                <a href="../historical/reports/2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="../historical/reports/2017-06-09.html">
+            
+                <a href="../historical/reports/2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="../historical/reports/2017-06-23.html">
+            
+                <a href="../historical/reports/2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="containerd-config.8.html">
+            
+                <a href="containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="containerd-config.toml.5.html">
+            
+                <a href="containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../snapshotters/">
+            
+                <a href="../snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../snapshotters/devmapper.html">
+            
+                <a href="../snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../client-opts.html">
+            
+                <a href="../client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../content-flow.html">
+            
+                <a href="../content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../garbage-collection.html">
+            
+                <a href="../garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../getting-started.html">
+            
+                <a href="../getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../hosts.html">
+            
+                <a href="../hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../managed-opt.html">
+            
+                <a href="../managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../namespaces.html">
+            
+                <a href="../namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../NRI.html">
+            
+                <a href="../NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../ops.html">
+            
+                <a href="../ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../PLUGINS.html">
+            
+                <a href="../PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../remote-snapshotter.html">
+            
+                <a href="../remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../rootless.html">
+            
+                <a href="../rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../RUNC.html">
+            
+                <a href="../RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../stream_processors.html">
+            
+                <a href="../stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../tracing.html">
+            
+                <a href="../tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../transfer.html">
+            
+                <a href="../transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >containerd-config.toml.5</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="etccontainerdconfigtoml-5-04052022">/etc/containerd/config.toml 5 04/05/2022</h1>
+<h2 id="name">NAME</h2>
+<p>containerd-config.toml - configuration file for containerd</p>
+<h2 id="synopsis">SYNOPSIS</h2>
+<p>The <strong>config.toml</strong> file is a configuration file for the containerd daemon. The
+file must be placed at <strong>/etc/containerd/config.toml</strong> or specified with the
+<strong>--config</strong> option of <strong>containerd</strong> to be used by the daemon. If the file
+does not exist at the appropriate location or is not provided via the
+<strong>--config</strong> option containerd uses its default configuration settings, which
+can be displayed with the <strong>containerd config(1)</strong> command.</p>
+<h2 id="description">DESCRIPTION</h2>
+<p>The TOML file used to configure the containerd daemon settings has a short
+list of global settings followed by a series of sections for specific areas
+of daemon configuration. There is also a section for <strong>plugins</strong> that allows
+each containerd plugin to have an area for plugin-specific configuration and
+settings.</p>
+<h2 id="format">FORMAT</h2>
+<p><strong>version</strong>
+: The version field in the config file specifies the config&#x2019;s version. If no
+version number is specified inside the config file then it is assumed to be a
+version 1 config and parsed as such. Please use version = 2 to enable version 2
+config as version 1 has been deprecated.</p>
+<p><strong>root</strong>
+: The root directory for containerd metadata. (Default: &quot;/var/lib/containerd&quot;)</p>
+<p><strong>state</strong>
+: The state directory for containerd (Default: &quot;/run/containerd&quot;)</p>
+<p><strong>plugin_dir</strong>
+: The directory for dynamic plugins to be stored</p>
+<p><strong>[grpc]</strong>
+: Section for gRPC socket listener settings. Contains the following properties:</p>
+<ul>
+<li><strong>address</strong> (Default: &quot;/run/containerd/containerd.sock&quot;)</li>
+<li><strong>tcp_address</strong></li>
+<li><strong>tcp_tls_cert</strong></li>
+<li><strong>tcp_tls_key</strong></li>
+<li><strong>uid</strong> (Default: 0)</li>
+<li><strong>gid</strong> (Default: 0)</li>
+<li><strong>max_recv_message_size</strong></li>
+<li><strong>max_send_message_size</strong></li>
+</ul>
+<p><strong>[ttrpc]</strong>
+: Section for TTRPC settings. Contains properties:</p>
+<ul>
+<li><strong>address</strong> (Default: &quot;&quot;)</li>
+<li><strong>uid</strong> (Default: 0)</li>
+<li><strong>gid</strong> (Default: 0)</li>
+</ul>
+<p><strong>[debug]</strong>
+: Section to enable and configure a debug socket listener. Contains four properties:</p>
+<ul>
+<li><strong>address</strong> (Default: &quot;/run/containerd/debug.sock&quot;)</li>
+<li><strong>uid</strong> (Default: 0)</li>
+<li><strong>gid</strong> (Default: 0)</li>
+<li><strong>level</strong> (Default: &quot;info&quot;) sets the debug log level. Supported levels are:
+&quot;trace&quot;, &quot;debug&quot;, &quot;info&quot;, &quot;warn&quot;, &quot;error&quot;, &quot;fatal&quot;, &quot;panic&quot;</li>
+<li><strong>format</strong> (Default: &quot;text&quot;) sets log format. Supported formats are &quot;text&quot; and &quot;json&quot;</li>
+</ul>
+<p><strong>[metrics]</strong>
+: Section to enable and configure a metrics listener. Contains two properties:</p>
+<ul>
+<li><strong>address</strong> (Default: &quot;&quot;) Metrics endpoint does not listen by default</li>
+<li><strong>grpc_histogram</strong> (Default: false) Turn on or off gRPC histogram metrics</li>
+</ul>
+<p><strong>disabled_plugins</strong>
+: Disabled plugins are IDs of plugins to disable. Disabled plugins won&apos;t be
+initialized and started.</p>
+<p><strong>required_plugins</strong>
+: Required plugins are IDs of required plugins. Containerd exits if any
+required plugin doesn&apos;t exist or fails to be initialized or started.</p>
+<p><strong>[plugins]</strong>
+: The plugins section contains configuration options exposed from installed plugins.
+The following plugins are enabled by default and their settings are shown below.
+Plugins that are not enabled by default will provide their own configuration values
+documentation.</p>
+<ul>
+<li><strong>[plugins.&quot;io.containerd.monitor.v1.cgroups&quot;]</strong> has one option <strong>no_prometheus</strong> (Default: <strong>false</strong>)</li>
+<li><strong>[plugins.&quot;io.containerd.service.v1.diff-service&quot;]</strong> has one option <strong>default</strong>, a list by default set to <strong>[&quot;walking&quot;]</strong></li>
+<li><strong>[plugins.&quot;io.containerd.gc.v1.scheduler&quot;]</strong> has several options that perform advanced tuning for the scheduler:<ul>
+<li><strong>pause_threshold</strong> is the maximum amount of time GC should be scheduled (Default: <strong>0.02</strong>),</li>
+<li><strong>deletion_threshold</strong> guarantees GC is scheduled after n number of deletions (Default: <strong>0</strong> [not triggered]),</li>
+<li><strong>mutation_threshold</strong> guarantees GC is scheduled after n number of database mutations (Default: <strong>100</strong>),</li>
+<li><strong>schedule_delay</strong> defines the delay after trigger event before scheduling a GC (Default <strong>&quot;0ms&quot;</strong> [immediate]),</li>
+<li><strong>startup_delay</strong> defines the delay after startup before scheduling a GC (Default <strong>&quot;100ms&quot;</strong>)</li>
+</ul>
+</li>
+<li><strong>[plugins.&quot;io.containerd.runtime.v2.task&quot;]</strong> specifies options for configuring the runtime shim:<ul>
+<li><strong>platforms</strong> specifies the list of supported platforms</li>
+<li><strong>sched_core</strong> Core scheduling is a feature that allows only trusted tasks
+to run concurrently on cpus sharing compute resources (eg: hyperthreads on
+a core). (Default: <strong>false</strong>)</li>
+</ul>
+</li>
+<li><strong>[plugins.&quot;io.containerd.service.v1.tasks-service&quot;]</strong> has performance options:<ul>
+<li><strong>blockio_config_file</strong> (Linux only) specifies path to blockio class definitions
+(Default: <strong>&quot;&quot;</strong>). Controls I/O scheduler priority and bandwidth throttling.
+See <a href="https://github.com/intel/goresctrl/blob/main/doc/blockio.md#configuration" target="_blank">blockio configuration</a>
+for details of the file format.</li>
+<li><strong>rdt_config_file</strong> (Linux only) specifies path to a configuration used for configuring
+RDT (Default: <strong>&quot;&quot;</strong>). Enables support for Intel RDT, a technology
+for cache and memory bandwidth management.
+See <a href="https://github.com/intel/goresctrl/blob/main/doc/rdt.md#configuration" target="_blank">RDT configuration</a>
+for details of the file format.</li>
+</ul>
+</li>
+</ul>
+<p><strong>oom_score</strong>
+: The out of memory (OOM) score applied to the containerd daemon process (Default: 0)</p>
+<p><strong>[cgroup]</strong>
+: Section for Linux cgroup specific settings</p>
+<ul>
+<li><strong>path</strong> (Default: &quot;&quot;) Specify a custom cgroup path for created containers</li>
+</ul>
+<p><strong>[proxy_plugins]</strong>
+: Proxy plugins configures plugins which are communicated to over gRPC</p>
+<ul>
+<li><strong>type</strong> (Default: &quot;&quot;)</li>
+<li><strong>address</strong> (Default: &quot;&quot;)</li>
+</ul>
+<p><strong>timeouts</strong>
+: Timeouts specified as a duration</p>
+<!-- [timeouts]
+  "io.containerd.timeout.shim.cleanup" = "5s"
+  "io.containerd.timeout.shim.load" = "5s"
+  "io.containerd.timeout.shim.shutdown" = "3s"
+  "io.containerd.timeout.task.state" = "2s" -->
+<p><strong>imports</strong>
+: Imports is a list of additional configuration files to include.
+This allows to split the main configuration file and keep some sections
+separately (for example vendors may keep a custom runtime configuration in a
+separate file without modifying the main <code>config.toml</code>).
+Imported files will overwrite simple fields like <code>int</code> or
+<code>string</code> (if not empty) and will append <code>array</code> and <code>map</code> fields.
+Imported files are also versioned, and the version can&apos;t be higher than
+the main config.</p>
+<p><strong>stream_processors</strong></p>
+<ul>
+<li><strong>accepts</strong> (Default: &quot;[]&quot;) Accepts specific media-types</li>
+<li><strong>returns</strong> (Default: &quot;&quot;) Returns the media-type</li>
+<li><strong>path</strong> (Default: &quot;&quot;) Path or name of the binary</li>
+<li><strong>args</strong> (Default: &quot;[]&quot;) Args to the binary</li>
+</ul>
+<h2 id="example">EXAMPLE</h2>
+<p>The following is a complete <strong>config.toml</strong> default configuration example:</p>
+<pre class="language-"><code class="lang-toml"><span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token number">2</span>
+
+<span class="token key property">root</span> <span class="token punctuation">=</span> <span class="token string">&quot;/var/lib/containerd&quot;</span>
+<span class="token key property">state</span> <span class="token punctuation">=</span> <span class="token string">&quot;/run/containerd&quot;</span>
+<span class="token key property">oom_score</span> <span class="token punctuation">=</span> <span class="token number">0</span>
+<span class="token key property">imports</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">&quot;/etc/containerd/runtime_*.toml&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;./debug.toml&quot;</span><span class="token punctuation">]</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">grpc</span><span class="token punctuation">]</span>
+  <span class="token key property">address</span> <span class="token punctuation">=</span> <span class="token string">&quot;/run/containerd/containerd.sock&quot;</span>
+  <span class="token key property">uid</span> <span class="token punctuation">=</span> <span class="token number">0</span>
+  <span class="token key property">gid</span> <span class="token punctuation">=</span> <span class="token number">0</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">debug</span><span class="token punctuation">]</span>
+  <span class="token key property">address</span> <span class="token punctuation">=</span> <span class="token string">&quot;/run/containerd/debug.sock&quot;</span>
+  <span class="token key property">uid</span> <span class="token punctuation">=</span> <span class="token number">0</span>
+  <span class="token key property">gid</span> <span class="token punctuation">=</span> <span class="token number">0</span>
+  <span class="token key property">level</span> <span class="token punctuation">=</span> <span class="token string">&quot;info&quot;</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">metrics</span><span class="token punctuation">]</span>
+  <span class="token key property">address</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;</span>
+  <span class="token key property">grpc_histogram</span> <span class="token punctuation">=</span> <span class="token boolean">false</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">cgroup</span><span class="token punctuation">]</span>
+  <span class="token key property">path</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">plugins</span><span class="token punctuation">]</span>
+  <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.monitor.v1.cgroups&quot;</span><span class="token punctuation">]</span>
+    <span class="token key property">no_prometheus</span> <span class="token punctuation">=</span> <span class="token boolean">false</span>
+  <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.service.v1.diff-service&quot;</span><span class="token punctuation">]</span>
+    <span class="token key property">default</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">&quot;walking&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.gc.v1.scheduler&quot;</span><span class="token punctuation">]</span>
+    <span class="token key property">pause_threshold</span> <span class="token punctuation">=</span> <span class="token number">0.02</span>
+    <span class="token key property">deletion_threshold</span> <span class="token punctuation">=</span> <span class="token number">0</span>
+    <span class="token key property">mutation_threshold</span> <span class="token punctuation">=</span> <span class="token number">100</span>
+    <span class="token key property">schedule_delay</span> <span class="token punctuation">=</span> <span class="token number">0</span>
+    <span class="token key property">startup_delay</span> <span class="token punctuation">=</span> <span class="token string">&quot;100ms&quot;</span>
+  <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.runtime.v2.task&quot;</span><span class="token punctuation">]</span>
+    <span class="token key property">platforms</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">&quot;linux/amd64&quot;</span><span class="token punctuation">]</span>
+    <span class="token key property">sched_core</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
+  <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.service.v1.tasks-service&quot;</span><span class="token punctuation">]</span>
+    <span class="token key property">blockio_config_file</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;</span>
+    <span class="token key property">rdt_config_file</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;</span>
+</code></pre>
+<h2 id="bugs">BUGS</h2>
+<p>Please file any specific issues that you encounter at
+<a href="https://github.com/containerd/containerd" target="_blank">https://github.com/containerd/containerd</a>.</p>
+<h2 id="author">AUTHOR</h2>
+<p>Phil Estes <a href="mailto:estesp@gmail.com" target="_blank">estesp@gmail.com</a></p>
+<h2 id="see-also">SEE ALSO</h2>
+<p>ctr(8), containerd-config(8), containerd(8)</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="containerd-config.8.html" class="navigation navigation-prev " aria-label="Previous page: containerd-config.8">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../snapshotters/" class="navigation navigation-next " aria-label="Next page: Snapshotters">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"containerd-config.toml.5","level":"1.4.2","depth":2,"next":{"title":"Snapshotters","level":"1.5","depth":1,"path":"snapshotters/README.md","ref":"snapshotters/README.md","articles":[{"title":"Devmapper","level":"1.5.1","depth":2,"path":"snapshotters/devmapper.md","ref":"snapshotters/devmapper.md","articles":[]}]},"previous":{"title":"containerd-config.8","level":"1.4.1","depth":2,"path":"man/containerd-config.8.md","ref":"man/containerd-config.8.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"man/containerd-config.toml.5.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

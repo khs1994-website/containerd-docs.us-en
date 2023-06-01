@@ -1,0 +1,1092 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2017 06 23 · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="2017-06-09.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../cri/architecture.html">
+            
+                <a href="../../cri/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../cri/config.html">
+            
+                <a href="../../cri/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../cri/crictl.html">
+            
+                <a href="../../cri/crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../cri/decryption.html">
+            
+                <a href="../../cri/decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../cri/installation.html">
+            
+                <a href="../../cri/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../cri/registry.html">
+            
+                <a href="../../cri/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../cri/testing.html">
+            
+                <a href="../../cri/testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../cri/proposal.html">
+            
+                <a href="../cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../design/architecture.html">
+            
+                <a href="../design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../design/data-flow.html">
+            
+                <a href="../design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../design/lifecycle.html">
+            
+                <a href="../design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../design/mounts.html">
+            
+                <a href="../design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../design/snapshots.html">
+            
+                <a href="../design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="2017-01-13.html">
+            
+                <a href="2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="2017-01-20.html">
+            
+                <a href="2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="2017-01-27.html">
+            
+                <a href="2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="2017-02-10.html">
+            
+                <a href="2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="2017-02-24.html">
+            
+                <a href="2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="2017-03-10.html">
+            
+                <a href="2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="2017-03-17.html">
+            
+                <a href="2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="2017-03-24.html">
+            
+                <a href="2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="2017-04-28.html">
+            
+                <a href="2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="2017-05-05.html">
+            
+                <a href="2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="2017-05-19.html">
+            
+                <a href="2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="2017-05-26.html">
+            
+                <a href="2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="2017-06-09.html">
+            
+                <a href="2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3.14" data-path="2017-06-23.html">
+            
+                <a href="2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../man/containerd-config.8.html">
+            
+                <a href="../../man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../man/containerd-config.toml.5.html">
+            
+                <a href="../../man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../snapshotters/">
+            
+                <a href="../../snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../snapshotters/devmapper.html">
+            
+                <a href="../../snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../client-opts.html">
+            
+                <a href="../../client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../content-flow.html">
+            
+                <a href="../../content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../garbage-collection.html">
+            
+                <a href="../../garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../getting-started.html">
+            
+                <a href="../../getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../hosts.html">
+            
+                <a href="../../hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../managed-opt.html">
+            
+                <a href="../../managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../namespaces.html">
+            
+                <a href="../../namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../NRI.html">
+            
+                <a href="../../NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../ops.html">
+            
+                <a href="../../ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../PLUGINS.html">
+            
+                <a href="../../PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../../remote-snapshotter.html">
+            
+                <a href="../../remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../../rootless.html">
+            
+                <a href="../../rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../../RUNC.html">
+            
+                <a href="../../RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../../stream_processors.html">
+            
+                <a href="../../stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../../tracing.html">
+            
+                <a href="../../tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../../transfer.html">
+            
+                <a href="../../transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >2017 06 23</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="development-report-for-june-23-2017">Development Report for June 23, 2017</h1>
+<h2 id="events-service">Events Service</h2>
+<p>We added an events service for getting events across various services including
+containers, content, execution, images, namespaces, and snapshots. Additionally
+we added <code>ctr events</code> to view events emitted by the service.</p>
+<pre class="language-"><code>$ ctr events
+2017-06-23 23:21:30.271802153 +0000 UTC   /snapshot/prepare   key=registry parent=sha256:dc22a13eb565d14bfe2b16f6fa731a05da0eeff02a52059c7b59cdc2c232a2b2
+2017-06-23 23:21:30.28045193 +0000 UTC   /containers/create   id=registry image=docker.io/library/registry:latest runtime=&amp;ContainerCreate_Runtime{Name:io.containerd.runtime.v1.linux,Options:map[string]string{},}
+2017-06-23 23:21:30.347842352 +0000 UTC   /runtime/task-create   id=registry type=CREATE pid=30411 status=0 exited=0001-01-01 00:00:00 +0000 UTC
+2017-06-23 23:21:30.355290368 +0000 UTC   /runtime/create   id=registry bundle=/var/lib/containerd/io.containerd.runtime.v1.linux/default/registry rootfs=type=overlay:src=overlay checkpoint=
+2017-06-23 23:21:30.362012776 +0000 UTC   /tasks/create   id=registry
+2017-06-23 23:21:30.369742117 +0000 UTC   /runtime/task-start   id=registry type=START pid=30411 status=0 exited=0001-01-01 00:00:00 +0000 UTC
+2017-06-23 23:21:30.369793151 +0000 UTC   /tasks/start   id=registry
+2017-06-23 23:21:40.169884207 +0000 UTC   /runtime/task-exit   id=registry type=EXIT pid=30411 status=130 exited=2017-06-23 23:21:40.16962998 +0000 UTC
+2017-06-23 23:21:40.185850194 +0000 UTC   /runtime/delete   id=registry runtime=io.containerd.runtime.v1.linux status=130 exited=2017-06-23 23:21:40.16962998 +0000 UTC
+2017-06-23 23:21:40.225633455 +0000 UTC   /tasks/delete   id=registry pid=30411 status=130
+2017-06-23 23:21:42.053154149 +0000 UTC   /snapshot/remove   key=registry
+2017-06-23 23:21:42.061579495 +0000 UTC   /containers/delete   id=registry
+</code></pre><p><a href="https://github.com/containerd/containerd/pull/956" target="_blank">#956: Events service</a></p>
+<h2 id="filters">Filters</h2>
+<p>We added the syntax to use for filtration of items over the containerd API. The
+<code>filter</code> package defines a syntax and parser that can be used across types and
+use cases in a uniform manner. This will be used commonly across the API for
+images, containers, events, snapshots, etc.</p>
+<p>The syntax is fairly familiar, if you&apos;ve used container ecosystem
+projects.  At the core, we base it on the concept of protobuf field
+paths, augmenting with the ability to quote portions of the field path
+to match arbitrary labels. These &quot;selectors&quot; come in the following
+syntax:</p>
+<pre class="language-"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fieldpath</span><span class="token punctuation">&gt;</span></span>[<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>operator</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>value</span><span class="token punctuation">&gt;</span></span>]
+</code></pre><p>A basic example is as follows:</p>
+<pre class="language-"><code>name==foo
+</code></pre><p>This would match all objects that have a field <code>name</code> with the value
+<code>foo</code>. If we only want to test if the field is present, we can omit the
+operator. This is most useful for matching labels in containerd. The
+following will match objects that has the field labels and have the
+label &quot;foo&quot; defined:</p>
+<pre class="language-"><code>labels.foo
+</code></pre><p>We also allow for quoting of parts of the field path to allow matching
+of arbitrary items:</p>
+<pre class="language-"><code>labels.&quot;very complex label&quot;==something
+</code></pre><p>We also define <code>!=</code> and <code>~=</code> as operators. The <code>!=</code> operator will match
+all objects that don&apos;t match the value for a field and <code>~=</code> will compile
+the target value as a regular expression and match the field value
+against that.</p>
+<p>Selectors can be combined using a comma, such that the resulting
+selector will require all selectors are matched for the object to match.
+The following example will match objects that are named <code>foo</code> and have
+the label <code>bar</code>:</p>
+<pre class="language-"><code>name==foo,labels.bar
+</code></pre><p><a href="https://github.com/containerd/containerd/pull/995" target="_blank">#995: Add package for filters</a></p>
+<p><a href="https://github.com/containerd/containerd/pull/1050" target="_blank">#1050: Container list filters</a></p>
+<p><a href="https://github.com/containerd/containerd/pull/1069" target="_blank">#1069: Event filters</a></p>
+<h2 id="support-for-pushing-and-pulling-oci-indexes">Support for pushing and pulling OCI indexes</h2>
+<p>We added support for pushing and pulling OCI indexes. Currently all content
+referenced by the list are pulled and further work on the client will be done
+to allow selection of the pulled manifest to extract and run.</p>
+<p><a href="https://github.com/containerd/containerd/pull/1022" target="_blank">#1022: Support pull for OCI indexes</a></p>
+<h2 id="snapshot-list">Snapshot list</h2>
+<p>We added <code>ctr snapshot list</code> to snapshots from containerd. This will output all
+snapshots, not just the active snapshots used by containers.</p>
+<pre class="language-"><code>$ ctr snapshot list
+ID                                                                      Parent                                                                  State     Readonly
+registry2                                                               sha256:dc22a13eb565d14bfe2b16f6fa731a05da0eeff02a52059c7b59cdc2c232a2b2 active    false
+registry3                                                               sha256:dc22a13eb565d14bfe2b16f6fa731a05da0eeff02a52059c7b59cdc2c232a2b2 active    false
+sha256:4ac69ce655ab8aa97362915793348d31361fb3c047e223c2b58be706e89c48fc sha256:ba2cc2690e31f63847e4bc0d266b354f8f11dc04474d45d44312ff70edae9c98 committed true
+sha256:ba2cc2690e31f63847e4bc0d266b354f8f11dc04474d45d44312ff70edae9c98                                                                         committed true
+sha256:bfe0b04fc169b94099b29dbf5a527f6a11db627cd0a6126803edf8f42bd7b4b3 sha256:4ac69ce655ab8aa97362915793348d31361fb3c047e223c2b58be706e89c48fc committed true
+sha256:d959def87dadbb9ba85070c09e99b46d994967b12f5748f617c377073b8d1e39 sha256:bfe0b04fc169b94099b29dbf5a527f6a11db627cd0a6126803edf8f42bd7b4b3 committed true
+sha256:dc22a13eb565d14bfe2b16f6fa731a05da0eeff02a52059c7b59cdc2c232a2b2 sha256:d959def87dadbb9ba85070c09e99b46d994967b12f5748f617c377073b8d1e39 committed true
+</code></pre><p><a href="https://github.com/containerd/containerd/pull/1058" target="_blank">#1058: Add list snapshot subcommand</a></p>
+<h2 id="api-cleanup">API cleanup</h2>
+<p>As part of our API review process we have started implementing some changes to
+make the API clearer and more consistent.</p>
+<p><a href="https://github.com/containerd/containerd/pull/1040" target="_blank">#1040: Update GRPC APIs</a></p>
+<p><a href="https://github.com/containerd/containerd/pull/1047" target="_blank">#1047: Rename execution service to tasks</a></p>
+<p><a href="https://github.com/containerd/containerd/pull/1059" target="_blank">#1059: enforce a character set for namespaces</a></p>
+<p><a href="https://github.com/containerd/containerd/pull/1062" target="_blank">#1052: version protobuf service packages</a></p>
+<p><a href="https://github.com/containerd/containerd/pull/1072" target="_blank">#1072: move events types into service package</a></p>
+<p><a href="https://github.com/containerd/containerd/pull/1073" target="_blank">#1073: consolidate API types packages</a></p>
+<p><a href="https://github.com/containerd/containerd/pull/1074" target="_blank">#1074: replace whale with D</a></p>
+<h2 id="containerd-notes-from-moby-summit">Containerd notes from Moby Summit</h2>
+<p>At the Moby summit on 06/19/2017 there was a containerd round table meeting.
+This was a good opportunity to discuss the upcoming API freeze and release of
+containerd with others working with it in the community. Always remember that
+these summit round tables are not the only opportunity to have these topics
+discussed and everyone is encouraged to open issues and engage the community on
+Slack.</p>
+<ul>
+<li><p>&quot;What are the plans for a resolver-resolver and image reference namespacing?&quot;</p>
+<ul>
+<li>Maintainers are trying to figure out what everyone&#x2019;s plans/needs are for a resolver-resolver.</li>
+<li>A resolver-resolver allows configuring where push/pull happens. Could take in a configuration format which specifies how to push, pull, and authenticate. Needed in order to do discover of names to registry configurations.</li>
+<li>Stephen confirms we are thinking of more configuration driven rather programmatic. The resolver-resolver and any configuration is always client side, allowing the integrator to design any interface or configuration suits their needs. But we are also looking to define something that could be consistently applied by containerd clients.</li>
+<li>The resolver-resolver will be compatible with Docker, but could allow Docker to expand its resolution support.</li>
+</ul>
+</li>
+<li><p>&quot;What is the plan for garbage collection?&quot;</p>
+<ul>
+<li>Current design is oriented around being garbage collected. The data model is designed around references which are used to walk a root set. Everything unreferenced would be garbage collected.</li>
+<li>Another more complicated aspect of garbage collection is around policy, allowing to clean up resources based on age or client specified policies.</li>
+<li>Client side implementations would allow establishing policies.</li>
+<li>Containerd will require a stop the world to do the garbage collection.</li>
+<li>A heavy delete which does not garbage collect is an option and similar to to the interface today. The API does not guarantee that disk is cleaned up after a deletion, only that the resource is freed. Inline deletion would require reference counting to know when to delete. This would also require global locking to protect the references.</li>
+<li>How to handle content which is active but unreferenced, leasing vs pre-allocate. This has not been decided on.</li>
+</ul>
+</li>
+<li><p>&quot;What will need to change in Docker in regards to graphdrivers for accommodating the containerd snapshotters?&quot;</p>
+<ul>
+<li>The goal is to have graphdrivers be able to be used as snapshot drivers.</li>
+<li>To accomplish this graphdrivers need to be able to return mounts without needing to require action on unmount. Unmount will no longer contact the graphdriver since snapshotters to do not control the mount/unmount lifecycle.</li>
+<li>For implementation, in the repository tree only overlayfs and btrfs are supported. Everything else will be out of tree and require special builds or proxying.</li>
+</ul>
+</li>
+<li><p>&quot;Version numbers on events and API objects&quot;</p>
+<ul>
+<li>Are objects mutable? Some objects are mutable but not necessarily relevant to clients.</li>
+<li>Are containers mutable? It can have multiple tasks, can be started and stopped.</li>
+<li>We may need to have task id separate from the container to differentiate between tasks within a container.</li>
+<li>Tasks have a pid which could be used to identify the task. Someone had a customer that ran out of memory from running too many tasks, could be caused by repeated execs in the same container.</li>
+<li>Getting state of a containers task involves requesting containers and tasks, or just tasks could be listed.</li>
+<li>What are the API costs, is there measurements of the cost of API calls and comparisons with Docker? Calling docker ps can be expensive due to locks, containerd should be much cheaper and faster to call. This need to be verified and measurements added.</li>
+</ul>
+</li>
+<li><p>&quot;How can clients understand the capabilities of the containerd instance it is talking to?&quot;</p>
+<ul>
+<li>As an orchestrator, interested in understanding what can be done with the plugins. Example, docker log drivers change feature set but the log driver names do not change. Stuck on checking docker version.</li>
+<li>There have been problems in the past with requiring multiple clients of docker to handle changes.</li>
+<li>GRPC is adding introspection, plan is to wait for this work rather than making something ourselves.</li>
+<li>The maintainers would like to understand what were the really bad changes in Docker that caused problems with version support for users. Problems around needing to bump the whole API to get a new feature. Containerd API versions each service and v1 interface will be stable and supported.</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2017-06-09.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 2017 06 09">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2017 06 23","level":"1.3.3.14","depth":3,"next":{"title":"Man","level":"1.4","depth":1,"ref":"","articles":[{"title":"containerd-config.8","level":"1.4.1","depth":2,"path":"man/containerd-config.8.md","ref":"man/containerd-config.8.md","articles":[]},{"title":"containerd-config.toml.5","level":"1.4.2","depth":2,"path":"man/containerd-config.toml.5.md","ref":"man/containerd-config.toml.5.md","articles":[]}]},"previous":{"title":"2017 06 09","level":"1.3.3.13","depth":3,"path":"historical/reports/2017-06-09.md","ref":"historical/reports/2017-06-09.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"historical/reports/2017-06-23.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

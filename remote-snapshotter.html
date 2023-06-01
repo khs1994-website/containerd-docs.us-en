@@ -1,0 +1,1066 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Remote Snapshotter · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="rootless.html" />
+    
+    
+    <link rel="prev" href="PLUGINS.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="cri/architecture.html">
+            
+                <a href="cri/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="cri/config.html">
+            
+                <a href="cri/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="cri/crictl.html">
+            
+                <a href="cri/crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="cri/decryption.html">
+            
+                <a href="cri/decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="cri/installation.html">
+            
+                <a href="cri/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="cri/registry.html">
+            
+                <a href="cri/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="cri/testing.html">
+            
+                <a href="cri/testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="historical/cri/proposal.html">
+            
+                <a href="historical/cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="historical/design/architecture.html">
+            
+                <a href="historical/design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="historical/design/data-flow.html">
+            
+                <a href="historical/design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="historical/design/lifecycle.html">
+            
+                <a href="historical/design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="historical/design/mounts.html">
+            
+                <a href="historical/design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="historical/design/snapshots.html">
+            
+                <a href="historical/design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="historical/reports/2017-01-13.html">
+            
+                <a href="historical/reports/2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="historical/reports/2017-01-20.html">
+            
+                <a href="historical/reports/2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="historical/reports/2017-01-27.html">
+            
+                <a href="historical/reports/2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="historical/reports/2017-02-10.html">
+            
+                <a href="historical/reports/2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="historical/reports/2017-02-24.html">
+            
+                <a href="historical/reports/2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="historical/reports/2017-03-10.html">
+            
+                <a href="historical/reports/2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="historical/reports/2017-03-17.html">
+            
+                <a href="historical/reports/2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="historical/reports/2017-03-24.html">
+            
+                <a href="historical/reports/2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="historical/reports/2017-04-28.html">
+            
+                <a href="historical/reports/2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="historical/reports/2017-05-05.html">
+            
+                <a href="historical/reports/2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="historical/reports/2017-05-19.html">
+            
+                <a href="historical/reports/2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="historical/reports/2017-05-26.html">
+            
+                <a href="historical/reports/2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="historical/reports/2017-06-09.html">
+            
+                <a href="historical/reports/2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="historical/reports/2017-06-23.html">
+            
+                <a href="historical/reports/2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="man/containerd-config.8.html">
+            
+                <a href="man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="man/containerd-config.toml.5.html">
+            
+                <a href="man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="snapshotters/">
+            
+                <a href="snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="snapshotters/devmapper.html">
+            
+                <a href="snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="client-opts.html">
+            
+                <a href="client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="content-flow.html">
+            
+                <a href="content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="garbage-collection.html">
+            
+                <a href="garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="hosts.html">
+            
+                <a href="hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="managed-opt.html">
+            
+                <a href="managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="namespaces.html">
+            
+                <a href="namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="NRI.html">
+            
+                <a href="NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ops.html">
+            
+                <a href="ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="PLUGINS.html">
+            
+                <a href="PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.16" data-path="remote-snapshotter.html">
+            
+                <a href="remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="rootless.html">
+            
+                <a href="rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="RUNC.html">
+            
+                <a href="RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="stream_processors.html">
+            
+                <a href="stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="tracing.html">
+            
+                <a href="tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="transfer.html">
+            
+                <a href="transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Remote Snapshotter</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="remote-snapshotter">Remote Snapshotter</h1>
+<p>Containerd allows snapshotters to reuse snapshots existing somewhere managed by them.</p>
+<p><em>Remote Snapshotter</em> is a snapshotter that leverages this functionality and reuses snapshots that are stored in a remotely shared place.
+These remotely shared snapshots are called <em>remote snapshots</em>.
+Remote snapshotter allows containerd to prepare these remote snapshots without pulling layers from registries, which hopefully shorten the time to take for image pull.</p>
+<p>One of the remote snapshotter implementations is <a href="https://github.com/containerd/stargz-snapshotter" target="_blank">Stargz Snapshotter</a>.
+This enables containerd to lazily pull images from standard-compliant registries leveraging remote snapshotter functionality and stargz images by google/crfs.</p>
+<h2 id="the-containerd-client-api">The containerd client API</h2>
+<p>The containerd client&apos;s <code>Pull</code> API with unpacking-mode allows the underlying snapshotter to query for remote snapshots before fetching content.
+Remote snapshotter needs to be plugged into containerd in <a href="docs/PLUGINS.md">the same ways as normal snapshotters</a>.</p>
+<pre class="language-"><code class="lang-go">image<span class="token punctuation">,</span> err <span class="token operator">:=</span> client<span class="token punctuation">.</span><span class="token function">Pull</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> ref<span class="token punctuation">,</span>
+    containerd<span class="token punctuation">.</span>WithPullUnpack<span class="token punctuation">,</span>
+    containerd<span class="token punctuation">.</span><span class="token function">WithPullSnapshotter</span><span class="token punctuation">(</span><span class="token string">&quot;my-remote-snapshotter&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+</code></pre>
+<h2 id="passing-snapshotter-specific-information">Passing snapshotter-specific information</h2>
+<p>Some remote snapshotters requires snapshotter-specific information through <code>Pull</code> API.
+The information will be used in various ways including searching snapshot contents from a remote store.
+One of the example snapshotters that requires snapshotter-specific information is stargz snapshotter.
+It requires the image reference name and layer digests, etc. for searching layer contents from registries.</p>
+<p>Snapshotters receive the information through user-defined labels prefixed by <code>containerd.io/snapshot/</code>.
+The containerd client supports two ways to pass these labels to the underlying snapshotter.</p>
+<h3 id="using-snapshotters-withlabels-option">Using snapshotter&apos;s <code>WithLabels</code> option</h3>
+<p>User-defined labels can be passed down to the underlying snapshotter using snapshotter option <code>WithLabels</code>.
+Specified labels will be passed down every time the containerd client queries a remote snapshot.
+This is useful if the values of these labels are determined statically regardless of the snapshots.
+These user-defined labels must be prefixed by <code>containerd.io/snapshot/</code>.</p>
+<pre class="language-"><code class="lang-go"><span class="token keyword">import</span> <span class="token string">&quot;github.com/containerd/containerd/snapshots&quot;</span>
+
+image<span class="token punctuation">,</span> err <span class="token operator">:=</span> client<span class="token punctuation">.</span><span class="token function">Pull</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> ref<span class="token punctuation">,</span>
+    containerd<span class="token punctuation">.</span>WithPullUnpack<span class="token punctuation">,</span>
+    containerd<span class="token punctuation">.</span><span class="token function">WithPullSnapshotter</span><span class="token punctuation">(</span>
+        <span class="token string">&quot;my-remote-snapshotter&quot;</span><span class="token punctuation">,</span>
+        snapshots<span class="token punctuation">.</span><span class="token function">WithLabels</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">{</span>
+            <span class="token string">&quot;containerd.io/snapshot/reference&quot;</span><span class="token punctuation">:</span> ref<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+</code></pre>
+<h3 id="using-the-containerd-clients-withimagehandlerwrapper-option">Using the containerd client&apos;s <code>WithImageHandlerWrapper</code> option</h3>
+<p>User-defined labels can also be passed using an image handler wrapper.
+This is useful when labels vary depending on the snapshot.</p>
+<p>Every time the containerd client queries remote snapshot, it passes <code>Annotations</code> appended to the targeting layer descriptor (means the layer descriptor that will be pulled and unpacked for preparing that snapshot) to the underlying snapshotter.
+These annotations are passed to the snapshotter as user-defined labels.
+The values of annotations can be dynamically added and modified in the handler wrapper.
+Note that annotations must be prefixed by <code>containerd.io/snapshot/</code>.
+<code>github.com/containerd/containerd/pkg/snapshotters</code> is a handler implementation used by the CRI package, nerdctl and moby.</p>
+<pre class="language-"><code class="lang-go"><span class="token keyword">import</span> <span class="token string">&quot;github.com/containerd/containerd/pkg/snapshotters&quot;</span>
+
+<span class="token keyword">if</span> <span class="token boolean">_</span><span class="token punctuation">,</span> err <span class="token operator">:=</span> client<span class="token punctuation">.</span><span class="token function">Pull</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> ref<span class="token punctuation">,</span>
+    containerd<span class="token punctuation">.</span>WithPullUnpack<span class="token punctuation">,</span>
+    containerd<span class="token punctuation">.</span><span class="token function">WithPullSnapshotter</span><span class="token punctuation">(</span><span class="token string">&quot;my-remote-snapshotter&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    containerd<span class="token punctuation">.</span><span class="token function">WithImageHandlerWrapper</span><span class="token punctuation">(</span>snapshotters<span class="token punctuation">.</span><span class="token function">AppendInfoHandlerWrapper</span><span class="token punctuation">(</span>ref<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+</code></pre>
+<h2 id="snapshotter-apis-for-querying-remote-snapshots">Snapshotter APIs for querying remote snapshots</h2>
+<p>The containerd client queries remote snapshots to the underlying remote snapshotter using snapshotter APIs.
+This section describes the high-level overview of how snapshotter APIs are used for remote snapshots functionality, with some piece of pseudo-codes that describe the simplified logic implemented in the containerd client.
+For more details, see <a href="../pkg/unpack/unpacker.go"><code>unpacker.go</code></a> that implements this logic.</p>
+<p>During image pull, the containerd client calls <code>Prepare</code> API with the label <code>containerd.io/snapshot.ref</code>.
+This is a containerd-defined label which contains ChainID that targets a committed snapshot that the client is trying to prepare.
+At this moment, user-defined labels (prefixed by <code>containerd.io/snapshot/</code>) will also be merged into the labels option.</p>
+<pre class="language-"><code class="lang-go"><span class="token comment">// Gets annotations appended to the targeting layer which would contain</span>
+<span class="token comment">// snapshotter-specific information passed by the user.</span>
+labels <span class="token operator">:=</span> snapshots<span class="token punctuation">.</span><span class="token function">FilterInheritedLabels</span><span class="token punctuation">(</span>desc<span class="token punctuation">.</span>Annotations<span class="token punctuation">)</span>
+<span class="token keyword">if</span> labels <span class="token operator">==</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+    labels <span class="token operator">=</span> <span class="token function">make</span><span class="token punctuation">(</span><span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Specifies ChainID of the targeting committed snapshot.</span>
+labels<span class="token punctuation">[</span><span class="token string">&quot;containerd.io/snapshot.ref&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> chainID
+
+<span class="token comment">// Merges snapshotter options specified by the user which would contain</span>
+<span class="token comment">// snapshotter-specific information passed by the user.</span>
+opts <span class="token operator">:=</span> <span class="token function">append</span><span class="token punctuation">(</span>rCtx<span class="token punctuation">.</span>SnapshotterOpts<span class="token punctuation">,</span> snapshots<span class="token punctuation">.</span><span class="token function">WithLabels</span><span class="token punctuation">(</span>labels<span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment">// Calls `Prepare` API with target identifier and snapshotter-specific</span>
+<span class="token comment">// information.</span>
+mounts<span class="token punctuation">,</span> err <span class="token operator">=</span> sn<span class="token punctuation">.</span><span class="token function">Prepare</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> key<span class="token punctuation">,</span> parent<span class="token punctuation">.</span><span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> opts<span class="token operator">...</span><span class="token punctuation">)</span>
+</code></pre>
+<p>If this snapshotter is a remote snapshotter, that committed snapshot hopefully exists, for example, in a shared remote store.
+Remote snapshotter must define and enforce policies about whether it will use an existing snapshot.
+When remote snapshotter allows the user to use that snapshot, it must return <code>ErrAlreadyExists</code>.</p>
+<p>If the containerd client gets <code>ErrAlreadyExists</code> by <code>Prepare</code>, it ensures the existence of that committed snapshot by calling <code>Stat</code> with the ChainID.
+If this snapshot is available, the containerd client skips pulling and unpacking layer that would otherwise be needed for preparing and committing that snapshot.</p>
+<pre class="language-"><code class="lang-go">mounts<span class="token punctuation">,</span> err <span class="token operator">=</span> sn<span class="token punctuation">.</span><span class="token function">Prepare</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> key<span class="token punctuation">,</span> parent<span class="token punctuation">.</span><span class="token function">String</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> opts<span class="token operator">...</span><span class="token punctuation">)</span>
+<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> errdefs<span class="token punctuation">.</span><span class="token function">IsAlreadyExists</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// Ensures the layer existence</span>
+        <span class="token keyword">if</span> <span class="token boolean">_</span><span class="token punctuation">,</span> err <span class="token operator">:=</span> sn<span class="token punctuation">.</span><span class="token function">Stat</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> chainID<span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+            <span class="token comment">// Handling error</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// snapshot found with ChainID</span>
+            <span class="token comment">// pulling/unpacking will be skipped</span>
+            <span class="token keyword">continue</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="PLUGINS.html" class="navigation navigation-prev " aria-label="Previous page: PLUGINS">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="rootless.html" class="navigation navigation-next " aria-label="Next page: Rootless">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Remote Snapshotter","level":"1.16","depth":1,"next":{"title":"Rootless","level":"1.17","depth":1,"path":"rootless.md","ref":"rootless.md","articles":[]},"previous":{"title":"PLUGINS","level":"1.15","depth":1,"path":"PLUGINS.md","ref":"PLUGINS.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"remote-snapshotter.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

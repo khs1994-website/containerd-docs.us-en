@@ -1,0 +1,1062 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Proposal · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../cri/architecture.html">
+            
+                <a href="../../cri/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../cri/config.html">
+            
+                <a href="../../cri/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../cri/crictl.html">
+            
+                <a href="../../cri/crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../cri/decryption.html">
+            
+                <a href="../../cri/decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../cri/installation.html">
+            
+                <a href="../../cri/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../cri/registry.html">
+            
+                <a href="../../cri/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../cri/testing.html">
+            
+                <a href="../../cri/testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1.1" data-path="proposal.html">
+            
+                <a href="proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../design/architecture.html">
+            
+                <a href="../design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../design/data-flow.html">
+            
+                <a href="../design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../design/lifecycle.html">
+            
+                <a href="../design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../design/mounts.html">
+            
+                <a href="../design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../design/snapshots.html">
+            
+                <a href="../design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../reports/2017-01-13.html">
+            
+                <a href="../reports/2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../reports/2017-01-20.html">
+            
+                <a href="../reports/2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../reports/2017-01-27.html">
+            
+                <a href="../reports/2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../reports/2017-02-10.html">
+            
+                <a href="../reports/2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../reports/2017-02-24.html">
+            
+                <a href="../reports/2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="../reports/2017-03-10.html">
+            
+                <a href="../reports/2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="../reports/2017-03-17.html">
+            
+                <a href="../reports/2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="../reports/2017-03-24.html">
+            
+                <a href="../reports/2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="../reports/2017-04-28.html">
+            
+                <a href="../reports/2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="../reports/2017-05-05.html">
+            
+                <a href="../reports/2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="../reports/2017-05-19.html">
+            
+                <a href="../reports/2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="../reports/2017-05-26.html">
+            
+                <a href="../reports/2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="../reports/2017-06-09.html">
+            
+                <a href="../reports/2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="../reports/2017-06-23.html">
+            
+                <a href="../reports/2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../man/containerd-config.8.html">
+            
+                <a href="../../man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../man/containerd-config.toml.5.html">
+            
+                <a href="../../man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../snapshotters/">
+            
+                <a href="../../snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../snapshotters/devmapper.html">
+            
+                <a href="../../snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../client-opts.html">
+            
+                <a href="../../client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../content-flow.html">
+            
+                <a href="../../content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../garbage-collection.html">
+            
+                <a href="../../garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../getting-started.html">
+            
+                <a href="../../getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../hosts.html">
+            
+                <a href="../../hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../managed-opt.html">
+            
+                <a href="../../managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../namespaces.html">
+            
+                <a href="../../namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../NRI.html">
+            
+                <a href="../../NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../ops.html">
+            
+                <a href="../../ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../PLUGINS.html">
+            
+                <a href="../../PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../../remote-snapshotter.html">
+            
+                <a href="../../remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../../rootless.html">
+            
+                <a href="../../rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../../RUNC.html">
+            
+                <a href="../../RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../../stream_processors.html">
+            
+                <a href="../../stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../../tracing.html">
+            
+                <a href="../../tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../../transfer.html">
+            
+                <a href="../../transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Proposal</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="containerd-cri-integration">Containerd CRI Integration</h1>
+<p>Author: Lantao Liu (@random-liu)</p>
+<h2 id="abstract">Abstract</h2>
+<p>This proposal aims to integrate <a href="https://github.com/containerd/containerd" target="_blank">containerd</a> with Kubelet against the <a href="https://github.com/kubernetes/kubernetes/blob/v1.6.0/pkg/kubelet/api/v1alpha1/runtime/api.proto" target="_blank">container runtime interface (CRI)</a>.</p>
+<h2 id="background">Background</h2>
+<p>Containerd is a core container runtime, which provides the minimum set of functionalities to manage the complete container lifecycle of its host system, including container execution and supervision, image distribution and storage, etc.</p>
+<p>Containerd was <a href="https://blog.docker.com/2016/04/docker-engine-1-11-runc/" target="_blank">introduced in Docker 1.11</a>, used to manage <a href="https://runc.io/" target="_blank">runC</a> containers on the node. As shown below, it creates a containerd-shim for each container, and the shim manages the lifecycle of its corresponding container.
+<img src="containerd.png" alt="containerd"></p>
+<p>In Dec. 2016, Docker Inc. spun it out into a standalone component, and donated it to <a href="https://www.cncf.io/" target="_blank">CNCF</a> in Mar. 2017.</p>
+<h2 id="motivation">Motivation</h2>
+<p>Containerd is one potential alternative to Docker as the runtime for Kubernetes clusters. <em>Compared with Docker</em>, containerd has pros and cons.</p>
+<h3 id="pros">Pros</h3>
+<ul>
+<li><strong>Stability</strong>: Containerd has limited scope and slower feature velocity, which is expected to be more stable.</li>
+<li><strong>Compatibility</strong>: The scope of containerd aligns with Kubernetes&apos; requirements. It provides the required functionalities and the flexibility for areas like image pulling, networking, volume and logging etc.</li>
+<li><strong>Performance</strong>:<ul>
+<li>Containerd consumes less resource than Docker at least because it&apos;s a subset of Docker;</li>
+<li>Containerd CRI integration eliminates an extra hop in the stack (as shown below). <img src="performance.png" alt="performance"></li>
+</ul>
+</li>
+<li><strong>Neutral Foundation</strong>: Containerd is part of CNCF now.<h3 id="cons">Cons</h3>
+</li>
+<li><strong>User Adoption</strong>:<ul>
+<li>Ideally, Kubernetes users don&apos;t interact with the underlying container runtime directly. However, for the lack of debug toolkits, sometimes users still need to login the node to debug with Docker CLI directly.</li>
+<li>Containerd provides barebone CLIs <a href="https://github.com/containerd/containerd/tree/main/cmd/ctr" target="_blank">ctr</a> and <a href="https://github.com/containerd/containerd/tree/main/cmd/dist" target="_blank">dist</a> for development and debugging purpose, but they may not be sufficient and necessary. Additionally, presuming these are sufficient and necessary tools, a plan and time would be needed to sufficiently document these CLIs and educate users in their use.</li>
+</ul>
+</li>
+<li><strong>Maturity</strong>: The rescoped containerd is pretty new, and it&apos;s still under heavy development.<h2 id="goals">Goals</h2>
+</li>
+<li>Make sure containerd meets the requirement of Kubernetes, now and into the foreseeable future.</li>
+<li>Implement containerd CRI shim and make sure it provides equivalent functionality, usability and debuggability.</li>
+<li>Improve Kubernetes by taking advantage of the flexibility provided by containerd.<h2 id="design">Design</h2>
+The following sections discuss the design aspects of the containerd CRI integration. For the purposes of this doc, the containerd CRI integration will be referred to as <code>CRI-containerd</code>.<h3 id="container-lifecycle">Container Lifecycle</h3>
+CRI-containerd relies on containerd to manage container lifecycle.</li>
+</ul>
+<p>Ideally, CRI-containerd only needs to do api translation and information reorganization. However, CRI-containerd needs to maintain some metadata because:</p>
+<ul>
+<li>There is a mismatch between container lifecycle of CRI and containerd - containerd only tracks running processes, once the container and it&apos;s corresponding containerd-shim exit, the container is no longer visible in the containerd API.</li>
+<li>Some sandbox/container metadata is not provided by containerd, and we can not leverage OCI runtime annotation to store it because of the container lifecycle mismatch, e.g. labels/annotations, <code>PodSandboxID</code> of a container, <code>FinishedAt</code> timestamp, <code>ExitCode</code>, <code>Mounts</code> etc.</li>
+</ul>
+<p>CRI-containerd should checkpoint these metadata itself or use <a href="https://github.com/containerd/containerd/blob/0a5544d8c4dab44dfc682f5ad07f1cd011c0a115/design/plugins.md#core" target="_blank">containerd metadata service</a> if available.</p>
+<h3 id="container-logging">Container Logging</h3>
+<p>Containerd doesn&apos;t provide persistent container log. It redirects container STDIO into different FIFOs.</p>
+<p>CRI-containerd should start a goroutine (process/container in the future) to:</p>
+<ul>
+<li>Continuously drain the FIFO;</li>
+<li>Decorate the log line into <a href="https://github.com/kubernetes/community/blob/master/contributors/design-proposals/node/kubelet-cri-logging.md#proposed-solution" target="_blank">CRI-defined format</a>;</li>
+<li>Write the log into <a href="https://github.com/kubernetes/community/blob/master/contributors/design-proposals/node/kubelet-cri-logging.md#proposed-solution" target="_blank">CRI-defined log path</a>.<h3 id="container-streaming">Container Streaming</h3>
+Containerd supports creating a process in the container with <code>Exec</code>, and the STDIO is also exposed as FIFOs. Containerd also supports resizing console of a specific process with <code>Pty</code>.</li>
+</ul>
+<p>CRI-containerd could reuse the <a href="https://github.com/kubernetes/kubernetes/blob/release-1.6/pkg/kubelet/server/streaming/server.go" target="_blank">streaming server</a>, it should implement the <a href="https://github.com/kubernetes/kubernetes/blob/release-1.6/pkg/kubelet/server/streaming/server.go#L61-L65" target="_blank">streaming runtime interface</a>.</p>
+<p>For different CRI streaming functions:</p>
+<ul>
+<li><code>ExecSync</code>: CRI-containerd should use <code>Exec</code> to create the exec process, collect the stdout/stderr of the process, and wait for the process to terminate.</li>
+<li><code>Exec</code>: CRI-containerd should use <code>Exec</code> to create the exec process, create a goroutine (process/container) to redirect streams, and wait for the process to terminate.</li>
+<li><code>Attach</code>: CRI-containerd should create a goroutine (process/container) to read the existing container log to the output, redirect streams of the init process, and wait for any stream to be closed.</li>
+<li><code>PortForward</code>: CRI-containerd could implement this with <code>socat</code> and <code>nsenter</code>, similar with <a href="https://github.com/kubernetes/kubernetes/blob/release-1.6/pkg/kubelet/dockertools/docker_manager.go#L1373-L1428" target="_blank">current Docker portforward implementation</a>.<h3 id="container-networking">Container Networking</h3>
+Containerd doesn&apos;t provide container networking, but OCI runtime spec supports joining a linux container into an existing network namespace.</li>
+</ul>
+<p>CRI-containerd should:</p>
+<ul>
+<li>Create a network namespace for a sandbox;</li>
+<li>Call <a href="https://github.com/kubernetes/kubernetes/blob/master/pkg/kubelet/network/plugins.go" target="_blank">network plugin</a> to update the options of the network namespace;</li>
+<li>Let the user containers in the same sandbox share the network namespace.<h3 id="container-metrics">Container Metrics</h3>
+Containerd provides <a href="https://github.com/containerd/containerd/blob/main/reports/2017-03-17.md#metrics" target="_blank">container cgroup metrics</a>, and plans to provide <a href="https://github.com/containerd/containerd/issues/678" target="_blank">container writable layer disk usage</a>.</li>
+</ul>
+<p>CRI container metrics api needs to be defined (<a href="https://github.com/kubernetes/kubernetes/issues/27097" target="_blank">#27097</a>). After that, CRI-containerd should translate containerd container metrics into CRI container metrics.</p>
+<h3 id="image-management">Image Management</h3>
+<p>CRI-containerd relies on containerd to manage images. Containerd should provide all function and information required by CRI, and CRI-containerd only needs to do api translation and information reorganization.</p>
+<h3 id="imagefs-metrics">ImageFS Metrics</h3>
+<p>Containerd plans to provide <a href="https://github.com/containerd/containerd/issues/678" target="_blank">image filesystem metrics</a>.</p>
+<p>CRI image filesystem metrics needs to be defined (<a href="https://github.com/kubernetes/kubernetes/issues/33048" target="_blank">#33048</a>). After that, we should make sure containerd provides the required metrics, and CRI-containerd should translate containerd image filesystem metrics into CRI image filesystem metrics.</p>
+<h3 id="out-of-scope">Out of Scope</h3>
+<p>Following items are out of the scope of this design, we may address them in future version as enhancement or optimization.</p>
+<ul>
+<li><strong>Debuggability</strong>: One of the biggest concern of CRI-containerd is debuggability. We should provide equivalent debuggability with Docker CLI through <code>kubectl</code>, <a href="https://github.com/kubernetes-sigs/cri-tools" target="_blank"><code>cri-tools</code></a> or containerd CLI.</li>
+<li><strong>Built-in CRI support</strong>: The <a href="https://github.com/containerd/containerd/blob/main/design/plugins.md" target="_blank">plugin model</a> provided by containerd makes it possible to directly build CRI support into containerd as a plugin, which will eliminate one more hop from the stack. But because of the <a href="https://github.com/containerd/containerd/issues/563" target="_blank">limitation of golang plugin</a>, we have to either maintain our own branch or push CRI plugin upstream.</li>
+<li><strong>Seccomp</strong>: (<a href="https://github.com/kubernetes/kubernetes/issues/36997" target="_blank">#36997</a>) Seccomp is supported in OCI runtime spec. However, current seccomp implementation in Kubernetes is experimental and docker specific, the api needs to be defined in CRI first before CRI-containerd implements it.</li>
+<li><strong>Streaming server authentication</strong>: (<a href="https://github.com/kubernetes/kubernetes/issues/36666" target="_blank">#36666</a>) CRI-containerd will be out-of-process with Kubelet, so it could not reuse Kubelet authentication. Its streaming server should implement its own authentication mechanism.</li>
+<li><strong>Move container facilities into pod cgroup</strong>: Container facilities including container image puller, container streaming handler, log handler and containerd-shim serve a specific container. They should be moved to the corresponding pod cgroup, and the overhead introduced by them should be charged to the pod.</li>
+<li><strong>Log rotation</strong>: (<a href="https://github.com/kubernetes/kubernetes/issues/42718" target="_blank">#42718</a>) Container log rotation is under design. A function may be added in CRI to signal the runtime to reopen log file. CRI-containerd should implement that function after it is defined.</li>
+<li><strong>Exec container</strong>: With the flexibility provided by containerd, it is possible to implement <code>Exec</code> with a separate container sharing the same rootfs and mount namespace with the original container. The advantage is that the <code>Exec</code> container could have it&apos;s own sub-cgroup, so that it will not consume the resource of application container and user could specify dedicated resource for it.</li>
+<li><strong>Advanced image management</strong>: The image management interface in CRI is relatively simple because the requirement of Kubelet image management is not clearly scoped out. In the future, we may want to leverage the flexibility provided by containerd more, e.g. estimate image size before pulling etc.</li>
+<li>...<h2 id="roadmap-and-milestones">Roadmap and Milestones</h2>
+<h3 id="milestones">Milestones</h3>
+<h4 id="kubernetes-17---q2">Kubernetes 1.7 - Q2</h4>
+</li>
+<li>[P0] Basic container lifecycle.</li>
+<li>[P0] Basic image management.</li>
+<li>[P0] Container networking.</li>
+<li>[P1] Container streaming/logging.</li>
+<li>[P2] Container/ImageFS Metrics.</li>
+</ul>
+<p><em>Test Plan: Each feature added should have unit test and pass its corresponding cri validation test.</em></p>
+<h4 id="kubernetes-18---q3">Kubernetes 1.8 - Q3</h4>
+<ul>
+<li>[P0] Feature complete, pass 100% cri validation test.</li>
+<li>[P0] Integrate CRI-containerd with Kubernetes, and build the e2e/node e2e test framework.</li>
+<li>[P1] Address the debuggability problem.<h3 id="q2-roadmap">Q2 Roadmap</h3>
+|               Item               | 1/2 Mar. | 2/2 Mar. | 1/2 Apr. | 2/2 Apr. | 1/2 May. | 2/2 May. |
+|:--------------------------------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+|              Survey              |     &#x2713;    |          |          |          |          |          |
+|                POC               |          |     &#x2713;    |          |          |          |          |
+|             Proposal             |          |          |     &#x2713;    |          |          |          |
+|    Containerd Feature Complete   |     &#x2713;    |     &#x2713;    |     &#x2713;    |          |          |          |
+|  Runtime Management Integration  |          |          |     &#x2713;    |     &#x2713;    |     &#x2713;    |     &#x2713;    |
+|   Image Management Integration   |          |          |          |     &#x2713;    |     &#x2713;    |     &#x2713;    |
+| Container Networking Integration |          |          |          |          |     &#x2713;    |     &#x2713;    |</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Proposal","level":"1.3.1.1","depth":3,"next":{"title":"Design","level":"1.3.2","depth":2,"ref":"","articles":[{"title":"Architecture","level":"1.3.2.1","depth":3,"path":"historical/design/architecture.md","ref":"historical/design/architecture.md","articles":[]},{"title":"Data Flow","level":"1.3.2.2","depth":3,"path":"historical/design/data-flow.md","ref":"historical/design/data-flow.md","articles":[]},{"title":"Lifecycle","level":"1.3.2.3","depth":3,"path":"historical/design/lifecycle.md","ref":"historical/design/lifecycle.md","articles":[]},{"title":"Mounts","level":"1.3.2.4","depth":3,"path":"historical/design/mounts.md","ref":"historical/design/mounts.md","articles":[]},{"title":"Snapshots","level":"1.3.2.5","depth":3,"path":"historical/design/snapshots.md","ref":"historical/design/snapshots.md","articles":[]}]},"previous":{"title":"Cri","level":"1.3.1","depth":2,"ref":"","articles":[{"title":"Proposal","level":"1.3.1.1","depth":3,"path":"historical/cri/proposal.md","ref":"historical/cri/proposal.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"historical/cri/proposal.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

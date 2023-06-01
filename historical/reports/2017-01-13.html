@@ -1,0 +1,991 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2017 01 13 · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2017-01-20.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../cri/architecture.html">
+            
+                <a href="../../cri/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../cri/config.html">
+            
+                <a href="../../cri/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../cri/crictl.html">
+            
+                <a href="../../cri/crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../cri/decryption.html">
+            
+                <a href="../../cri/decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../cri/installation.html">
+            
+                <a href="../../cri/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../cri/registry.html">
+            
+                <a href="../../cri/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../cri/testing.html">
+            
+                <a href="../../cri/testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../cri/proposal.html">
+            
+                <a href="../cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../design/architecture.html">
+            
+                <a href="../design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../design/data-flow.html">
+            
+                <a href="../design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../design/lifecycle.html">
+            
+                <a href="../design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../design/mounts.html">
+            
+                <a href="../design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../design/snapshots.html">
+            
+                <a href="../design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.3.1" data-path="2017-01-13.html">
+            
+                <a href="2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="2017-01-20.html">
+            
+                <a href="2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="2017-01-27.html">
+            
+                <a href="2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="2017-02-10.html">
+            
+                <a href="2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="2017-02-24.html">
+            
+                <a href="2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="2017-03-10.html">
+            
+                <a href="2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="2017-03-17.html">
+            
+                <a href="2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="2017-03-24.html">
+            
+                <a href="2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="2017-04-28.html">
+            
+                <a href="2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="2017-05-05.html">
+            
+                <a href="2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="2017-05-19.html">
+            
+                <a href="2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="2017-05-26.html">
+            
+                <a href="2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="2017-06-09.html">
+            
+                <a href="2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="2017-06-23.html">
+            
+                <a href="2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../man/containerd-config.8.html">
+            
+                <a href="../../man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../man/containerd-config.toml.5.html">
+            
+                <a href="../../man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../snapshotters/">
+            
+                <a href="../../snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../snapshotters/devmapper.html">
+            
+                <a href="../../snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../client-opts.html">
+            
+                <a href="../../client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../content-flow.html">
+            
+                <a href="../../content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../garbage-collection.html">
+            
+                <a href="../../garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../getting-started.html">
+            
+                <a href="../../getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../hosts.html">
+            
+                <a href="../../hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../managed-opt.html">
+            
+                <a href="../../managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../namespaces.html">
+            
+                <a href="../../namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../NRI.html">
+            
+                <a href="../../NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../ops.html">
+            
+                <a href="../../ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../PLUGINS.html">
+            
+                <a href="../../PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../../remote-snapshotter.html">
+            
+                <a href="../../remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../../rootless.html">
+            
+                <a href="../../rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../../RUNC.html">
+            
+                <a href="../../RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../../stream_processors.html">
+            
+                <a href="../../stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../../tracing.html">
+            
+                <a href="../../tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../../transfer.html">
+            
+                <a href="../../transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >2017 01 13</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="development-report-for-jan-13-2017">Development Report for Jan 13, 2017</h1>
+<h3 id="preface">Preface</h3>
+<p>I wanted to try something different for this project during its development by giving a weekly summary on the progress and what is being working on.  I figured the best place is to keep the reports in the repo.  Please give your feedback on the format and let me know if this is a waste of time or if there is something better we can do.</p>
+<h2 id="quick-start-and-vendoring">Quick Start and Vendoring</h2>
+<p>This week we merged PRs adding a quick start guide with build instructions to help get new contributors onboard quicker.  We also merged a vendoring PR so everyone has the same revision of packages for the project.  It can add a little burden on development having vendoring at this early stage, especially the way we have to do vendoring in Go, but it ensures that everyone contributing has a consistent environment.</p>
+<ul>
+<li><a href="https://github.com/containerd/containerd/pull/400" target="_blank">https://github.com/containerd/containerd/pull/400</a></li>
+<li><a href="https://github.com/containerd/containerd/pull/390" target="_blank">https://github.com/containerd/containerd/pull/390</a></li>
+</ul>
+<h2 id="milestones">Milestones</h2>
+<p>I spent some time yesterday working on milestones.  The milestones are more goal focused instead of being based on a versions or a date.  We have goals that we want to hit in each of the phases and the milestones are organized that way.</p>
+<p>We are currently in the bootstrap phase.  Much of the design work, getting the project&apos;s infrastructure up (ci, vendoring, guides for development, etc) are part of this work.</p>
+<p>The milestones will give you the most up-to-date view on the project and what is being worked on when.</p>
+<ul>
+<li><a href="https://github.com/containerd/containerd/milestones" target="_blank">https://github.com/containerd/containerd/milestones</a></li>
+</ul>
+<h2 id="networking">Networking</h2>
+<p>Containerd will not support networking in its core.  Based on the feedback we received and our own experience with networking we can confidently leave this out of containerd without impacting functionality.  You can see the full discussion in the issue linked below.</p>
+<p>Networking means many different things today and is becoming more software based.  On the runtime level, overlay networking is very simple, its just veth interfaces.  All of the overlay magic happens at the upper levels with routing tables and termination outside of the runtime and interfaces.  Networking also contains various forms of service discovery which should not be at the runtime level as things like health checks come into play to make sure you are only discovering healthy services.</p>
+<p>I personally feel like this is a good move for the project.  We have good primitives at the runtime level with the create/start split that allows a container&apos;s network namespace to be created and time for a network plugin to create and add interfaces to the container before the user&apos;s process is started.  We also have the ability for containers to join pre-existing network namespaces that have already been populated by a networking implementation.</p>
+<ul>
+<li><a href="https://github.com/containerd/containerd/issues/362" target="_blank">https://github.com/containerd/containerd/issues/362</a></li>
+</ul>
+<h2 id="runtime-and-shim">Runtime and Shim</h2>
+<p>We finished porting over the shim from the existing containerd implementation that is being used today.  This makes sure that the containers are not tied to the daemon&apos;s lifecycle.  This allows containerd to reattach to the STDIO and receive exit events for the containers when it is no longer the parent of these processes.</p>
+<ul>
+<li><a href="https://github.com/containerd/containerd/pull/417" target="_blank">https://github.com/containerd/containerd/pull/417</a></li>
+</ul>
+<h2 id="whats-next">What&apos;s Next?</h2>
+<p>Next week we will be working towards a full PoC with the runtime, storage, and fetching of images.  Getting the core functionality up and running quickly is important to us to ensure that integration between the different subsystems in the core flow well together.  We want to make sure the responsibilities of pulling an image from a remote source do not spill into the storage layer and vice-versa.</p>
+<p>We still have more documentation work to do on the design and lifecycle of components in the core which is another focus for next week.  You can find the current design docs in the <a href="https://github.com/containerd/containerd/tree/main/design" target="_blank">repo here</a>.</p>
+<p>I hope this status report helps.  If you are looking for ways to contribute, check out the issues on the current milestone.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="2017-01-20.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 2017 01 20">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2017 01 13","level":"1.3.3.1","depth":3,"next":{"title":"2017 01 20","level":"1.3.3.2","depth":3,"path":"historical/reports/2017-01-20.md","ref":"historical/reports/2017-01-20.md","articles":[]},"previous":{"title":"Reports","level":"1.3.3","depth":2,"ref":"","articles":[{"title":"2017 01 13","level":"1.3.3.1","depth":3,"path":"historical/reports/2017-01-13.md","ref":"historical/reports/2017-01-13.md","articles":[]},{"title":"2017 01 20","level":"1.3.3.2","depth":3,"path":"historical/reports/2017-01-20.md","ref":"historical/reports/2017-01-20.md","articles":[]},{"title":"2017 01 27","level":"1.3.3.3","depth":3,"path":"historical/reports/2017-01-27.md","ref":"historical/reports/2017-01-27.md","articles":[]},{"title":"2017 02 10","level":"1.3.3.4","depth":3,"path":"historical/reports/2017-02-10.md","ref":"historical/reports/2017-02-10.md","articles":[]},{"title":"2017 02 24","level":"1.3.3.5","depth":3,"path":"historical/reports/2017-02-24.md","ref":"historical/reports/2017-02-24.md","articles":[]},{"title":"2017 03 10","level":"1.3.3.6","depth":3,"path":"historical/reports/2017-03-10.md","ref":"historical/reports/2017-03-10.md","articles":[]},{"title":"2017 03 17","level":"1.3.3.7","depth":3,"path":"historical/reports/2017-03-17.md","ref":"historical/reports/2017-03-17.md","articles":[]},{"title":"2017 03 24","level":"1.3.3.8","depth":3,"path":"historical/reports/2017-03-24.md","ref":"historical/reports/2017-03-24.md","articles":[]},{"title":"2017 04 28","level":"1.3.3.9","depth":3,"path":"historical/reports/2017-04-28.md","ref":"historical/reports/2017-04-28.md","articles":[]},{"title":"2017 05 05","level":"1.3.3.10","depth":3,"path":"historical/reports/2017-05-05.md","ref":"historical/reports/2017-05-05.md","articles":[]},{"title":"2017 05 19","level":"1.3.3.11","depth":3,"path":"historical/reports/2017-05-19.md","ref":"historical/reports/2017-05-19.md","articles":[]},{"title":"2017 05 26","level":"1.3.3.12","depth":3,"path":"historical/reports/2017-05-26.md","ref":"historical/reports/2017-05-26.md","articles":[]},{"title":"2017 06 09","level":"1.3.3.13","depth":3,"path":"historical/reports/2017-06-09.md","ref":"historical/reports/2017-06-09.md","articles":[]},{"title":"2017 06 23","level":"1.3.3.14","depth":3,"path":"historical/reports/2017-06-23.md","ref":"historical/reports/2017-06-23.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"historical/reports/2017-01-13.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

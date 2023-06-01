@@ -1,0 +1,1103 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Snapshots · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="mounts.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../cri/architecture.html">
+            
+                <a href="../../cri/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../cri/config.html">
+            
+                <a href="../../cri/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../cri/crictl.html">
+            
+                <a href="../../cri/crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../cri/decryption.html">
+            
+                <a href="../../cri/decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../cri/installation.html">
+            
+                <a href="../../cri/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../cri/registry.html">
+            
+                <a href="../../cri/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../cri/testing.html">
+            
+                <a href="../../cri/testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../cri/proposal.html">
+            
+                <a href="../cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="architecture.html">
+            
+                <a href="architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="data-flow.html">
+            
+                <a href="data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="lifecycle.html">
+            
+                <a href="lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="mounts.html">
+            
+                <a href="mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2.5" data-path="snapshots.html">
+            
+                <a href="snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../reports/2017-01-13.html">
+            
+                <a href="../reports/2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../reports/2017-01-20.html">
+            
+                <a href="../reports/2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../reports/2017-01-27.html">
+            
+                <a href="../reports/2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../reports/2017-02-10.html">
+            
+                <a href="../reports/2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../reports/2017-02-24.html">
+            
+                <a href="../reports/2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="../reports/2017-03-10.html">
+            
+                <a href="../reports/2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="../reports/2017-03-17.html">
+            
+                <a href="../reports/2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="../reports/2017-03-24.html">
+            
+                <a href="../reports/2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="../reports/2017-04-28.html">
+            
+                <a href="../reports/2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="../reports/2017-05-05.html">
+            
+                <a href="../reports/2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="../reports/2017-05-19.html">
+            
+                <a href="../reports/2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="../reports/2017-05-26.html">
+            
+                <a href="../reports/2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="../reports/2017-06-09.html">
+            
+                <a href="../reports/2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="../reports/2017-06-23.html">
+            
+                <a href="../reports/2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../man/containerd-config.8.html">
+            
+                <a href="../../man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../man/containerd-config.toml.5.html">
+            
+                <a href="../../man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../snapshotters/">
+            
+                <a href="../../snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../snapshotters/devmapper.html">
+            
+                <a href="../../snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../client-opts.html">
+            
+                <a href="../../client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../content-flow.html">
+            
+                <a href="../../content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../garbage-collection.html">
+            
+                <a href="../../garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../getting-started.html">
+            
+                <a href="../../getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../hosts.html">
+            
+                <a href="../../hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../managed-opt.html">
+            
+                <a href="../../managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../namespaces.html">
+            
+                <a href="../../namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../NRI.html">
+            
+                <a href="../../NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../ops.html">
+            
+                <a href="../../ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../PLUGINS.html">
+            
+                <a href="../../PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../../remote-snapshotter.html">
+            
+                <a href="../../remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../../rootless.html">
+            
+                <a href="../../rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../../RUNC.html">
+            
+                <a href="../../RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../../stream_processors.html">
+            
+                <a href="../../stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../../tracing.html">
+            
+                <a href="../../tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../../transfer.html">
+            
+                <a href="../../transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Snapshots</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="snapshots">Snapshots</h1>
+<p>Docker containers, from the beginning, have long been built on a snapshotting
+methodology known as <em>layers</em>. <em>Layers</em> provide the ability to fork a
+filesystem, make changes then save the changeset back to a new layer.</p>
+<p>Historically, these have been tightly integrated into the Docker daemon as a
+component called the <code>graphdriver</code>. The <code>graphdriver</code> allows one to run the
+docker daemon on several different operating systems while still maintaining
+roughly similar snapshot semantics for committing and distributing changes to
+images.</p>
+<p>The <code>graphdriver</code> is deeply integrated with the import and export of images,
+including managing layer relationships and container runtime filesystems. The
+behavior of the <code>graphdriver</code> informs the transport of image formats.</p>
+<p>In this document, we propose a more flexible model for managing layers. It
+focuses on providing an API for the base snapshotting functionality without
+coupling so tightly to the structure of images and their identification. The
+minimal API simplifies behavior without sacrificing power. This makes the
+surface area for driver implementations smaller, ensuring that behavior is more
+consistent between implementations.</p>
+<p>These differ from the concept of the graphdriver in that the <em>Snapshotter</em>
+has no knowledge of images or containers. Users simply prepare and commit
+directories. We also avoid the integration between graph drivers and the tar
+format used to represent the changesets.</p>
+<p>The best aspect is that we can get to this model by refactoring the existing
+graphdrivers, minimizing the need for new code and sprawling tests.</p>
+<h2 id="scope">Scope</h2>
+<p>In the past, the <code>graphdriver</code> component has provided quite a lot of
+functionality in Docker. This includes serialization, hashing, unpacking,
+packing, mounting.</p>
+<p>The <em>Snapshotter</em> will only provide mount-oriented snapshot
+access with minimal metadata. Serialization, hashing, unpacking, packing and
+mounting are not included in this design, opting for common implementations
+between graphdrivers, rather than specialized ones. This is less of a problem
+for performance since direct access to changesets is provided in the
+interface.</p>
+<h2 id="architecture">Architecture</h2>
+<p>The <em>Snapshotter</em> provides an API for allocating, snapshotting and mounting
+abstract, layer-based filesystems. The model works by building up sets of
+directories with parent-child relationships, known as <em>Snapshots</em>.</p>
+<p>A <em>Snapshot</em> represents a filesystem state.  Every snapshot has a parent,
+where the empty parent is represented by the empty string.  A diff can be taken
+between a parent and its snapshot to create a classic layer.</p>
+<p>Snapshots are best understood by their lifecycle.  <em>Active</em> snapshots are always
+created with <code>Prepare</code> or <code>View</code> from a <em>Committed</em> snapshot (including the
+empty snapshot).  <em>Committed</em> snapshots are always created with
+<code>Commit</code> from an <em>Active</em> snapshot.  Active snapshots never become committed
+snapshots and vice versa. All snapshots may be removed.</p>
+<p>After mounting an <em>Active</em> snapshot, changes can be made to the snapshot.  The
+act of committing creates a <em>Committed</em> snapshot.  The committed snapshot will
+inherit the parent of the active snapshot.  The committed snapshot can then be
+used as a parent.  Active snapshots can never be used as a parent.</p>
+<p>The following diagram demonstrates the relationships of snapshots:</p>
+<p><img src="snapshot_model.png" alt="snapshot model diagram, showing active snapshots on the left and
+committed snapshots on the right"></p>
+<p>In this diagram, you can see that the active snapshot <em>a</em> is created by calling
+<code>Prepare</code> with the committed snapshot <em>P<sub>0</sub></em>.  After modification, <em>a</em>
+becomes <em>a&apos;</em> and a committed snapshot <em>P<sub>1</sub></em> is created by calling
+<code>Commit</code>.  <em>a&apos;</em> can be further modified as <em>a&apos;&apos;</em> and a second committed snapshot
+can be created as <em>P<sub>2</sub></em> by calling <code>Commit</code> again.  Note here that
+<em>P<sub>2</sub></em>&apos;s parent is <em>P<sub>0</sub></em> and not <em>P<sub>1</sub></em>.</p>
+<h3 id="operations">Operations</h3>
+<p>The manifestation of <em>snapshots</em> is facilitated by the <code>Mount</code> object and
+user-defined directories used for opaque data storage. When creating a new
+active snapshot, the caller provides an identifier called the <em>key</em>. This
+operation returns a list of mounts that, if mounted, will have the fully
+prepared snapshot at the mounted path. We call this the <em>prepare</em> operation.</p>
+<p>Once a snapshot is <em>prepared</em> and mounted, the caller may write new data to the
+snapshot. Depending on the application, a user may want to capture these changes
+or not.</p>
+<p>For a read-only view of a snapshot, the <em>view</em> operation can be used. Like
+<em>prepare</em>, <em>view</em> will return a list of mounts that, if mounted, will have the
+fully prepared snapshot at the mounted path.</p>
+<p>If the user wants to keep the changes, the <em>commit</em> operation is employed. The
+<em>commit</em> operation takes the <em>key</em> identifier, which represents an active
+snapshot, and a <em>name</em> identifier. A successful result will create a <em>committed</em>
+snapshot that can be used as the parent of new <em>active</em> snapshots when
+referenced by the <em>name</em>.</p>
+<p>If the user wants to discard the changes in an active snapshot, the <em>remove</em>
+operation will release any resources associated with the snapshot.  The mounts
+provided by <em>prepare</em> or <em>view</em> should be unmounted before calling this method.</p>
+<p>If the user wants to discard committed snapshots, the <em>remove</em> operation can
+also be used, but any children must be removed before proceeding.</p>
+<p>For detailed usage information, see the
+<a href="https://godoc.org/github.com/containerd/containerd/snapshots#Snapshotter" target="_blank">GoDoc</a>.</p>
+<h3 id="graph-metadata">Graph metadata</h3>
+<p>As snapshots are imported into the container system, a &quot;graph&quot; of snapshots and
+their parents will form. Queries over this graph must be a supported operation.</p>
+<h2 id="how-snapshots-work">How snapshots work</h2>
+<p>To flesh out the <em>Snapshots</em> terminology, we are going to demonstrate the use of
+the <em>Snapshotter</em> from the perspective of importing layers. We&apos;ll use a Go API
+to represent the process.</p>
+<h3 id="importing-a-layer">Importing a Layer</h3>
+<p>To import a layer, we simply have the <em>Snapshotter</em> provide a list of
+mounts to be applied such that our destination will capture a changeset. We start
+out by getting a path to the layer tar file and creating a temp location to
+unpack it to:</p>
+<pre class="language-"><code>layerPath, tmpDir := getLayerPath(), mkTmpDir() // just a path to layer tar file.
+</code></pre><p>We start by using a <em>Snapshotter</em> to <em>Prepare</em> a new snapshot transaction, using
+a <em>key</em> and descending from the empty parent &quot;&quot;:</p>
+<pre class="language-"><code>mounts, err := snapshotter.Prepare(key, &quot;&quot;)
+if err != nil { ... }
+</code></pre><p>We get back a list of mounts from <code>Snapshotter.Prepare</code>, with the <code>key</code>
+identifying the active snapshot. Mount this to the temporary location with the
+following:</p>
+<pre class="language-"><code>if err := mount.All(mounts, tmpDir); err != nil { ... }
+</code></pre><p>Once the mounts are performed, our temporary location is ready to capture
+a diff. In practice, this works similar to a filesystem transaction. The
+next step is to unpack the layer. We have a special function <code>unpackLayer</code>
+that applies the contents of the layer to target location and calculates the
+<code>DiffID</code> of the unpacked layer (this is a requirement for docker
+implementation):</p>
+<pre class="language-"><code>layer, err := os.Open(layerPath)
+if err != nil { ... }
+digest, err := unpackLayer(tmpLocation, layer) // unpack into layer location
+if err != nil { ... }
+</code></pre><p>When the above completes, we should have a filesystem the represents the
+contents of the layer. Careful implementations should verify that digest
+matches the expected <code>DiffID</code>. When completed, we unmount the mounts:</p>
+<pre class="language-"><code>unmount(mounts) // optional, for now
+</code></pre><p>Now that we&apos;ve verified and unpacked our layer, we commit the active
+snapshot to a <em>name</em>. For this example, we are just going to use the layer
+digest, but in practice, this will probably be the <code>ChainID</code>:</p>
+<pre class="language-"><code>if err := snapshotter.Commit(digest.String(), key); err != nil { ... }
+</code></pre><p>Now, we have a layer in the <em>Snapshotter</em> that can be accessed with the digest
+provided during commit. Once you have committed the snapshot, the active
+snapshot can be removed with the following:</p>
+<pre class="language-"><code>snapshotter.Remove(key)
+</code></pre><h3 id="importing-the-next-layer">Importing the Next Layer</h3>
+<p>Making a layer depend on the above is identical to the process described
+above except that the parent is provided as <code>parent</code> when calling
+<code>Snapshotter.Prepare</code>, assuming a clean <code>tmpLocation</code>:</p>
+<pre class="language-"><code>mounts, err := snapshotter.Prepare(tmpLocation, parentDigest)
+</code></pre><p>We then mount, apply and commit, as we did above. The new snapshot will be
+based on the content of the previous one.</p>
+<h3 id="running-a-container">Running a Container</h3>
+<p>To run a container, we simply provide <code>Snapshotter.Prepare</code> the committed image
+snapshot as the parent. After mounting, the prepared path can
+be used directly as the container&apos;s filesystem:</p>
+<pre class="language-"><code>mounts, err := snapshotter.Prepare(containerKey, imageRootFSChainID)
+</code></pre><p>The returned mounts can then be passed directly to the container runtime. If
+one would like to create a new image from the filesystem, <code>Snapshotter.Commit</code>
+is called:</p>
+<pre class="language-"><code>if err := snapshotter.Commit(newImageSnapshot, containerKey); err != nil { ... }
+</code></pre><p>Alternatively, for most container runs, <code>Snapshotter.Remove</code> will be called to
+signal the Snapshotter to abandon the changes.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mounts.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Mounts">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Snapshots","level":"1.3.2.5","depth":3,"next":{"title":"Reports","level":"1.3.3","depth":2,"ref":"","articles":[{"title":"2017 01 13","level":"1.3.3.1","depth":3,"path":"historical/reports/2017-01-13.md","ref":"historical/reports/2017-01-13.md","articles":[]},{"title":"2017 01 20","level":"1.3.3.2","depth":3,"path":"historical/reports/2017-01-20.md","ref":"historical/reports/2017-01-20.md","articles":[]},{"title":"2017 01 27","level":"1.3.3.3","depth":3,"path":"historical/reports/2017-01-27.md","ref":"historical/reports/2017-01-27.md","articles":[]},{"title":"2017 02 10","level":"1.3.3.4","depth":3,"path":"historical/reports/2017-02-10.md","ref":"historical/reports/2017-02-10.md","articles":[]},{"title":"2017 02 24","level":"1.3.3.5","depth":3,"path":"historical/reports/2017-02-24.md","ref":"historical/reports/2017-02-24.md","articles":[]},{"title":"2017 03 10","level":"1.3.3.6","depth":3,"path":"historical/reports/2017-03-10.md","ref":"historical/reports/2017-03-10.md","articles":[]},{"title":"2017 03 17","level":"1.3.3.7","depth":3,"path":"historical/reports/2017-03-17.md","ref":"historical/reports/2017-03-17.md","articles":[]},{"title":"2017 03 24","level":"1.3.3.8","depth":3,"path":"historical/reports/2017-03-24.md","ref":"historical/reports/2017-03-24.md","articles":[]},{"title":"2017 04 28","level":"1.3.3.9","depth":3,"path":"historical/reports/2017-04-28.md","ref":"historical/reports/2017-04-28.md","articles":[]},{"title":"2017 05 05","level":"1.3.3.10","depth":3,"path":"historical/reports/2017-05-05.md","ref":"historical/reports/2017-05-05.md","articles":[]},{"title":"2017 05 19","level":"1.3.3.11","depth":3,"path":"historical/reports/2017-05-19.md","ref":"historical/reports/2017-05-19.md","articles":[]},{"title":"2017 05 26","level":"1.3.3.12","depth":3,"path":"historical/reports/2017-05-26.md","ref":"historical/reports/2017-05-26.md","articles":[]},{"title":"2017 06 09","level":"1.3.3.13","depth":3,"path":"historical/reports/2017-06-09.md","ref":"historical/reports/2017-06-09.md","articles":[]},{"title":"2017 06 23","level":"1.3.3.14","depth":3,"path":"historical/reports/2017-06-23.md","ref":"historical/reports/2017-06-23.md","articles":[]}]},"previous":{"title":"Mounts","level":"1.3.2.4","depth":3,"path":"historical/design/mounts.md","ref":"historical/design/mounts.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"historical/design/snapshots.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

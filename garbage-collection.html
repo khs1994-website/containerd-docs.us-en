@@ -1,0 +1,1167 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Garbage Collection · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="getting-started.html" />
+    
+    
+    <link rel="prev" href="content-flow.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="cri/architecture.html">
+            
+                <a href="cri/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="cri/config.html">
+            
+                <a href="cri/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="cri/crictl.html">
+            
+                <a href="cri/crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="cri/decryption.html">
+            
+                <a href="cri/decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="cri/installation.html">
+            
+                <a href="cri/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="cri/registry.html">
+            
+                <a href="cri/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="cri/testing.html">
+            
+                <a href="cri/testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="historical/cri/proposal.html">
+            
+                <a href="historical/cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="historical/design/architecture.html">
+            
+                <a href="historical/design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="historical/design/data-flow.html">
+            
+                <a href="historical/design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="historical/design/lifecycle.html">
+            
+                <a href="historical/design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="historical/design/mounts.html">
+            
+                <a href="historical/design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="historical/design/snapshots.html">
+            
+                <a href="historical/design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="historical/reports/2017-01-13.html">
+            
+                <a href="historical/reports/2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="historical/reports/2017-01-20.html">
+            
+                <a href="historical/reports/2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="historical/reports/2017-01-27.html">
+            
+                <a href="historical/reports/2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="historical/reports/2017-02-10.html">
+            
+                <a href="historical/reports/2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="historical/reports/2017-02-24.html">
+            
+                <a href="historical/reports/2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="historical/reports/2017-03-10.html">
+            
+                <a href="historical/reports/2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="historical/reports/2017-03-17.html">
+            
+                <a href="historical/reports/2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="historical/reports/2017-03-24.html">
+            
+                <a href="historical/reports/2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="historical/reports/2017-04-28.html">
+            
+                <a href="historical/reports/2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="historical/reports/2017-05-05.html">
+            
+                <a href="historical/reports/2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="historical/reports/2017-05-19.html">
+            
+                <a href="historical/reports/2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="historical/reports/2017-05-26.html">
+            
+                <a href="historical/reports/2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="historical/reports/2017-06-09.html">
+            
+                <a href="historical/reports/2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="historical/reports/2017-06-23.html">
+            
+                <a href="historical/reports/2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="man/containerd-config.8.html">
+            
+                <a href="man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="man/containerd-config.toml.5.html">
+            
+                <a href="man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="snapshotters/">
+            
+                <a href="snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="snapshotters/devmapper.html">
+            
+                <a href="snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="client-opts.html">
+            
+                <a href="client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="content-flow.html">
+            
+                <a href="content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="garbage-collection.html">
+            
+                <a href="garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="hosts.html">
+            
+                <a href="hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="managed-opt.html">
+            
+                <a href="managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="namespaces.html">
+            
+                <a href="namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="NRI.html">
+            
+                <a href="NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ops.html">
+            
+                <a href="ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="PLUGINS.html">
+            
+                <a href="PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="remote-snapshotter.html">
+            
+                <a href="remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="rootless.html">
+            
+                <a href="rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="RUNC.html">
+            
+                <a href="RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="stream_processors.html">
+            
+                <a href="stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="tracing.html">
+            
+                <a href="tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="transfer.html">
+            
+                <a href="transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Garbage Collection</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="garbage-collection">Garbage Collection</h1>
+<p><code>containerd</code> has a garbage collector capable of removing resources which are no
+longer being used. The client is responsible for ensuring that all resources
+which are created are either used or held by a lease at all times, else they
+will be considered eligible for removal. The Go client library
+(<code>github.com/containerd/containerd</code>) has built-in behavior to ensure resources
+are properly tracked and leased. However, the lifecycles of leases are the
+responsibility of the caller of the library. The <code>containerd</code> daemon has strict
+resource management and will garbage collect any unused resource.</p>
+<h2 id="what-is-a-lease">What is a lease?</h2>
+<p>Leases are a resource in <code>containerd</code> which are created by clients and are used
+to reference other resources such as snapshots and content. Leases may be
+configured with an expiration or deleted by clients once it has completed an
+operation. Leases are needed to inform the <code>containerd</code> daemon that a resource
+may be used in the future after the client completes an operation, even though
+it currently is not seen as utilized.</p>
+<h2 id="how-to-use-leases">How to use leases</h2>
+<h3 id="using-go-client">using Go client</h3>
+<p>The best way to use leases is to add it to a Go context immediately after the
+context is created. Normally the lifespan of a lease will be the same as the
+lifecycle of a Go context.</p>
+<pre class="language-"><code class="lang-.go">    ctx, done, err := client.WithLease(ctx)
+    if err != nil {
+        return err
+    }
+    defer done(ctx)
+</code></pre>
+<p>This will create a lease which will defer its own deletion and have a default
+expiry of 24 hours (in case the process dies before defer). For most use cases,
+this is enough and no more thought needs to be put into leases.</p>
+<p><em>But, of course, more complicated use cases are supported...</em></p>
+<p>If the program or lease are intended to be longer lived, instead of the very
+easy <code>client.WithLease</code>, the lease manager can be used directly. This also
+allows for setting custom labels on the lease or manipulating its resources.
+Use <code>client.LeasesService()</code> to get a <a href="https://godoc.org/github.com/containerd/containerd/leases#Manager" target="_blank">lease Manager</a>
+which can be used to create, list, and delete leases as well as manage the
+referenced resources for that lease.</p>
+<pre class="language-"><code class="lang-.go">    manager := client.LeasesService()
+
+    // this lease will never expire
+    // Use `leases.WithExpiration` to make it expire
+    // Use `leases.WithLabels` to apply any labels
+    l, err := manager.Create(ctx, leases.WithRandomID())
+    if err != nil {
+        return err
+    }
+
+    // Update current context to add lease
+    ctx = leases.WithLease(ctx, l.ID)
+
+    // Do something, lease will be used...
+
+    // Delete lease at any time, or track it to delete later
+    if err := ls.Delete(ctx, l); err != nil {
+        return err
+    }
+</code></pre>
+<h3 id="using-grpc">using gRPC</h3>
+<p>The lease is not an explicit field in the API (except of course the leases
+service), but rather an optional field any API service can use. Leases can
+be set on any gRPC service endpoint using a gRPC header. Set the
+gRPC header <code>containerd-lease</code> to the lease identifier and the API
+service will operate within that lease context.</p>
+<p>To manage the creation and deletion of leases, use the leases gRPC service.</p>
+<h2 id="garbage-collection-labels">Garbage Collection labels</h2>
+<p>The garbage collection defines relationships between resources in two different
+ways, by type specific resources properties, and by resource labels. The type
+specific properties do not need to be managed by the user as they are part of
+the natural structure of a resource (i.e. a container&apos;s snapshot, a snapshot&apos;s
+parent, an image&apos;s target, etc). However resources may have relationships which
+are not defined by <code>containerd</code>, but rather by the client. For example, an OCI
+image has a manifest which references a config file and layer tars. These
+resources are stored in <code>containerd</code> as generic blobs, it is the client that
+understands the relationships between these blobs and sets them up using labels
+on the content resources.</p>
+<p>Resource labels can also be used to cue the garbage collector on other
+properties, such as expiry, whether an object should be kept without any
+reference or limit what is referenced.</p>
+<p>The supported garbage collection labels are:</p>
+<table>
+<thead>
+<tr>
+<th>Label key</th>
+<th>Label value</th>
+<th>Supported Resources</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>containerd.io/gc.root</code></td>
+<td><em>nonempty</em></td>
+<td>Content, Snapshots</td>
+<td>Keep this object and anything it references. (Clients may set this to a <a href="https://tools.ietf.org/html/rfc3339" target="_blank">rfc3339</a> timestamp to indicate when this value was set, however, the garbage collector does not parse the value)</td>
+</tr>
+<tr>
+<td><code>containerd.io/gc.ref.snapshot.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>snapshotter</span><span class="token punctuation">&gt;</span></span></code></td>
+<td><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>identifier</span><span class="token punctuation">&gt;</span></span></code></td>
+<td>Content, Snapshots</td>
+<td>Resource references the given snapshot <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>identifier</span><span class="token punctuation">&gt;</span></span></code> for the snapshotter <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>snapshotter</span><span class="token punctuation">&gt;</span></span></code></td>
+</tr>
+<tr>
+<td><code>containerd.io/gc.ref.content</code></td>
+<td><em>digest</em></td>
+<td>Content, Snapshots, Images, Containers</td>
+<td>Resource references the given content blob</td>
+</tr>
+<tr>
+<td><code>containerd.io/gc.ref.content.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>user</span> <span class="token attr-name">defined</span><span class="token punctuation">&gt;</span></span></code></td>
+<td><em>digest</em></td>
+<td>Content, Snapshots, Images, Containers</td>
+<td>Resource references the given content blob with a <code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>user</span> <span class="token attr-name">defined</span><span class="token punctuation">&gt;</span></span></code> label key</td>
+</tr>
+<tr>
+<td><code>containerd.io/gc.expire</code></td>
+<td><em>timestamp</em> formatted as <a href="https://tools.ietf.org/html/rfc3339" target="_blank">rfc3339</a></td>
+<td>Leases</td>
+<td>When to expire the lease. The garbage collector will delete the lease after expiration.</td>
+</tr>
+<tr>
+<td><code>containerd.io/gc.flat</code></td>
+<td><em>nonempty</em></td>
+<td>Leases</td>
+<td>Ignore label references of leased resources. This only applies when the reference is originating from the lease, if the leased resources are referenced elsewhere, then their label references will be used.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="garbage-collection-configuration">Garbage Collection configuration</h2>
+<p>The garbage collector (gc) is scheduled on a background goroutine and runs based
+on a number of configurable factors. By default the garbage collector will
+attempt to keep the database unlocked 98% of the time based on prior
+calculations of lock time from garbage collection. Also by default, the garbage
+collector will not schedule itself if no deletions occurred or after every 100
+database writes.</p>
+<p>The garbage collection scheduler considers the time the database is locked
+as the pause time. The garbage collection will take longer than this when
+resources are being removed, for example cleaning up snapshots may be slow.
+The scheduler will only schedule after the whole garbage collection is
+completed but use the average pause time for determining when the next run
+attempt is.</p>
+<p>Garbage collection may be configured using the <code>containerd</code> daemon&apos;s
+configuration file, usually at <code>/etc/containerd/config.toml</code>. The
+configuration is under the <code>scheduler</code> plugin.</p>
+<h3 id="configuration-parameters">Configuration parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Configuration</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pause_threshold</code></td>
+<td>0.02</td>
+<td>Represents the maximum amount of time gc should be scheduled based on the average pause time. A maximum value of .5 (50%) is enforced to prevent over scheduling.</td>
+</tr>
+<tr>
+<td><code>deletion_threshold</code></td>
+<td>0</td>
+<td>A threshold of number of deletes to immediately trigger gc. 0 means a gc will not be triggered by deletion count, however a deletion will ensure the next scheduled gc will run.</td>
+</tr>
+<tr>
+<td><code>mutation_threshold</code></td>
+<td>100</td>
+<td>A threshold for running gc after the given number of database mutations. Note any mutation which performed a delete will always cause gc to run, this case handles more rare events such as label reference removal.</td>
+</tr>
+<tr>
+<td><code>schedule_delay</code></td>
+<td>&quot;0ms&quot;</td>
+<td>The delay between a trigger event and running gc. A non-zero value can be used when mutations may quickly burst.</td>
+</tr>
+<tr>
+<td><code>startup_delay</code></td>
+<td>&quot;100ms&quot;</td>
+<td>The delay before running the initial garbage collection after daemon startup. This should be run after other startup processes have completed and no gc can be scheduled before this delay.</td>
+</tr>
+</tbody>
+</table>
+<p>The default configuration is represented as...</p>
+<pre class="language-"><code class="lang-.toml">version = 2
+[plugins]
+  [plugins.&quot;io.containerd.gc.v1.scheduler&quot;]
+    pause_threshold = 0.02
+    deletion_threshold = 0
+    mutation_threshold = 100
+    schedule_delay = &quot;0ms&quot;
+    startup_delay = &quot;100ms&quot;
+</code></pre>
+<h2 id="synchronous-garbage-collection">Synchronous Garbage Collection</h2>
+<p>In addition to garbage collections done through the scheduler, the client
+may also request a garbage collection during resource removal. In this case,
+the garbage collection will be scheduled immediately (or after <code>schedule_delay</code>
+when configured to non-zero). The service will not return until the garbage
+collection has completed. This is currently supported on removal of images and
+leases. Use <a href="https://godoc.org/github.com/containerd/containerd/images#SynchronousDelete" target="_blank"><code>images.SynchronousDelete()</code></a>
+for <a href="https://godoc.org/github.com/containerd/containerd/images#Store" target="_blank"><code>images.Store</code></a>&apos;s
+<code>Delete</code> and
+<a href="https://godoc.org/github.com/containerd/containerd/leases#SynchronousDelete" target="_blank"><code>leases.SynchronousDelete</code></a>
+for <a href="https://godoc.org/github.com/containerd/containerd/leases#Manager" target="_blank"><code>leases.Manager</code></a>&apos;s
+<code>Delete</code>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="content-flow.html" class="navigation navigation-prev " aria-label="Previous page: Content Flow">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="getting-started.html" class="navigation navigation-next " aria-label="Next page: Getting Started">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Garbage Collection","level":"1.8","depth":1,"next":{"title":"Getting Started","level":"1.9","depth":1,"path":"getting-started.md","ref":"getting-started.md","articles":[]},"previous":{"title":"Content Flow","level":"1.7","depth":1,"path":"content-flow.md","ref":"content-flow.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"garbage-collection.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1134 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Devmapper · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../client-opts.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../cri/architecture.html">
+            
+                <a href="../cri/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../cri/config.html">
+            
+                <a href="../cri/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../cri/crictl.html">
+            
+                <a href="../cri/crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../cri/decryption.html">
+            
+                <a href="../cri/decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../cri/installation.html">
+            
+                <a href="../cri/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../cri/registry.html">
+            
+                <a href="../cri/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../cri/testing.html">
+            
+                <a href="../cri/testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../historical/cri/proposal.html">
+            
+                <a href="../historical/cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../historical/design/architecture.html">
+            
+                <a href="../historical/design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../historical/design/data-flow.html">
+            
+                <a href="../historical/design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../historical/design/lifecycle.html">
+            
+                <a href="../historical/design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../historical/design/mounts.html">
+            
+                <a href="../historical/design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../historical/design/snapshots.html">
+            
+                <a href="../historical/design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../historical/reports/2017-01-13.html">
+            
+                <a href="../historical/reports/2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../historical/reports/2017-01-20.html">
+            
+                <a href="../historical/reports/2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../historical/reports/2017-01-27.html">
+            
+                <a href="../historical/reports/2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../historical/reports/2017-02-10.html">
+            
+                <a href="../historical/reports/2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../historical/reports/2017-02-24.html">
+            
+                <a href="../historical/reports/2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="../historical/reports/2017-03-10.html">
+            
+                <a href="../historical/reports/2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="../historical/reports/2017-03-17.html">
+            
+                <a href="../historical/reports/2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="../historical/reports/2017-03-24.html">
+            
+                <a href="../historical/reports/2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="../historical/reports/2017-04-28.html">
+            
+                <a href="../historical/reports/2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="../historical/reports/2017-05-05.html">
+            
+                <a href="../historical/reports/2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="../historical/reports/2017-05-19.html">
+            
+                <a href="../historical/reports/2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="../historical/reports/2017-05-26.html">
+            
+                <a href="../historical/reports/2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="../historical/reports/2017-06-09.html">
+            
+                <a href="../historical/reports/2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="../historical/reports/2017-06-23.html">
+            
+                <a href="../historical/reports/2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../man/containerd-config.8.html">
+            
+                <a href="../man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../man/containerd-config.toml.5.html">
+            
+                <a href="../man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1" data-path="devmapper.html">
+            
+                <a href="devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../client-opts.html">
+            
+                <a href="../client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../content-flow.html">
+            
+                <a href="../content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../garbage-collection.html">
+            
+                <a href="../garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../getting-started.html">
+            
+                <a href="../getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../hosts.html">
+            
+                <a href="../hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../managed-opt.html">
+            
+                <a href="../managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../namespaces.html">
+            
+                <a href="../namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../NRI.html">
+            
+                <a href="../NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../ops.html">
+            
+                <a href="../ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../PLUGINS.html">
+            
+                <a href="../PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../remote-snapshotter.html">
+            
+                <a href="../remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../rootless.html">
+            
+                <a href="../rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../RUNC.html">
+            
+                <a href="../RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../stream_processors.html">
+            
+                <a href="../stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../tracing.html">
+            
+                <a href="../tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../transfer.html">
+            
+                <a href="../transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Devmapper</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="devmapper-snapshotter">Devmapper snapshotter</h2>
+<p>Devmapper is a <code>containerd</code> snapshotter plugin that stores snapshots in filesystem images
+in a Device-mapper thin-pool. The devmapper plugin takes advantage of Device-mapper features
+like <a href="https://www.kernel.org/doc/Documentation/device-mapper/snapshot.txt" target="_blank">device snapshot support</a>.</p>
+<h2 id="setup">Setup</h2>
+<p>To use the devmapper snapshotter plugin you need to prepare a Device-mapper <code>thin-pool</code> in advance and update containerd&apos;s configuration file.
+This file is typically located at <code>/etc/containerd/config.toml</code>.</p>
+<p>Here&apos;s a minimal sample entry that can be made in the configuration file:</p>
+<pre class="language-"><code class="lang-toml"><span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token number">2</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">plugins</span><span class="token punctuation">]</span>
+  <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+  <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.snapshotter.v1.devmapper&quot;</span><span class="token punctuation">]</span>
+    <span class="token key property">root_path</span> <span class="token punctuation">=</span> <span class="token string">&quot;/var/lib/containerd/devmapper&quot;</span>
+    <span class="token key property">pool_name</span> <span class="token punctuation">=</span> <span class="token string">&quot;containerd-pool&quot;</span>
+    <span class="token key property">base_image_size</span> <span class="token punctuation">=</span> <span class="token string">&quot;8192MB&quot;</span>
+  <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+</code></pre>
+<p>The following configuration flags are supported:</p>
+<ul>
+<li><code>root_path</code> - a directory where the metadata will be available (if empty
+default location for <code>containerd</code> plugins will be used)</li>
+<li><code>pool_name</code> - a name to use for the Device-mapper thin-pool. Pool name
+should be the same as in <code>/dev/mapper/</code> directory</li>
+<li><code>base_image_size</code> - defines how much space to allocate when creating thin device snapshots from the base (pool) device</li>
+<li><code>async_remove</code> - flag to async remove device using snapshot GC&apos;s cleanup callback (default: <code>false</code>)</li>
+<li><code>discard_blocks</code> - whether to discard blocks when removing a device. This is especially useful for returning disk space to the filesystem when using loopback devices. (default: <code>false</code>)</li>
+<li><code>fs_type</code> - defines the file system to use for snapshot device mount. Valid values are <code>ext4</code> and <code>xfs</code> (default: <code>&quot;ext4&quot;</code>)</li>
+<li><code>fs_options</code> - optionally defines the file system options. This is currently only applicable to <code>ext4</code> file system. (default: <code>&quot;&quot;</code>)</li>
+</ul>
+<p><code>root_path</code>, <code>pool_name</code>, and <code>base_image_size</code> are required snapshotter parameters.</p>
+<h2 id="run">Run</h2>
+<p>Give it a try with the following commands:</p>
+<pre class="language-"><code class="lang-bash">ctr images pull --snapshotter devmapper docker.io/library/hello-world:latest
+ctr run --snapshotter devmapper docker.io/library/hello-world:latest <span class="token builtin class-name">test</span>
+</code></pre>
+<h2 id="requirements">Requirements</h2>
+<p>The devicemapper snapshotter requires <code>dmsetup</code> (&gt;= 1.02.110) command line tool to be installed and
+available on your computer. On Ubuntu, it can be installed with <code>apt-get install dmsetup</code> command.</p>
+<h3 id="how-to-setup-device-mapper-thin-pool">How to setup Device-Mapper thin-pool</h3>
+<p>There are many ways how to configure a Device-mapper thin-pool depending on your requirements, disk configuration,
+and environment. Two common configurations are provided below, one for development environments and one for
+production environments.</p>
+<h4 id="1-loopback-devices">1. Loopback Devices</h4>
+<p>On local dev environment you can utilize loopback devices. This type of configuration is simple and suits well for
+development and testing (<em>please note that this configuration is slow and not recommended for production uses</em>).
+Run the following script to create a thin-pool device with associated metadata and data device files:</p>
+<pre class="language-"><code class="lang-bash"><span class="token shebang important">#!/bin/bash</span>
+<span class="token builtin class-name">set</span> -ex
+
+<span class="token assign-left variable">DATA_DIR</span><span class="token operator">=</span>/var/lib/containerd/devmapper
+<span class="token assign-left variable">POOL_NAME</span><span class="token operator">=</span>devpool
+
+<span class="token function">sudo</span> <span class="token function">mkdir</span> -p <span class="token variable">${DATA_DIR}</span>
+
+<span class="token comment"># Create data file</span>
+<span class="token function">sudo</span> <span class="token function">touch</span> <span class="token string">&quot;<span class="token variable">${DATA_DIR}</span>/data&quot;</span>
+<span class="token function">sudo</span> truncate -s 100G <span class="token string">&quot;<span class="token variable">${DATA_DIR}</span>/data&quot;</span>
+
+<span class="token comment"># Create metadata file</span>
+<span class="token function">sudo</span> <span class="token function">touch</span> <span class="token string">&quot;<span class="token variable">${DATA_DIR}</span>/meta&quot;</span>
+<span class="token function">sudo</span> truncate -s 10G <span class="token string">&quot;<span class="token variable">${DATA_DIR}</span>/meta&quot;</span>
+
+<span class="token comment"># Allocate loop devices</span>
+<span class="token assign-left variable">DATA_DEV</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">sudo</span> losetup --find --show <span class="token string">&quot;<span class="token variable">${DATA_DIR}</span>/data&quot;</span><span class="token variable">)</span></span>
+<span class="token assign-left variable">META_DEV</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">sudo</span> losetup --find --show <span class="token string">&quot;<span class="token variable">${DATA_DIR}</span>/meta&quot;</span><span class="token variable">)</span></span>
+
+<span class="token comment"># Define thin-pool parameters.</span>
+<span class="token comment"># See https://www.kernel.org/doc/Documentation/device-mapper/thin-provisioning.txt for details.</span>
+<span class="token assign-left variable">SECTOR_SIZE</span><span class="token operator">=</span><span class="token number">512</span>
+<span class="token assign-left variable">DATA_SIZE</span><span class="token operator">=</span><span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token function">sudo</span> blockdev --getsize64 -q $<span class="token punctuation">{</span>DATA_DEV<span class="token punctuation">}</span><span class="token variable">)</span></span>&quot;</span>
+<span class="token assign-left variable">LENGTH_IN_SECTORS</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">bc</span> <span class="token operator">&lt;&lt;&lt;</span> <span class="token string">&quot;<span class="token variable">${DATA_SIZE}</span>/<span class="token variable">${SECTOR_SIZE}</span>&quot;</span><span class="token variable">)</span></span>
+<span class="token assign-left variable">DATA_BLOCK_SIZE</span><span class="token operator">=</span><span class="token number">128</span>
+<span class="token assign-left variable">LOW_WATER_MARK</span><span class="token operator">=</span><span class="token number">32768</span>
+
+<span class="token comment"># Create a thin-pool device</span>
+<span class="token function">sudo</span> dmsetup create <span class="token string">&quot;<span class="token variable">${POOL_NAME}</span>&quot;</span> <span class="token punctuation">\</span>
+    --table <span class="token string">&quot;0 <span class="token variable">${LENGTH_IN_SECTORS}</span> thin-pool <span class="token variable">${META_DEV}</span> <span class="token variable">${DATA_DEV}</span> <span class="token variable">${DATA_BLOCK_SIZE}</span> <span class="token variable">${LOW_WATER_MARK}</span>&quot;</span>
+
+<span class="token function">cat</span> <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
+#
+# Add this to your config.toml configuration file and restart the containerd daemon
+#
+[plugins]
+  [plugins.&quot;io.containerd.snapshotter.v1.devmapper&quot;]
+    pool_name = &quot;<span class="token variable">${POOL_NAME}</span>&quot;
+    root_path = &quot;<span class="token variable">${DATA_DIR}</span>&quot;
+    base_image_size = &quot;10GB&quot;
+    discard_blocks = true
+EOF</span>
+</code></pre>
+<p>Use <code>dmsetup</code> to verify that the thin-pool was created successfully:</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">sudo</span> dmsetup <span class="token function">ls</span>
+devpool    <span class="token punctuation">(</span><span class="token number">253</span>:0<span class="token punctuation">)</span>
+</code></pre>
+<p>Once <code>containerd</code> is configured and restarted, you&apos;ll see the following output:</p>
+<pre class="language-"><code>INFO[2020-03-17T20:24:45.532604888Z] loading plugin &quot;io.containerd.snapshotter.v1.devmapper&quot;...  type=io.containerd.snapshotter.v1
+INFO[2020-03-17T20:24:45.532672738Z] initializing pool device &quot;devpool&quot;
+</code></pre><h4 id="2-direct-lvm-thin-pool">2. direct-lvm thin-pool</h4>
+<p>Another way to setup a thin-pool is via the <a href="https://github.com/projectatomic/container-storage-setup" target="_blank">container-storage-setup</a>
+tool (formerly known as <code>docker-storage-setup</code>). It is a script to configure CoW file systems like devicemapper:</p>
+<pre class="language-"><code class="lang-bash"><span class="token shebang important">#!/bin/bash</span>
+<span class="token builtin class-name">set</span> -ex
+
+<span class="token comment"># Block device to use for devmapper thin-pool</span>
+<span class="token assign-left variable">BLOCK_DEV</span><span class="token operator">=</span>/dev/sdf
+<span class="token assign-left variable">POOL_NAME</span><span class="token operator">=</span>devpool
+<span class="token assign-left variable">VG_NAME</span><span class="token operator">=</span>containerd
+
+<span class="token comment"># Install container-storage-setup tool</span>
+<span class="token function">git</span> clone https://github.com/projectatomic/container-storage-setup.git
+<span class="token builtin class-name">cd</span> container-storage-setup/
+<span class="token function">sudo</span> <span class="token function">make</span> install-core
+<span class="token builtin class-name">echo</span> <span class="token string">&quot;Using version <span class="token variable"><span class="token variable">$(</span>container-storage-setup -v<span class="token variable">)</span></span>&quot;</span>
+
+<span class="token comment"># Create configuration file</span>
+<span class="token comment"># Refer to `man container-storage-setup` to see available options</span>
+<span class="token function">sudo</span> <span class="token function">tee</span> /etc/sysconfig/docker-storage-setup <span class="token operator">&lt;&lt;</span><span class="token string">EOF
+DEVS=<span class="token variable">${BLOCK_DEV}</span>
+VG=<span class="token variable">${VG_NAME}</span>
+CONTAINER_THINPOOL=<span class="token variable">${POOL_NAME}</span>
+EOF</span>
+
+<span class="token comment"># Run the script</span>
+<span class="token function">sudo</span> container-storage-setup
+
+<span class="token function">cat</span> <span class="token operator">&lt;&lt;</span> <span class="token string">EOF
+#
+# Add this to your config.toml configuration file and restart containerd daemon
+#
+[plugins]
+  [plugins.devmapper]
+    root_path = &quot;/var/lib/containerd/devmapper&quot;
+    pool_name = &quot;<span class="token variable">${VG_NAME}</span>-<span class="token variable">${POOL_NAME}</span>&quot;
+    base_image_size = &quot;10GB&quot;
+EOF</span>
+</code></pre>
+<p>If successful <code>container-storage-setup</code> will output:</p>
+<pre class="language-"><code>+ echo VG=containerd
++ sudo container-storage-setup
+INFO: Volume group backing root filesystem could not be determined
+INFO: Writing zeros to first 4MB of device /dev/xvdf
+4+0 records in
+4+0 records out
+4194304 bytes (4.2 MB) copied, 0.0162906 s, 257 MB/s
+INFO: Device node /dev/xvdf1 exists.
+  Physical volume &quot;/dev/xvdf1&quot; successfully created.
+  Volume group &quot;containerd&quot; successfully created
+  Rounding up size to full physical extent 12.00 MiB
+  Thin pool volume with chunk size 512.00 KiB can address at most 126.50 TiB of data.
+  Logical volume &quot;devpool&quot; created.
+  Logical volume containerd/devpool changed.
+...
+</code></pre><p>And <code>dmsetup</code> will produce the following output:</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">sudo</span> dmsetup <span class="token function">ls</span>
+containerd-devpool          <span class="token punctuation">(</span><span class="token number">253</span>:2<span class="token punctuation">)</span>
+containerd-devpool_tdata    <span class="token punctuation">(</span><span class="token number">253</span>:1<span class="token punctuation">)</span>
+containerd-devpool_tmeta    <span class="token punctuation">(</span><span class="token number">253</span>:0<span class="token punctuation">)</span>
+</code></pre>
+<p>See also <a href="https://docs.docker.com/storage/storagedriver/device-mapper-driver/#configure-direct-lvm-mode-for-production" target="_blank">Configure direct-lvm mode for production</a> for additional information about production devmapper setups.</p>
+<h2 id="additional-resources">Additional Resources</h2>
+<p>For more information on Device-mapper, thin provisioning, etc., you can refer to the following resources:</p>
+<ul>
+<li><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/logical_volume_manager_administration/device_mapper" target="_blank">https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/logical_volume_manager_administration/device_mapper</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Device_mapper" target="_blank">https://en.wikipedia.org/wiki/Device_mapper</a></li>
+<li><a href="https://docs.docker.com/storage/storagedriver/device-mapper-driver/" target="_blank">https://docs.docker.com/storage/storagedriver/device-mapper-driver/</a></li>
+<li><a href="https://www.kernel.org/doc/Documentation/device-mapper/thin-provisioning.txt" target="_blank">https://www.kernel.org/doc/Documentation/device-mapper/thin-provisioning.txt</a></li>
+<li><a href="https://www.kernel.org/doc/Documentation/device-mapper/snapshot.txt" target="_blank">https://www.kernel.org/doc/Documentation/device-mapper/snapshot.txt</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Snapshotters">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../client-opts.html" class="navigation navigation-next " aria-label="Next page: Client Opts">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Devmapper","level":"1.5.1","depth":2,"next":{"title":"Client Opts","level":"1.6","depth":1,"path":"client-opts.md","ref":"client-opts.md","articles":[]},"previous":{"title":"Snapshotters","level":"1.5","depth":1,"path":"snapshotters/README.md","ref":"snapshotters/README.md","articles":[{"title":"Devmapper","level":"1.5.1","depth":2,"path":"snapshotters/devmapper.md","ref":"snapshotters/devmapper.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"snapshotters/devmapper.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1038 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Client Opts · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="content-flow.html" />
+    
+    
+    <link rel="prev" href="snapshotters/devmapper.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="cri/architecture.html">
+            
+                <a href="cri/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="cri/config.html">
+            
+                <a href="cri/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="cri/crictl.html">
+            
+                <a href="cri/crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="cri/decryption.html">
+            
+                <a href="cri/decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="cri/installation.html">
+            
+                <a href="cri/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="cri/registry.html">
+            
+                <a href="cri/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="cri/testing.html">
+            
+                <a href="cri/testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="historical/cri/proposal.html">
+            
+                <a href="historical/cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="historical/design/architecture.html">
+            
+                <a href="historical/design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="historical/design/data-flow.html">
+            
+                <a href="historical/design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="historical/design/lifecycle.html">
+            
+                <a href="historical/design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="historical/design/mounts.html">
+            
+                <a href="historical/design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="historical/design/snapshots.html">
+            
+                <a href="historical/design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="historical/reports/2017-01-13.html">
+            
+                <a href="historical/reports/2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="historical/reports/2017-01-20.html">
+            
+                <a href="historical/reports/2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="historical/reports/2017-01-27.html">
+            
+                <a href="historical/reports/2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="historical/reports/2017-02-10.html">
+            
+                <a href="historical/reports/2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="historical/reports/2017-02-24.html">
+            
+                <a href="historical/reports/2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="historical/reports/2017-03-10.html">
+            
+                <a href="historical/reports/2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="historical/reports/2017-03-17.html">
+            
+                <a href="historical/reports/2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="historical/reports/2017-03-24.html">
+            
+                <a href="historical/reports/2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="historical/reports/2017-04-28.html">
+            
+                <a href="historical/reports/2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="historical/reports/2017-05-05.html">
+            
+                <a href="historical/reports/2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="historical/reports/2017-05-19.html">
+            
+                <a href="historical/reports/2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="historical/reports/2017-05-26.html">
+            
+                <a href="historical/reports/2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="historical/reports/2017-06-09.html">
+            
+                <a href="historical/reports/2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="historical/reports/2017-06-23.html">
+            
+                <a href="historical/reports/2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="man/containerd-config.8.html">
+            
+                <a href="man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="man/containerd-config.toml.5.html">
+            
+                <a href="man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="snapshotters/">
+            
+                <a href="snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="snapshotters/devmapper.html">
+            
+                <a href="snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="client-opts.html">
+            
+                <a href="client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="content-flow.html">
+            
+                <a href="content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="garbage-collection.html">
+            
+                <a href="garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="hosts.html">
+            
+                <a href="hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="managed-opt.html">
+            
+                <a href="managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="namespaces.html">
+            
+                <a href="namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="NRI.html">
+            
+                <a href="NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ops.html">
+            
+                <a href="ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="PLUGINS.html">
+            
+                <a href="PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="remote-snapshotter.html">
+            
+                <a href="remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="rootless.html">
+            
+                <a href="rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="RUNC.html">
+            
+                <a href="RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="stream_processors.html">
+            
+                <a href="stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="tracing.html">
+            
+                <a href="tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="transfer.html">
+            
+                <a href="transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Client Opts</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="client-options">Client options</h1>
+<p>The containerd client was built to be easily extended by consumers.
+The goal is that the execution flow of the calls remain the same across implementations while <code>Opts</code> are written to extend functionality.
+To accomplish this we depend on the <code>Opts</code> pattern in Go.</p>
+<h2 id="method-calls">Method Calls</h2>
+<p>For many functions and methods within the client package you will generally see variadic args as the last parameter.</p>
+<p>If we look at the <code>NewContainer</code> method on the client we can see that it has a required argument of <code>id</code> and then additional <code>NewContainerOpts</code>.</p>
+<p>There are a few built in options that allow the container to be created with an existing spec, <code>WithSpec</code>, and snapshot opts for creating or using an existing snapshot.</p>
+<pre class="language-"><code class="lang-go"><span class="token keyword">func</span> <span class="token punctuation">(</span>c <span class="token operator">*</span>Client<span class="token punctuation">)</span> <span class="token function">NewContainer</span><span class="token punctuation">(</span>ctx context<span class="token punctuation">.</span>Context<span class="token punctuation">,</span> id <span class="token builtin">string</span><span class="token punctuation">,</span> opts <span class="token operator">...</span>NewContainerOpts<span class="token punctuation">)</span> <span class="token punctuation">(</span>Container<span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="extending-the-client">Extending the Client</h2>
+<p>As a consumer of the containerd client you need to be able to add your domain specific functionality.
+There are a few ways of doing this, changing the client code, submitting a PR to the containerd client, or forking the client.
+These ways of extending the client should only be considered after every other method has been tried.</p>
+<p>The proper and supported way of extending the client is to build a package of <code>Opts</code> that define your application specific logic.</p>
+<p>As an example, if Docker is integrating containerd support and needs to add concepts such as Volumes, they would create a <code>docker</code> package with options.</p>
+<h4 id="bad-extension-example">Bad Extension Example</h4>
+<pre class="language-"><code class="lang-go"><span class="token comment">// example code</span>
+container<span class="token punctuation">,</span> err <span class="token operator">:=</span> client<span class="token punctuation">.</span><span class="token function">NewContainer</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> id<span class="token punctuation">)</span>
+
+<span class="token comment">// add volumes with their config and bind mounts</span>
+container<span class="token punctuation">.</span>Labels<span class="token punctuation">[</span><span class="token string">&quot;volumes&quot;</span><span class="token punctuation">]</span> <span class="token operator">=</span> VolumeConfig<span class="token punctuation">{</span><span class="token punctuation">}</span>
+container<span class="token punctuation">.</span>Spec<span class="token punctuation">.</span>Binds  <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">&quot;/var/lib/docker/volumes...&quot;</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<h4 id="good-extension-example">Good Extension Example</h4>
+<pre class="language-"><code class="lang-go"><span class="token comment">// example code</span>
+<span class="token keyword">import</span> <span class="token string">&quot;github.com/docker/docker&quot;</span>
+<span class="token keyword">import</span> <span class="token string">&quot;github.com/docker/libnetwork&quot;</span>
+
+container<span class="token punctuation">,</span> err <span class="token operator">:=</span> client<span class="token punctuation">.</span><span class="token function">NewContainer</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> id<span class="token punctuation">,</span>
+    docker<span class="token punctuation">.</span><span class="token function">WithVolume</span><span class="token punctuation">(</span><span class="token string">&quot;volume-name&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    libnetwork<span class="token punctuation">.</span><span class="token function">WithOverlayNetwork</span><span class="token punctuation">(</span><span class="token string">&quot;cluster-network&quot;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+</code></pre>
+<p>There are a few advantages using this model.</p>
+<ol>
+<li>Your application code is not scattered in the execution flow of the containerd client.</li>
+<li>Your code can be unit tested without mocking the containerd client.</li>
+<li>Contributors can better follow your containerd implementation and understand when and where your application logic is added to standard containerd client calls.</li>
+</ol>
+<h2 id="example-specopt">Example SpecOpt</h2>
+<p>If we want to make a <code>SpecOpt</code> to setup a container to monitor the host system with <code>htop</code> it can be easily done without ever touching a line of code in the containerd repository.</p>
+<pre class="language-"><code class="lang-go"><span class="token keyword">package</span> monitor
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+    <span class="token string">&quot;github.com/containerd/containerd/oci&quot;</span>
+    specs <span class="token string">&quot;github.com/opencontainers/runtime-spec/specs-go&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment">// WithHtop configures a container to monitor the host system via `htop`</span>
+<span class="token keyword">func</span> <span class="token function">WithHtop</span><span class="token punctuation">(</span>s <span class="token operator">*</span>specs<span class="token punctuation">.</span>Spec<span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>
+    <span class="token comment">// make sure we are in the host pid namespace</span>
+    <span class="token keyword">if</span> err <span class="token operator">:=</span> oci<span class="token punctuation">.</span><span class="token function">WithHostNamespace</span><span class="token punctuation">(</span>specs<span class="token punctuation">.</span>PIDNamespace<span class="token punctuation">)</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+    <span class="token comment">// make sure we set htop as our arg</span>
+    s<span class="token punctuation">.</span>Process<span class="token punctuation">.</span>Args <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">string</span><span class="token punctuation">{</span><span class="token string">&quot;htop&quot;</span><span class="token punctuation">}</span>
+    <span class="token comment">// make sure we have a tty set for htop</span>
+    <span class="token keyword">if</span> err <span class="token operator">:=</span> oci<span class="token punctuation">.</span><span class="token function">WithTTY</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Adding your new option to spec generation is as easy as importing your new package and adding the option when creating a spec.</p>
+<pre class="language-"><code class="lang-go"><span class="token keyword">import</span> <span class="token string">&quot;github.com/crosbymichael/monitor&quot;</span>
+
+container<span class="token punctuation">,</span> err <span class="token operator">:=</span> client<span class="token punctuation">.</span><span class="token function">NewContainer</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> id<span class="token punctuation">,</span>
+    containerd<span class="token punctuation">.</span><span class="token function">WithNewSpec</span><span class="token punctuation">(</span>oci<span class="token punctuation">.</span><span class="token function">WithImageConfig</span><span class="token punctuation">(</span>image<span class="token punctuation">)</span><span class="token punctuation">,</span> monitor<span class="token punctuation">.</span>WithHtop<span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">)</span>
+</code></pre>
+<p>You can see the full code and run the monitor container <a href="https://github.com/crosbymichael/monitor" target="_blank">here</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="snapshotters/devmapper.html" class="navigation navigation-prev " aria-label="Previous page: Devmapper">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="content-flow.html" class="navigation navigation-next " aria-label="Next page: Content Flow">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Client Opts","level":"1.6","depth":1,"next":{"title":"Content Flow","level":"1.7","depth":1,"path":"content-flow.md","ref":"content-flow.md","articles":[]},"previous":{"title":"Devmapper","level":"1.5.1","depth":2,"path":"snapshotters/devmapper.md","ref":"snapshotters/devmapper.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"client-opts.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

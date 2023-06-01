@@ -1,0 +1,1060 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Registry · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="testing.html" />
+    
+    
+    <link rel="prev" href="installation.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="architecture.html">
+            
+                <a href="architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="crictl.html">
+            
+                <a href="crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="decryption.html">
+            
+                <a href="decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6" data-path="registry.html">
+            
+                <a href="registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="testing.html">
+            
+                <a href="testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../historical/cri/proposal.html">
+            
+                <a href="../historical/cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../historical/design/architecture.html">
+            
+                <a href="../historical/design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../historical/design/data-flow.html">
+            
+                <a href="../historical/design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../historical/design/lifecycle.html">
+            
+                <a href="../historical/design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../historical/design/mounts.html">
+            
+                <a href="../historical/design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../historical/design/snapshots.html">
+            
+                <a href="../historical/design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../historical/reports/2017-01-13.html">
+            
+                <a href="../historical/reports/2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../historical/reports/2017-01-20.html">
+            
+                <a href="../historical/reports/2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../historical/reports/2017-01-27.html">
+            
+                <a href="../historical/reports/2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../historical/reports/2017-02-10.html">
+            
+                <a href="../historical/reports/2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../historical/reports/2017-02-24.html">
+            
+                <a href="../historical/reports/2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="../historical/reports/2017-03-10.html">
+            
+                <a href="../historical/reports/2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="../historical/reports/2017-03-17.html">
+            
+                <a href="../historical/reports/2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="../historical/reports/2017-03-24.html">
+            
+                <a href="../historical/reports/2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="../historical/reports/2017-04-28.html">
+            
+                <a href="../historical/reports/2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="../historical/reports/2017-05-05.html">
+            
+                <a href="../historical/reports/2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="../historical/reports/2017-05-19.html">
+            
+                <a href="../historical/reports/2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="../historical/reports/2017-05-26.html">
+            
+                <a href="../historical/reports/2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="../historical/reports/2017-06-09.html">
+            
+                <a href="../historical/reports/2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="../historical/reports/2017-06-23.html">
+            
+                <a href="../historical/reports/2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../man/containerd-config.8.html">
+            
+                <a href="../man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../man/containerd-config.toml.5.html">
+            
+                <a href="../man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../snapshotters/">
+            
+                <a href="../snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../snapshotters/devmapper.html">
+            
+                <a href="../snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../client-opts.html">
+            
+                <a href="../client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../content-flow.html">
+            
+                <a href="../content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../garbage-collection.html">
+            
+                <a href="../garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../getting-started.html">
+            
+                <a href="../getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../hosts.html">
+            
+                <a href="../hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../managed-opt.html">
+            
+                <a href="../managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../namespaces.html">
+            
+                <a href="../namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../NRI.html">
+            
+                <a href="../NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../ops.html">
+            
+                <a href="../ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../PLUGINS.html">
+            
+                <a href="../PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../remote-snapshotter.html">
+            
+                <a href="../remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../rootless.html">
+            
+                <a href="../rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../RUNC.html">
+            
+                <a href="../RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../stream_processors.html">
+            
+                <a href="../stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../tracing.html">
+            
+                <a href="../tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../transfer.html">
+            
+                <a href="../transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Registry</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="configure-image-registry">Configure Image Registry</h1>
+<p>This document describes the method to configure the image registry for <code>containerd</code> for use with the <code>cri</code> plugin.</p>
+<blockquote>
+<p><strong><em>NOTE:</em></strong> registry.mirrors and registry.configs as previously described in this document
+have been DEPRECATED. As described in <a href="config.html#registry-configuration">the cri config</a> you
+should now use the following configuration</p>
+<pre class="language-"><code class="lang-toml"><span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry</span><span class="token punctuation">]</span>
+   <span class="token key property">config_path</span> <span class="token punctuation">=</span> <span class="token string">&quot;/etc/containerd/certs.d&quot;</span>
+</code></pre>
+</blockquote>
+<h2 id="configure-registry-credentials">Configure Registry Credentials</h2>
+<blockquote>
+<p><strong><em>NOTE:</em></strong>  registry.configs.*.auth is DEPRECATED and will NOT have an equivalent way to store
+unecrypted secrets in the host configuration files. However, it will not be removed until
+a suitable secret management alternative is available as a plugin. It remains supported
+in 1.x releases, including the 1.6 LTS release.</p>
+</blockquote>
+<p>To configure a credential for a specific registry, create/modify the
+<code>/etc/containerd/config.toml</code> as follows:</p>
+<pre class="language-"><code class="lang-toml"><span class="token comment"># explicitly use v2 config format</span>
+<span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token number">2</span>
+
+<span class="token comment"># The registry host has to be a domain name or IP. Port number is also</span>
+<span class="token comment"># needed if the default HTTPS or HTTP port is not used.</span>
+<span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry.configs.&quot;gcr.io&quot;.auth</span><span class="token punctuation">]</span>
+  <span class="token key property">username</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;</span>
+  <span class="token key property">password</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;</span>
+  <span class="token key property">auth</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;</span>
+  <span class="token key property">identitytoken</span> <span class="token punctuation">=</span> <span class="token string">&quot;&quot;</span>
+</code></pre>
+<p>The meaning of each field is the same with the corresponding field in <code>.docker/config.json</code>.</p>
+<p>Please note that auth config passed by CRI takes precedence over this config.
+The registry credential in this config will only be used when auth config is
+not specified by Kubernetes via CRI.</p>
+<p>After modifying this config, you need to restart the <code>containerd</code> service.</p>
+<h3 id="configure-registry-credentials-example---gcr-with-service-account-key-authentication">Configure Registry Credentials Example - GCR with Service Account Key Authentication</h3>
+<p>If you don&apos;t already have Google Container Registry (GCR) set-up then you need to do the following steps:</p>
+<ul>
+<li>Create a Google Cloud Platform (GCP) account and project if not already created (see <a href="https://cloud.google.com/gcp/getting-started" target="_blank">GCP getting started</a>)</li>
+<li>Enable GCR for your project (see <a href="https://cloud.google.com/container-registry/docs/quickstart" target="_blank">Quickstart for Container Registry</a>)</li>
+<li>For authentication to GCR: Create <a href="https://cloud.google.com/container-registry/docs/advanced-authentication#json-key" target="_blank">service account and JSON key</a></li>
+<li>The JSON key file needs to be downloaded to your system from the GCP console</li>
+<li>For access to the GCR storage: Add service account to the GCR storage bucket with storage admin access rights (see <a href="https://cloud.google.com/container-registry/docs/access-control#grant-bucket" target="_blank">Granting permissions</a>)</li>
+</ul>
+<p>Refer to <a href="https://cloud.google.com/container-registry/docs/pushing-and-pulling" target="_blank">Pushing and pulling images</a> for detailed information on the above steps.</p>
+<blockquote>
+<p>Note: The JSON key file is a multi-line file and it can be cumbersome to use the contents as a key outside of the file. It is worthwhile generating a single line format output of the file. One way of doing this is using the <code>jq</code> tool as follows: <code>jq -c . key.json</code></p>
+</blockquote>
+<p>It is beneficial to first confirm that from your terminal you can authenticate with your GCR and have access to the storage before hooking it into containerd. This can be verified by performing a login to your GCR and
+pushing an image to it as follows:</p>
+<pre class="language-"><code class="lang-console">docker login -u _json_key -p &quot;$(cat key.json)&quot; gcr.io
+
+docker pull busybox
+
+docker tag busybox gcr.io/your-gcp-project-id/busybox
+
+docker push gcr.io/your-gcp-project-id/busybox
+
+docker logout gcr.io
+</code></pre>
+<p>Now that you know you can access your GCR from your terminal, it is now time to try out containerd.</p>
+<p>Edit the containerd config (default location is at <code>/etc/containerd/config.toml</code>)
+to add your JSON key for <code>gcr.io</code> domain image pull
+requests:</p>
+<pre class="language-"><code class="lang-toml"><span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token number">2</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry</span><span class="token punctuation">]</span>
+  <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry.mirrors</span><span class="token punctuation">]</span>
+    <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry.mirrors.&quot;docker.io&quot;</span><span class="token punctuation">]</span>
+      <span class="token key property">endpoint</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">&quot;https://registry-1.docker.io&quot;</span><span class="token punctuation">]</span>
+    <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry.mirrors.&quot;gcr.io&quot;</span><span class="token punctuation">]</span>
+      <span class="token key property">endpoint</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">&quot;https://gcr.io&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry.configs</span><span class="token punctuation">]</span>
+    <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry.configs.&quot;gcr.io&quot;.auth</span><span class="token punctuation">]</span>
+      <span class="token key property">username</span> <span class="token punctuation">=</span> <span class="token string">&quot;_json_key&quot;</span>
+      <span class="token key property">password</span> <span class="token punctuation">=</span> <span class="token string">&apos;paste output from jq&apos;</span>
+</code></pre>
+<blockquote>
+<p>Note: <code>username</code> of <code>_json_key</code> signifies that JSON key authentication will be used.</p>
+</blockquote>
+<p>Restart containerd:</p>
+<pre class="language-"><code class="lang-console">service containerd restart
+</code></pre>
+<p>Pull an image from your GCR with <code>crictl</code>:</p>
+<pre class="language-"><code class="lang-console">$ sudo crictl pull gcr.io/your-gcp-project-id/busybox
+
+DEBU[0000] get image connection
+DEBU[0000] connect using endpoint &apos;unix:///run/containerd/containerd.sock&apos; with &apos;3s&apos; timeout
+DEBU[0000] connected successfully using endpoint: unix:///run/containerd/containerd.sock
+DEBU[0000] PullImageRequest: &amp;PullImageRequest{Image:&amp;ImageSpec{Image:gcr.io/your-gcr-instance-id/busybox,},Auth:nil,SandboxConfig:nil,}
+DEBU[0001] PullImageResponse: &amp;PullImageResponse{ImageRef:sha256:78096d0a54788961ca68393e5f8038704b97d8af374249dc5c8faec1b8045e42,}
+Image is up to date for sha256:78096d0a54788961ca68393e5f8038704b97d8af374249dc5c8faec1b8045e42
+</code></pre>
+<hr>
+<p>NOTE: The configuration syntax used in this doc is in version 2 which is the recommended since <code>containerd</code> 1.3. For the previous config format you can reference <a href="https://github.com/containerd/cri/blob/release/1.2/docs/registry.md" target="_blank">https://github.com/containerd/cri/blob/release/1.2/docs/registry.md</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="installation.html" class="navigation navigation-prev " aria-label="Previous page: Installation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="testing.html" class="navigation navigation-next " aria-label="Next page: Testing">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Registry","level":"1.2.6","depth":2,"next":{"title":"Testing","level":"1.2.7","depth":2,"path":"cri/testing.md","ref":"cri/testing.md","articles":[]},"previous":{"title":"Installation","level":"1.2.5","depth":2,"path":"cri/installation.md","ref":"cri/installation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"cri/registry.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

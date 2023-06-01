@@ -1,0 +1,1198 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>PLUGINS · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="remote-snapshotter.html" />
+    
+    
+    <link rel="prev" href="ops.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="cri/architecture.html">
+            
+                <a href="cri/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="cri/config.html">
+            
+                <a href="cri/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="cri/crictl.html">
+            
+                <a href="cri/crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="cri/decryption.html">
+            
+                <a href="cri/decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="cri/installation.html">
+            
+                <a href="cri/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="cri/registry.html">
+            
+                <a href="cri/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="cri/testing.html">
+            
+                <a href="cri/testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="historical/cri/proposal.html">
+            
+                <a href="historical/cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="historical/design/architecture.html">
+            
+                <a href="historical/design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="historical/design/data-flow.html">
+            
+                <a href="historical/design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="historical/design/lifecycle.html">
+            
+                <a href="historical/design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="historical/design/mounts.html">
+            
+                <a href="historical/design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="historical/design/snapshots.html">
+            
+                <a href="historical/design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="historical/reports/2017-01-13.html">
+            
+                <a href="historical/reports/2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="historical/reports/2017-01-20.html">
+            
+                <a href="historical/reports/2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="historical/reports/2017-01-27.html">
+            
+                <a href="historical/reports/2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="historical/reports/2017-02-10.html">
+            
+                <a href="historical/reports/2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="historical/reports/2017-02-24.html">
+            
+                <a href="historical/reports/2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="historical/reports/2017-03-10.html">
+            
+                <a href="historical/reports/2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="historical/reports/2017-03-17.html">
+            
+                <a href="historical/reports/2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="historical/reports/2017-03-24.html">
+            
+                <a href="historical/reports/2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="historical/reports/2017-04-28.html">
+            
+                <a href="historical/reports/2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="historical/reports/2017-05-05.html">
+            
+                <a href="historical/reports/2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="historical/reports/2017-05-19.html">
+            
+                <a href="historical/reports/2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="historical/reports/2017-05-26.html">
+            
+                <a href="historical/reports/2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="historical/reports/2017-06-09.html">
+            
+                <a href="historical/reports/2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="historical/reports/2017-06-23.html">
+            
+                <a href="historical/reports/2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="man/containerd-config.8.html">
+            
+                <a href="man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="man/containerd-config.toml.5.html">
+            
+                <a href="man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="snapshotters/">
+            
+                <a href="snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="snapshotters/devmapper.html">
+            
+                <a href="snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="client-opts.html">
+            
+                <a href="client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="content-flow.html">
+            
+                <a href="content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="garbage-collection.html">
+            
+                <a href="garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="hosts.html">
+            
+                <a href="hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="managed-opt.html">
+            
+                <a href="managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="namespaces.html">
+            
+                <a href="namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="NRI.html">
+            
+                <a href="NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ops.html">
+            
+                <a href="ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.15" data-path="PLUGINS.html">
+            
+                <a href="PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="remote-snapshotter.html">
+            
+                <a href="remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="rootless.html">
+            
+                <a href="rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="RUNC.html">
+            
+                <a href="RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="stream_processors.html">
+            
+                <a href="stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="tracing.html">
+            
+                <a href="tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="transfer.html">
+            
+                <a href="transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >PLUGINS</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="containerd-plugins">containerd Plugins</h1>
+<p>containerd supports extending its functionality using most of its defined
+interfaces. This includes using a customized runtime, snapshotter, content
+store, and even adding gRPC interfaces.</p>
+<h2 id="smart-client-model">Smart Client Model</h2>
+<p>containerd has a smart client architecture, meaning any functionality which is
+not required by the daemon is done by the client. This includes most high
+level interactions such as creating a container&apos;s specification, interacting
+with an image registry, or loading an image from tar. containerd&apos;s Go client
+gives a user access to many points of extensions from creating their own
+options on container creation to resolving image registry names.</p>
+<p>See <a href="https://godoc.org/github.com/containerd/containerd" target="_blank">containerd&apos;s Go documentation</a></p>
+<h2 id="external-plugins">External Plugins</h2>
+<p>External plugins allow extending containerd&apos;s functionality using an officially
+released version of containerd without needing to recompile the daemon to add a
+plugin.</p>
+<p>containerd allows extensions through two methods:</p>
+<ul>
+<li>via a binary available in containerd&apos;s PATH</li>
+<li>by configuring containerd to proxy to another gRPC service</li>
+</ul>
+<h3 id="v2-runtimes">V2 Runtimes</h3>
+<p>The runtime v2 interface allows resolving runtimes to binaries on the system.
+These binaries are used to start the shim process for containerd and allows
+containerd to manage those containers using the runtime shim api returned by
+the binary.</p>
+<p>See <a href="../runtime/v2/README.md">runtime v2 documentation</a></p>
+<h3 id="proxy-plugins">Proxy Plugins</h3>
+<p>A proxy plugin is configured using containerd&apos;s config file and will be loaded
+alongside the internal plugins when containerd is started. These plugins are
+connected to containerd using a local socket serving one of containerd&apos;s gRPC
+API services. Each plugin is configured with a type and name just as internal
+plugins are.</p>
+<h4 id="configuration">Configuration</h4>
+<p>Update the containerd config file, which by default is at
+<code>/etc/containerd/config.toml</code>. Add a <code>[proxy_plugins]</code> section along with a
+section for your given plugin <code>[proxy_plugins.myplugin]</code>. The <code>address</code> must
+refer to a local socket file which the containerd process has access to. The
+currently supported types are <code>snapshot</code> and <code>content</code>.</p>
+<pre class="language-"><code class="lang-toml"><span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token number">2</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">proxy_plugins</span><span class="token punctuation">]</span>
+  <span class="token punctuation">[</span><span class="token table class-name">proxy_plugins.customsnapshot</span><span class="token punctuation">]</span>
+    <span class="token key property">type</span> <span class="token punctuation">=</span> <span class="token string">&quot;snapshot&quot;</span>
+    <span class="token key property">address</span> <span class="token punctuation">=</span> <span class="token string">&quot;/var/run/mysnapshotter.sock&quot;</span>
+</code></pre>
+<h4 id="implementation">Implementation</h4>
+<p>Implementing a proxy plugin is as easy as implementing the gRPC API for a
+service. For implementing a proxy plugin in Go, look at the go doc for
+<a href="https://godoc.org/github.com/containerd/containerd/api/services/content/v1#ContentServer" target="_blank">content store service</a>
+and <a href="https://godoc.org/github.com/containerd/containerd/api/services/snapshots/v1#SnapshotsServer" target="_blank">snapshotter service</a>.</p>
+<p>The following example creates a snapshot plugin binary which can be used
+with any implementation of
+<a href="https://godoc.org/github.com/containerd/containerd/snapshots#Snapshotter" target="_blank">containerd&apos;s Snapshotter interface</a></p>
+<pre class="language-"><code class="lang-go"><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+    <span class="token string">&quot;fmt&quot;</span>
+    <span class="token string">&quot;net&quot;</span>
+    <span class="token string">&quot;os&quot;</span>
+
+    <span class="token string">&quot;google.golang.org/grpc&quot;</span>
+
+    snapshotsapi <span class="token string">&quot;github.com/containerd/containerd/api/services/snapshots/v1&quot;</span>
+    <span class="token string">&quot;github.com/containerd/containerd/contrib/snapshotservice&quot;</span>
+    <span class="token string">&quot;github.com/containerd/containerd/snapshots/native&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Provide a unix address to listen to, this will be the `address`</span>
+    <span class="token comment">// in the `proxy_plugin` configuration.</span>
+    <span class="token comment">// The root will be used to store the snapshots.</span>
+    <span class="token keyword">if</span> <span class="token function">len</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>Args<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">3</span> <span class="token punctuation">{</span>
+        fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;invalid args: usage: %s &lt;unix addr&gt; &lt;root&gt;\n&quot;</span><span class="token punctuation">,</span> os<span class="token punctuation">.</span>Args<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        os<span class="token punctuation">.</span><span class="token function">Exit</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Create a gRPC server</span>
+    rpc <span class="token operator">:=</span> grpc<span class="token punctuation">.</span><span class="token function">NewServer</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// Configure your custom snapshotter, this example uses the native</span>
+    <span class="token comment">// snapshotter and a root directory. Your custom snapshotter will be</span>
+    <span class="token comment">// much more useful than using a snapshotter which is already included.</span>
+    <span class="token comment">// https://godoc.org/github.com/containerd/containerd/snapshots#Snapshotter</span>
+    sn<span class="token punctuation">,</span> err <span class="token operator">:=</span> native<span class="token punctuation">.</span><span class="token function">NewSnapshotter</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>Args<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;error: %v\n&quot;</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span>
+        os<span class="token punctuation">.</span><span class="token function">Exit</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// Convert the snapshotter to a gRPC service,</span>
+    <span class="token comment">// example in github.com/containerd/containerd/contrib/snapshotservice</span>
+    service <span class="token operator">:=</span> snapshotservice<span class="token punctuation">.</span><span class="token function">FromSnapshotter</span><span class="token punctuation">(</span>sn<span class="token punctuation">)</span>
+
+    <span class="token comment">// Register the service with the gRPC server</span>
+    snapshotsapi<span class="token punctuation">.</span><span class="token function">RegisterSnapshotsServer</span><span class="token punctuation">(</span>rpc<span class="token punctuation">,</span> service<span class="token punctuation">)</span>
+
+    <span class="token comment">// Listen and serve</span>
+    l<span class="token punctuation">,</span> err <span class="token operator">:=</span> net<span class="token punctuation">.</span><span class="token function">Listen</span><span class="token punctuation">(</span><span class="token string">&quot;unix&quot;</span><span class="token punctuation">,</span> os<span class="token punctuation">.</span>Args<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;error: %v\n&quot;</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span>
+        os<span class="token punctuation">.</span><span class="token function">Exit</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">if</span> err <span class="token operator">:=</span> rpc<span class="token punctuation">.</span><span class="token function">Serve</span><span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;error: %v\n&quot;</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span>
+        os<span class="token punctuation">.</span><span class="token function">Exit</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Using the previous configuration and example, you could run a snapshot plugin
+with</p>
+<pre class="language-"><code># Start plugin in one terminal
+$ go run ./main.go /var/run/mysnapshotter.sock /tmp/snapshots
+
+# Use ctr in another
+$ CONTAINERD_SNAPSHOTTER=customsnapshot ctr images pull docker.io/library/alpine:latest
+$ tree -L 3 /tmp/snapshots
+/tmp/snapshots
+|-- metadata.db
+`-- snapshots
+    `-- 1
+        |-- bin
+        |-- dev
+        |-- etc
+        |-- home
+        |-- lib
+        |-- media
+        |-- mnt
+        |-- proc
+        |-- root
+        |-- run
+        |-- sbin
+        |-- srv
+        |-- sys
+        |-- tmp
+        |-- usr
+        `-- var
+
+18 directories, 1 file
+</code></pre><h2 id="built-in-plugins">Built-in Plugins</h2>
+<p>containerd uses plugins internally to ensure that internal implementations are
+decoupled, stable, and treated equally with external plugins. To see all the
+plugins containerd has, use <code>ctr plugins ls</code></p>
+<pre class="language-"><code>$ ctr plugins ls
+TYPE                            ID                    PLATFORMS      STATUS
+io.containerd.content.v1        content               -              ok
+io.containerd.snapshotter.v1    btrfs                 linux/amd64    ok
+io.containerd.snapshotter.v1    aufs                  linux/amd64    error
+io.containerd.snapshotter.v1    native                linux/amd64    ok
+io.containerd.snapshotter.v1    overlayfs             linux/amd64    ok
+io.containerd.snapshotter.v1    zfs                   linux/amd64    error
+io.containerd.metadata.v1       bolt                  -              ok
+io.containerd.differ.v1         walking               linux/amd64    ok
+io.containerd.gc.v1             scheduler             -              ok
+io.containerd.service.v1        containers-service    -              ok
+io.containerd.service.v1        content-service       -              ok
+io.containerd.service.v1        diff-service          -              ok
+io.containerd.service.v1        images-service        -              ok
+io.containerd.service.v1        leases-service        -              ok
+io.containerd.service.v1        namespaces-service    -              ok
+io.containerd.service.v1        snapshots-service     -              ok
+io.containerd.runtime.v1        linux                 linux/amd64    ok
+io.containerd.runtime.v2        task                  linux/amd64    ok
+io.containerd.monitor.v1        cgroups               linux/amd64    ok
+io.containerd.service.v1        tasks-service         -              ok
+io.containerd.internal.v1       restart               -              ok
+io.containerd.grpc.v1           containers            -              ok
+io.containerd.grpc.v1           content               -              ok
+io.containerd.grpc.v1           diff                  -              ok
+io.containerd.grpc.v1           events                -              ok
+io.containerd.grpc.v1           healthcheck           -              ok
+io.containerd.grpc.v1           images                -              ok
+io.containerd.grpc.v1           leases                -              ok
+io.containerd.grpc.v1           namespaces            -              ok
+io.containerd.grpc.v1           snapshots             -              ok
+io.containerd.grpc.v1           tasks                 -              ok
+io.containerd.grpc.v1           version               -              ok
+io.containerd.grpc.v1           cri                   linux/amd64    ok
+</code></pre><p>From the output all the plugins can be seen as well those which did not
+successfully load. In this case <code>aufs</code> and <code>zfs</code> are expected not to load
+since they are not support on the machine. The logs will show why it failed,
+but you can also get more details using the <code>-d</code> option.</p>
+<pre class="language-"><code>$ ctr plugins ls -d id==aufs id==zfs
+Type:          io.containerd.snapshotter.v1
+ID:            aufs
+Platforms:     linux/amd64
+Exports:
+               root      /var/lib/containerd/io.containerd.snapshotter.v1.aufs
+Error:
+               Code:        Unknown
+               Message:     modprobe aufs failed: &quot;modprobe: FATAL: Module aufs not found in directory /lib/modules/4.17.2-1-ARCH\n&quot;: exit status 1
+
+Type:          io.containerd.snapshotter.v1
+ID:            zfs
+Platforms:     linux/amd64
+Exports:
+               root      /var/lib/containerd/io.containerd.snapshotter.v1.zfs
+Error:
+               Code:        Unknown
+               Message:     path /var/lib/containerd/io.containerd.snapshotter.v1.zfs must be a zfs filesystem to be used with the zfs snapshotter
+</code></pre><p>The error message which the plugin returned explains why the plugin was unable
+to load.</p>
+<h4 id="configuration">Configuration</h4>
+<p>Plugins are configured using the <code>[plugins]</code> section of containerd&apos;s config.
+Every plugin can have its own section using the pattern <code>[plugins.&quot;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugin</span> <span class="token attr-name">type</span><span class="token punctuation">&gt;</span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>plugin</span> <span class="token attr-name">id</span><span class="token punctuation">&gt;</span></span>&quot;]</code>.</p>
+<p>example configuration</p>
+<pre class="language-"><code class="lang-toml"><span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token number">2</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">plugins</span><span class="token punctuation">]</span>
+  <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.monitor.v1.cgroups&quot;</span><span class="token punctuation">]</span>
+    <span class="token key property">no_prometheus</span> <span class="token punctuation">=</span> <span class="token boolean">false</span>
+</code></pre>
+<p>To see full configuration example run <code>containerd config default</code>.
+If you want to get the configuration combined with your configuration, run <code>containerd config dump</code>.</p>
+<h5 id="version-header">Version header</h5>
+<p>containerd has two configuration versions:</p>
+<ul>
+<li>Version 2 (Recommended): Introduced in containerd 1.3.</li>
+<li>Version 1 (Default): Introduced in containerd 1.0. Removed in containerd 2.0.</li>
+</ul>
+<p>A configuration with Version 2 must have <code>version = 2</code> header, and must have
+fully qualified plugin IDs in the <code>[plugins]</code> section:</p>
+<pre class="language-"><code class="lang-toml"><span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token number">2</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">plugins</span><span class="token punctuation">]</span>
+  <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.monitor.v1.cgroups&quot;</span><span class="token punctuation">]</span>
+    <span class="token key property">no_prometheus</span> <span class="token punctuation">=</span> <span class="token boolean">false</span>
+</code></pre>
+<p>A configuration with Version 1 may not have <code>version</code> header, and does not need fully qualified plugin IDs.</p>
+<pre class="language-"><code class="lang-toml"><span class="token punctuation">[</span><span class="token table class-name">plugins</span><span class="token punctuation">]</span>
+  <span class="token punctuation">[</span><span class="token table class-name">plugins.cgroups</span><span class="token punctuation">]</span>
+    <span class="token key property">no_prometheus</span> <span class="token punctuation">=</span> <span class="token boolean">false</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ops.html" class="navigation navigation-prev " aria-label="Previous page: Ops">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="remote-snapshotter.html" class="navigation navigation-next " aria-label="Next page: Remote Snapshotter">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"PLUGINS","level":"1.15","depth":1,"next":{"title":"Remote Snapshotter","level":"1.16","depth":1,"path":"remote-snapshotter.md","ref":"remote-snapshotter.md","articles":[]},"previous":{"title":"Ops","level":"1.14","depth":1,"path":"ops.md","ref":"ops.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"PLUGINS.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

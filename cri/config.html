@@ -1,0 +1,1283 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Config · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="crictl.html" />
+    
+    
+    <link rel="prev" href="architecture.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="architecture.html">
+            
+                <a href="architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="crictl.html">
+            
+                <a href="crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="decryption.html">
+            
+                <a href="decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="registry.html">
+            
+                <a href="registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="testing.html">
+            
+                <a href="testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../historical/cri/proposal.html">
+            
+                <a href="../historical/cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../historical/design/architecture.html">
+            
+                <a href="../historical/design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../historical/design/data-flow.html">
+            
+                <a href="../historical/design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../historical/design/lifecycle.html">
+            
+                <a href="../historical/design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../historical/design/mounts.html">
+            
+                <a href="../historical/design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../historical/design/snapshots.html">
+            
+                <a href="../historical/design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../historical/reports/2017-01-13.html">
+            
+                <a href="../historical/reports/2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../historical/reports/2017-01-20.html">
+            
+                <a href="../historical/reports/2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../historical/reports/2017-01-27.html">
+            
+                <a href="../historical/reports/2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../historical/reports/2017-02-10.html">
+            
+                <a href="../historical/reports/2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../historical/reports/2017-02-24.html">
+            
+                <a href="../historical/reports/2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="../historical/reports/2017-03-10.html">
+            
+                <a href="../historical/reports/2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="../historical/reports/2017-03-17.html">
+            
+                <a href="../historical/reports/2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="../historical/reports/2017-03-24.html">
+            
+                <a href="../historical/reports/2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="../historical/reports/2017-04-28.html">
+            
+                <a href="../historical/reports/2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="../historical/reports/2017-05-05.html">
+            
+                <a href="../historical/reports/2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="../historical/reports/2017-05-19.html">
+            
+                <a href="../historical/reports/2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="../historical/reports/2017-05-26.html">
+            
+                <a href="../historical/reports/2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="../historical/reports/2017-06-09.html">
+            
+                <a href="../historical/reports/2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="../historical/reports/2017-06-23.html">
+            
+                <a href="../historical/reports/2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../man/containerd-config.8.html">
+            
+                <a href="../man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../man/containerd-config.toml.5.html">
+            
+                <a href="../man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../snapshotters/">
+            
+                <a href="../snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../snapshotters/devmapper.html">
+            
+                <a href="../snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../client-opts.html">
+            
+                <a href="../client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../content-flow.html">
+            
+                <a href="../content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../garbage-collection.html">
+            
+                <a href="../garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../getting-started.html">
+            
+                <a href="../getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../hosts.html">
+            
+                <a href="../hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../managed-opt.html">
+            
+                <a href="../managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../namespaces.html">
+            
+                <a href="../namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../NRI.html">
+            
+                <a href="../NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../ops.html">
+            
+                <a href="../ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../PLUGINS.html">
+            
+                <a href="../PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../remote-snapshotter.html">
+            
+                <a href="../remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../rootless.html">
+            
+                <a href="../rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../RUNC.html">
+            
+                <a href="../RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../stream_processors.html">
+            
+                <a href="../stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../tracing.html">
+            
+                <a href="../tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../transfer.html">
+            
+                <a href="../transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Config</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="cri-plugin-config-guide">CRI Plugin Config Guide</h1>
+<p>This document provides the description of the CRI plugin configuration.
+The CRI plugin config is part of the containerd config (default
+path: <code>/etc/containerd/config.toml</code>).</p>
+<p>See <a href="https://github.com/containerd/containerd/blob/main/docs/ops.md" target="_blank">here</a>
+for more information about containerd config.</p>
+<p>Note that the <code>[plugins.&quot;io.containerd.grpc.v1.cri&quot;]</code> section is specific to CRI,
+and not recognized by other containerd clients such as <code>ctr</code>, <code>nerdctl</code>, and Docker/Moby.</p>
+<h2 id="basic-configuration">Basic configuration</h2>
+<h3 id="cgroup-driver">Cgroup Driver</h3>
+<p>While containerd and Kubernetes use the legacy <code>cgroupfs</code> driver for managing cgroups by default,
+it is recommended to use the <code>systemd</code> driver on systemd-based hosts for compliance of
+<a href="https://systemd.io/CGROUP_DELEGATION/" target="_blank">the &quot;single-writer&quot; rule</a> of cgroups.</p>
+<p>To configure containerd to use the <code>systemd</code> driver, set the following option in <code>/etc/containerd/config.toml</code>:</p>
+<pre class="language-"><code class="lang-toml"><span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token number">2</span>
+<span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd.runtimes.runc.options</span><span class="token punctuation">]</span>
+  <span class="token key property">SystemdCgroup</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
+</code></pre>
+<p>In addition to containerd, you have to configure the <code>KubeletConfiguration</code> to use the &quot;systemd&quot; cgroup driver.
+The <code>KubeletConfiguration</code> is typically located at <code>/var/lib/kubelet/config.yaml</code>:</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">kind</span><span class="token punctuation">:</span> KubeletConfiguration
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> kubelet.config.k8s.io/v1beta1
+<span class="token key atrule">cgroupDriver</span><span class="token punctuation">:</span> <span class="token string">&quot;systemd&quot;</span>
+</code></pre>
+<p>kubeadm users should also see <a href="https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/configure-cgroup-driver/" target="_blank">the kubeadm documentation</a>.</p>
+<h3 id="snapshotter">Snapshotter</h3>
+<p>The default snapshotter is set to <code>overlayfs</code> (akin to Docker&apos;s <code>overlay2</code> storage driver):</p>
+<pre class="language-"><code class="lang-toml"><span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token number">2</span>
+<span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd</span><span class="token punctuation">]</span>
+  <span class="token key property">snapshotter</span> <span class="token punctuation">=</span> <span class="token string">&quot;overlayfs&quot;</span>
+</code></pre>
+<p>See <a href="https://github.com/containerd/containerd/blob/main/docs/snapshotters" target="_blank">here</a> for other supported snapshotters.</p>
+<h3 id="runtime-classes">Runtime classes</h3>
+<p>The following example registers custom runtimes into containerd:</p>
+<pre class="language-"><code class="lang-toml"><span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token number">2</span>
+<span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd</span><span class="token punctuation">]</span>
+  <span class="token key property">default_runtime_name</span> <span class="token punctuation">=</span> <span class="token string">&quot;crun&quot;</span>
+  <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd.runtimes</span><span class="token punctuation">]</span>
+    <span class="token comment"># crun: https://github.com/containers/crun</span>
+    <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd.runtimes.crun</span><span class="token punctuation">]</span>
+      <span class="token key property">runtime_type</span> <span class="token punctuation">=</span> <span class="token string">&quot;io.containerd.runc.v2&quot;</span>
+      <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd.runtimes.crun.options</span><span class="token punctuation">]</span>
+        <span class="token key property">BinaryName</span> <span class="token punctuation">=</span> <span class="token string">&quot;/usr/local/bin/crun&quot;</span>
+    <span class="token comment"># gVisor: https://gvisor.dev/</span>
+    <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd.runtimes.gvisor</span><span class="token punctuation">]</span>
+      <span class="token key property">runtime_type</span> <span class="token punctuation">=</span> <span class="token string">&quot;io.containerd.runsc.v1&quot;</span>
+    <span class="token comment"># Kata Containers: https://katacontainers.io/</span>
+    <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd.runtimes.kata</span><span class="token punctuation">]</span>
+      <span class="token key property">runtime_type</span> <span class="token punctuation">=</span> <span class="token string">&quot;io.containerd.kata.v2&quot;</span>
+</code></pre>
+<p>In addition, you have to install the following <code>RuntimeClass</code> resources into the cluster
+with the <code>cluster-admin</code> role:</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> node.k8s.io/v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> RuntimeClass
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> crun
+<span class="token key atrule">handler</span><span class="token punctuation">:</span> crun
+<span class="token punctuation">---</span>
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> node.k8s.io/v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> RuntimeClass
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> gvisor
+<span class="token key atrule">handler</span><span class="token punctuation">:</span> gvisor
+<span class="token punctuation">---</span>
+<span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> node.k8s.io/v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> RuntimeClass
+<span class="token key atrule">metadata</span><span class="token punctuation">:</span>
+  <span class="token key atrule">name</span><span class="token punctuation">:</span> kata
+<span class="token key atrule">handler</span><span class="token punctuation">:</span> kata
+</code></pre>
+<p>To apply a runtime class to a pod, set <code>.spec.runtimeClassName</code>:</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">apiVersion</span><span class="token punctuation">:</span> v1
+<span class="token key atrule">kind</span><span class="token punctuation">:</span> Pod
+<span class="token key atrule">spec</span><span class="token punctuation">:</span>
+  <span class="token key atrule">runtimeClassName</span><span class="token punctuation">:</span> crun
+</code></pre>
+<p>See also <a href="https://kubernetes.io/docs/concepts/containers/runtime-class/" target="_blank">the Kubernetes documentation</a>.</p>
+<h2 id="full-configuration">Full configuration</h2>
+<p>The explanation and default value of each configuration item are as follows:</p>
+<details>
+
+<p>
+
+```toml
+# Use config version 2 to enable new configuration fields.
+# Config file is parsed as version 1 by default.
+# Version 2 uses long plugin names, i.e. &quot;io.containerd.grpc.v1.cri&quot; vs &quot;cri&quot;.
+version = 2
+
+# The &apos;plugins.&quot;io.containerd.grpc.v1.cri&quot;&apos; table contains all of the server options.
+[plugins.&quot;io.containerd.grpc.v1.cri&quot;]
+
+  # disable_tcp_service disables serving CRI on the TCP server.
+  # Note that a TCP server is enabled for containerd if TCPAddress is set in section [grpc].
+  disable_tcp_service = true
+
+  # stream_server_address is the ip address streaming server is listening on.
+  stream_server_address = &quot;127.0.0.1&quot;
+
+  # stream_server_port is the port streaming server is listening on.
+  stream_server_port = &quot;0&quot;
+
+  # stream_idle_timeout is the maximum time a streaming connection can be
+  # idle before the connection is automatically closed.
+  # The string is in the golang duration format, see:
+  #   https://golang.org/pkg/time/#ParseDuration
+  stream_idle_timeout = &quot;4h&quot;
+
+  # enable_selinux indicates to enable the selinux support.
+  enable_selinux = false
+
+  # selinux_category_range allows the upper bound on the category range to be set.
+  # if not specified or set to 0, defaults to 1024 from the selinux package.
+  selinux_category_range = 1024
+
+  # sandbox_image is the image used by sandbox container.
+  sandbox_image = &quot;registry.k8s.io/pause:3.9&quot;
+
+  # stats_collect_period is the period (in seconds) of snapshots stats collection.
+  stats_collect_period = 10
+
+  # enable_tls_streaming enables the TLS streaming support.
+  # It generates a self-sign certificate unless the following x509_key_pair_streaming are both set.
+  enable_tls_streaming = false
+
+  # tolerate_missing_hugetlb_controller if set to false will error out on create/update
+  # container requests with huge page limits if the cgroup controller for hugepages is not present.
+  # This helps with supporting Kubernetes <=1.18 4665="" out="" of="" the="" box.="" (default="" is="" `true`)="" tolerate_missing_hugetlb_controller="true" #="" ignore_image_defined_volumes="" ignores="" volumes="" defined="" by="" image.="" useful="" for="" better="" resource="" isolation,="" security="" and="" early="" detection="" issues="" in="" mount="" configuration="" when="" using="" readonlyrootfilesystem="" since="" containers="" won't="" silently="" a="" temporary="" volume.="" netns_mounts_under_state_dir="" places="" all="" mounts="" network="" namespaces="" under="" statedir="" netns="" instead="" being="" placed="" hardcoded="" directory="" var="" run="" netns.="" changing="" this="" setting="" requires="" that="" are="" deleted.="" 'plugins."io.containerd.grpc.v1.cri".x509_key_pair_streaming'="" contains="" x509="" valid="" key="" pair="" to="" stream="" with="" tls.="" [plugins."io.containerd.grpc.v1.cri".x509_key_pair_streaming]="" tls_cert_file="" filepath="" certificate="" paired="" "tls_key_file"="" tls_key_file="" private="" "tls_cert_file"="" max_container_log_line_size="" maximum="" log="" line="" size="" bytes="" container.="" longer="" than="" limit="" will="" be="" split="" into="" multiple lines.="" -1="" means="" no="" limit.="" disable_cgroup="" indicates="" disable="" cgroup="" support.="" daemon="" does="" not="" have="" permission="" access="" cgroup.="" disable_apparmor="" apparmor="" apparmor.="" restrict_oom_score_adj="" lower="" bound="" oomscoreadj="" containerd's="" current="" oomscoreadj.="" containerd="" decrease="" max_concurrent_downloads="" restricts="" number="" concurrent="" downloads="" each="" disable_proc_mount="" disables="" kubernetes="" procmount="" must="" set="" `true`="" <="1.11." unset_seccomp_profile="" seccomp="" profile="" cri="" use="" if="" requested="" over="" unset="" (or="" nil)="" pod="" container="" (otherwise="" field="" default map="" `unconfined`)="" note:="" should="" confused="" used="" runtime="" requested.="" later="" case,="" following="" code="" (https:="" github.com="" blob="" main="" contrib="" seccomp_default.go).="" summarize,="" there="" two="" different="" defaults,="" request="" nil="" or="" `unconfined`,="" enable_unprivileged_ports="" configures="" net.ipv4.ip_unprivileged_port_start="0" which="" host="" it="" overwritten="" podsandboxconfig="" note="" currently="" disabled but="" target="" change="" future,="" see:="" [k8s="" discussion](https:="" 102612)="" enable_unprivileged_icmp="" net.ipv4.ping_group_range="0 2147483647" network,="" running="" user="" namespace="" future="" together="" enable_cdi="" enables="" support="" device="" interface="" (cdi)="" more="" details="" about="" cdi="" syntax="" spec="" files="" please="" refer="" https:="" container-orchestrated-devices="" container-device-interface.="" cdi_spec_dirs="" list="" directories="" scan="" container-device-interface#containerd-configuration="" "="" cdi"]="" drain_exec_sync_io_timeout="" duration="" wait="" execsync="" api'="" io="" eof="" event="" after="" exec="" init="" process="" exits.="" zero="" value="" timeout.="" string="" golang="" format,="" golang.org="" pkg="" time="" #parseduration="" example,="" can="" '5h',="" '2h30m',="" '10s'.="" 'plugins."io.containerd.grpc.v1.cri".containerd'="" config="" related="" [plugins."io.containerd.grpc.v1.cri".containerd]="" snapshotter="" runtimes,="" overridden="" an="" experimental="" runtime's="" config.="" no_pivot="" pivot-root="" (linux="" only),="" required ramdisk="" runc.="" only="" works="" type="" "io.containerd.runtime.v1.linux".="" disable_snapshot_annotations="" pass="" additional="" annotations="" (image="" information)="" snapshotters.="" these="" stargz="" stargz-snapshotter)="" changed="" true="" pull="" subsequent="" service="" refreshes.="" discard_unpacked_layers="" allows="" gc="" remove="" layers="" from="" content="" store="" successfully="" unpacking="" snapshotter.="" default_runtime_name="" name="" use.="" ignore_blockio_not_enabled_errors="" blockio="" errors="" has="" been="" enabled.="" default,="" trying="" class="" via="" produces="" error="" hasn't="" option="" practically="" "soft"="" mode="" where="" ignored="" gets="" class.="" ignore_rdt_not_enabled_errors="" rdt="" intel="" technology="" cache="" memory="" bandwidth="" management.="" 'plugins."io.containerd.grpc.v1.cri".containerd.default_runtime'="" containerd.="" deprecated:="" `default_runtime_name`="" `plugins."io.containerd.grpc.v1.cri".containerd.runtimes`="" instead.="" [plugins."io.containerd.grpc.v1.cri".containerd.default_runtime]="" 'plugins."io.containerd.grpc.v1.cri".containerd.untrusted_workload_runtime'="" untrusted="" workloads="" on="" it.="" `untrusted`="" [plugins."io.containerd.grpc.v1.cri".containerd.untrusted_workload_runtime]="" 'plugins."io.containerd.grpc.v1.cri".containerd.runtimes'="" runtimehandler="" strings,="" specify="" types="" configurations,="" matching="" configurations.="" 'runc'="" match.="" [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc]="" runtime_type="" "io.containerd.runc.v2"="" 1.4.="" was="" "io.containerd.runc.v1"="" 1.3,="" "io.containerd.runtime.v1.linux"="" prior="" releases.="" pod_annotations="" passed="" both="" sandbox="" as="" well="" oci="" annotations.="" also="" supports="" path="" match="" pattern="" -="" #match.="" e.g.="" ["runc.com.*"],="" ["*.runc.com"],="" ["runc.com="" *"].="" naming="" convention="" annotation="" keys,="" reference:="" *="" kubernetes:="" kubernetes.io="" docs="" concepts="" overview="" working-with-objects="" #syntax-and-character-set="" oci:="" opencontainers="" image-spec="" annotations.md="" container_annotations="" through="" containers.="" usually="" generated="" other="" node="" components="" (i.e.,="" users).="" currently,="" plugins="" populate="" privileged_without_host_devices="" overloading="" behaviour="" passing="" devices="" privileged="" make="" sense="" privileged.="" defaults="" false="" i.e="" privileged_without_host_devices_all_devices_allowed="" allowlisting="" plain="" nodes="" added="" container's="" put="" allowlist.="" flags="" modification="" so="" even="" implicitly="" container,="" still="" false.="" base_runtime_spec="" file="" json="" base="" created="" from.="" `ctr=""> /etc/containerd/cri-base.json` to output initial spec file.
+      # Spec files are loaded at launch, so containerd daemon must be restarted on any changes to refresh default specs.
+      # Still running containers and restarted containers will still be using the original spec from which that container was created.
+      base_runtime_spec = &quot;&quot;
+
+      # conf_dir is the directory in which the admin places a CNI conf.
+      # this allows a different CNI conf for the network stack when a different runtime is being used.
+      cni_conf_dir = &quot;/etc/cni/net.d&quot;
+
+      # cni_max_conf_num specifies the maximum number of CNI plugin config files to
+      # load from the CNI config directory. By default, only 1 CNI plugin config
+      # file will be loaded. If you want to load multiple CNI plugin config files
+      # set max_conf_num to the number desired. Setting cni_max_config_num to 0 is
+      # interpreted as no limit is desired and will result in all CNI plugin
+      # config files being loaded from the CNI config directory.
+      cni_max_conf_num = 1
+
+      # snapshotter overrides the global default snapshotter to a runtime specific value.
+      # Please be aware that overriding the default snapshotter on a runtime basis is currently an experimental feature.
+      # See https://github.com/containerd/containerd/issues/6657 for context.
+      snapshotter = &quot;&quot;
+
+      # &apos;plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd.runtimes.runc.options&apos; is options specific to
+      # &quot;io.containerd.runc.v1&quot; and &quot;io.containerd.runc.v2&quot;. Its corresponding options type is:
+      #   https://github.com/containerd/containerd/blob/v1.3.2/runtime/v2/runc/options/oci.pb.go#L26 .
+      [plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd.runtimes.runc.options]
+        # NoPivotRoot disables pivot root when creating a container.
+        NoPivotRoot = false
+
+        # NoNewKeyring disables new keyring for the container.
+        NoNewKeyring = false
+
+        # ShimCgroup places the shim in a cgroup.
+        ShimCgroup = &quot;&quot;
+
+        # IoUid sets the I/O&apos;s pipes uid.
+        IoUid = 0
+
+        # IoGid sets the I/O&apos;s pipes gid.
+        IoGid = 0
+
+        # BinaryName is the binary name of the runc binary.
+        BinaryName = &quot;&quot;
+
+        # Root is the runc root directory.
+        Root = &quot;&quot;
+
+        # SystemdCgroup enables systemd cgroups.
+        SystemdCgroup = false
+
+        # CriuImagePath is the criu image path
+        CriuImagePath = &quot;&quot;
+
+        # CriuWorkPath is the criu work path.
+        CriuWorkPath = &quot;&quot;
+
+  # &apos;plugins.&quot;io.containerd.grpc.v1.cri&quot;.cni&apos; contains config related to cni
+  [plugins.&quot;io.containerd.grpc.v1.cri&quot;.cni]
+    # bin_dir is the directory in which the binaries for the plugin is kept.
+    bin_dir = &quot;/opt/cni/bin&quot;
+
+    # conf_dir is the directory in which the admin places a CNI conf.
+    conf_dir = &quot;/etc/cni/net.d&quot;
+
+    # max_conf_num specifies the maximum number of CNI plugin config files to
+    # load from the CNI config directory. By default, only 1 CNI plugin config
+    # file will be loaded. If you want to load multiple CNI plugin config files
+    # set max_conf_num to the number desired. Setting max_config_num to 0 is
+    # interpreted as no limit is desired and will result in all CNI plugin
+    # config files being loaded from the CNI config directory.
+    max_conf_num = 1
+
+    # conf_template is the file path of golang template used to generate
+    # cni config.
+    # If this is set, containerd will generate a cni config file from the
+    # template. Otherwise, containerd will wait for the system admin or cni
+    # daemon to drop the config file into the conf_dir.
+    # See the &quot;CNI Config Template&quot; section for more details.
+    conf_template = &quot;&quot;
+    # ip_pref specifies the strategy to use when selecting the main IP address for a pod.
+    # options include:
+    # * ipv4, &quot;&quot; - (default) select the first ipv4 address
+    # * ipv6 - select the first ipv6 address
+    # * cni - use the order returned by the CNI plugins, returning the first IP address from the results
+    ip_pref = &quot;ipv4&quot;
+
+  # &apos;plugins.&quot;io.containerd.grpc.v1.cri&quot;.image_decryption&apos; contains config related
+  # to handling decryption of encrypted container images.
+  [plugins.&quot;io.containerd.grpc.v1.cri&quot;.image_decryption]
+    # key_model defines the name of the key model used for how the cri obtains
+    # keys used for decryption of encrypted container images.
+    # The [decryption document](https://github.com/containerd/containerd/blob/main/docs/cri/decryption.md)
+    # contains additional information about the key models available.
+    #
+    # Set of available string options: {&quot;&quot;, &quot;node&quot;}
+    # Omission of this field defaults to the empty string &quot;&quot;, which indicates no key model,
+    # disabling image decryption.
+    #
+    # In order to use the decryption feature, additional configurations must be made.
+    # The [decryption document](https://github.com/containerd/containerd/blob/main/docs/cri/decryption.md)
+    # provides information of how to set up stream processors and the containerd imgcrypt decoder
+    # with the appropriate key models.
+    #
+    # Additional information:
+    # * Stream processors: https://github.com/containerd/containerd/blob/main/docs/stream_processors.md
+    # * Containerd imgcrypt: https://github.com/containerd/imgcrypt
+    key_model = &quot;node&quot;
+
+  # &apos;plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry&apos; contains config related to
+  # the registry
+  [plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry]
+    # config_path specifies a directory to look for the registry hosts configuration.
+    #
+    # The cri plugin will look for and use config_path/host-namespace/hosts.toml
+    #   configs if present OR load certificate files as laid out in the Docker/Moby
+    #   specific layout https://docs.docker.com/engine/security/certificates/
+    #
+    # If config_path is not provided defaults are used.
+    #
+    # *** registry.configs and registry.mirrors that were a part of containerd 1.4
+    # are now DEPRECATED and will only be used if the config_path is not specified.
+    config_path = &quot;&quot;
+```
+
+</=1.18></p>
+</details>
+
+<h2 id="registry-configuration">Registry Configuration</h2>
+<p>Here is a simple example for a default registry hosts configuration. Set
+<code>config_path = &quot;/etc/containerd/certs.d&quot;</code> in your config.toml for containerd.
+Make a directory tree at the config path that includes <code>docker.io</code> as a directory
+representing the host namespace to be configured. Then add a <code>hosts.toml</code> file
+in the <code>docker.io</code> to configure the host namespace. It should look like this:</p>
+<pre class="language-"><code>$ tree /etc/containerd/certs.d
+/etc/containerd/certs.d
+&#x2514;&#x2500;&#x2500; docker.io
+    &#x2514;&#x2500;&#x2500; hosts.toml
+
+$ cat /etc/containerd/certs.d/docker.io/hosts.toml
+server = &quot;https://docker.io&quot;
+
+[host.&quot;https://registry-1.docker.io&quot;]
+  capabilities = [&quot;pull&quot;, &quot;resolve&quot;]
+</code></pre><p>To specify a custom certificate:</p>
+<pre class="language-"><code>$ cat /etc/containerd/certs.d/192.168.12.34:5000/hosts.toml
+server = &quot;https://192.168.12.34:5000&quot;
+
+[host.&quot;https://192.168.12.34:5000&quot;]
+  ca = &quot;/path/to/ca.crt&quot;
+</code></pre><p>See <a href="https://github.com/containerd/containerd/blob/main/docs/hosts.md" target="_blank"><code>docs/hosts.md</code></a> for the further information.</p>
+<h2 id="untrusted-workload">Untrusted Workload</h2>
+<p>The recommended way to run untrusted workload is to use
+<a href="https://kubernetes.io/docs/concepts/containers/runtime-class/" target="_blank"><code>RuntimeClass</code></a> api
+introduced in Kubernetes 1.12 to select RuntimeHandlers configured to run
+untrusted workload in <code>plugins.&quot;io.containerd.grpc.v1.cri&quot;.containerd.runtimes</code>.</p>
+<p>However, if you are using the legacy <code>io.kubernetes.cri.untrusted-workload</code>pod annotation
+to request a pod be run using a runtime for untrusted workloads, the RuntimeHandler
+<code>plugins.&quot;io.containerd.grpc.v1.cri&quot;cri.containerd.runtimes.untrusted</code> must be defined first.
+When the annotation <code>io.kubernetes.cri.untrusted-workload</code> is set to <code>true</code> the <code>untrusted</code>
+runtime will be used. For example, see
+<a href="https://github.com/kata-containers/kata-containers/blob/main/docs/how-to/containerd-kata.md#kata-containers-as-the-runtime-for-untrusted-workload" target="_blank">Create an untrusted pod using Kata Containers</a>.</p>
+<h2 id="cni-config-template">CNI Config Template</h2>
+<p>Ideally the cni config should be placed by system admin or cni daemon like calico, weaveworks etc.
+However, this is useful for the cases when there is no cni daemonset to place cni config.</p>
+<p>The cni config template uses the <a href="https://golang.org/pkg/text/template/" target="_blank">golang
+template</a> format. Currently supported
+values are:</p>
+<ul>
+<li><code>.PodCIDR</code> is a string of the first CIDR assigned to the node.</li>
+<li><code>.PodCIDRRanges</code> is a string array of all CIDRs assigned to the node. It is
+usually used for
+<a href="https://github.com/kubernetes/enhancements/tree/master/keps/sig-network/563-dual-stack" target="_blank">dualstack</a> support.</li>
+<li><code>.Routes</code> is a string array of all routes needed. It is usually used for
+dualstack support or single stack but IPv4 or IPv6 is decided at runtime.</li>
+</ul>
+<p>The <a href="https://golang.org/pkg/text/template/#hdr-Actions" target="_blank">golang template actions</a>
+can be used to render the cni config. For example, you can use the following
+template to add CIDRs and routes for dualstack in the CNI config:</p>
+<pre class="language-"><code>&quot;ipam&quot;: {
+  &quot;type&quot;: &quot;host-local&quot;,
+  &quot;ranges&quot;: [{{range $i, $range := .PodCIDRRanges}}{{if $i}}, {{end}}[{&quot;subnet&quot;: &quot;{{$range}}&quot;}]{{end}}],
+  &quot;routes&quot;: [{{range $i, $route := .Routes}}{{if $i}}, {{end}}{&quot;dst&quot;: &quot;{{$route}}&quot;}{{end}}]
+}
+</code></pre><h2 id="deprecation">Deprecation</h2>
+<p>The config options of the CRI plugin follow the <a href="https://kubernetes.io/docs/reference/using-api/deprecation-policy/#deprecating-a-flag-or-cli" target="_blank">Kubernetes deprecation
+policy of &quot;admin-facing CLI components&quot;</a>.</p>
+<p>In summary, when a config option is announced to be deprecated:</p>
+<ul>
+<li>It is kept functional for 6 months or 1 release (whichever is longer);</li>
+<li>A warning is emitted when it is used.</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="architecture.html" class="navigation navigation-prev " aria-label="Previous page: Architecture">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="crictl.html" class="navigation navigation-next " aria-label="Next page: Crictl">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Config","level":"1.2.2","depth":2,"next":{"title":"Crictl","level":"1.2.3","depth":2,"path":"cri/crictl.md","ref":"cri/crictl.md","articles":[]},"previous":{"title":"Architecture","level":"1.2.1","depth":2,"path":"cri/architecture.md","ref":"cri/architecture.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"cri/config.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

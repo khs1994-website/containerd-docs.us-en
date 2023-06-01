@@ -1,0 +1,1152 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2017 01 27 · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2017-02-10.html" />
+    
+    
+    <link rel="prev" href="2017-01-20.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../cri/architecture.html">
+            
+                <a href="../../cri/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../cri/config.html">
+            
+                <a href="../../cri/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../cri/crictl.html">
+            
+                <a href="../../cri/crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../cri/decryption.html">
+            
+                <a href="../../cri/decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../cri/installation.html">
+            
+                <a href="../../cri/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../cri/registry.html">
+            
+                <a href="../../cri/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../cri/testing.html">
+            
+                <a href="../../cri/testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../cri/proposal.html">
+            
+                <a href="../cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../design/architecture.html">
+            
+                <a href="../design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../design/data-flow.html">
+            
+                <a href="../design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../design/lifecycle.html">
+            
+                <a href="../design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../design/mounts.html">
+            
+                <a href="../design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../design/snapshots.html">
+            
+                <a href="../design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="2017-01-13.html">
+            
+                <a href="2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="2017-01-20.html">
+            
+                <a href="2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3.3" data-path="2017-01-27.html">
+            
+                <a href="2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="2017-02-10.html">
+            
+                <a href="2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="2017-02-24.html">
+            
+                <a href="2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="2017-03-10.html">
+            
+                <a href="2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="2017-03-17.html">
+            
+                <a href="2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="2017-03-24.html">
+            
+                <a href="2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="2017-04-28.html">
+            
+                <a href="2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="2017-05-05.html">
+            
+                <a href="2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="2017-05-19.html">
+            
+                <a href="2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="2017-05-26.html">
+            
+                <a href="2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="2017-06-09.html">
+            
+                <a href="2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="2017-06-23.html">
+            
+                <a href="2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../man/containerd-config.8.html">
+            
+                <a href="../../man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../man/containerd-config.toml.5.html">
+            
+                <a href="../../man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../snapshotters/">
+            
+                <a href="../../snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../snapshotters/devmapper.html">
+            
+                <a href="../../snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../client-opts.html">
+            
+                <a href="../../client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../content-flow.html">
+            
+                <a href="../../content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../garbage-collection.html">
+            
+                <a href="../../garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../getting-started.html">
+            
+                <a href="../../getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../hosts.html">
+            
+                <a href="../../hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../managed-opt.html">
+            
+                <a href="../../managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../namespaces.html">
+            
+                <a href="../../namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../NRI.html">
+            
+                <a href="../../NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../ops.html">
+            
+                <a href="../../ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../PLUGINS.html">
+            
+                <a href="../../PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../../remote-snapshotter.html">
+            
+                <a href="../../remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../../rootless.html">
+            
+                <a href="../../rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../../RUNC.html">
+            
+                <a href="../../RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../../stream_processors.html">
+            
+                <a href="../../stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../../tracing.html">
+            
+                <a href="../../tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../../transfer.html">
+            
+                <a href="../../transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >2017 01 27</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="development-report-for-jan-27-2017">Development Report for Jan 27, 2017</h1>
+<p>This week we made a lot of progress on tools to work with local content storage
+and image distribution. These parts are critical in forming an end to end proof
+of concept, taking docker/oci images and turning them into bundles.</p>
+<p>We also have defined a new GRPC protocol for interacting with the
+container-shim, which is used for robust container management.</p>
+<h2 id="maintainers">Maintainers</h2>
+<ul>
+<li><a href="https://github.com/containerd/containerd/pull/473" target="_blank">https://github.com/containerd/containerd/pull/473</a></li>
+</ul>
+<p>Derek McGowan will be joining the containerd team as a maintainer. His
+extensive experience in graphdrivers and distribution will be invaluable to the
+containerd project.</p>
+<h2 id="shim-over-grpc">Shim over GRPC</h2>
+<ul>
+<li><a href="https://github.com/containerd/containerd/pull/462" target="_blank">https://github.com/containerd/containerd/pull/462</a></li>
+</ul>
+<pre class="language-"><code>NAME:
+   containerd-shim - 
+                    __        _                     __           __    _         
+  _________  ____  / /_____ _(_)___  ___  _________/ /     _____/ /_  (_)___ ___ 
+ / ___/ __ \/ __ \/ __/ __ `/ / __ \/ _ \/ ___/ __  /_____/ ___/ __ \/ / __ `__ \
+/ /__/ /_/ / / / / /_/ /_/ / / / / /  __/ /  / /_/ /_____(__  ) / / / / / / / / /
+\___/\____/_/ /_/\__/\__,_/_/_/ /_/\___/_/   \__,_/     /____/_/ /_/_/_/ /_/ /_/ 
+
+shim for container lifecycle and reconnection
+
+
+USAGE:
+   containerd-shim [global options] command [command options] [arguments...]
+
+VERSION:
+   1.0.0
+
+COMMANDS:
+     help, h  Shows a list of commands or help for one command
+
+GLOBAL OPTIONS:
+   --debug        enable debug output in logs
+   --help, -h     show help
+   --version, -v  print the version
+</code></pre><p>This week we completed work on porting the shim over to GRPC.  This allows us
+to have a more robust way to interface with the shim.  It also allows us to
+have one shim per container where previously we had one shim per process.  This
+drastically reduces the memory usage for exec processes.</p>
+<p>We also had a lot of code in the containerd core for syncing with the shims
+during execution.  This was because we needed ways to signal if the shim was
+running, the container was created or any errors on create and then starting
+the container&apos;s process.  Getting this right and syncing was hard and required
+a lot of code.  With the new flow it is just function calls via rpc.</p>
+<pre class="language-"><code class="lang-proto">service Shim {
+    rpc Create(CreateRequest) returns (CreateResponse);
+    rpc Start(StartRequest) returns (google.protobuf.Empty);
+    rpc Delete(DeleteRequest) returns (DeleteResponse);
+    rpc Exec(ExecRequest) returns (ExecResponse);
+    rpc Pty(PtyRequest) returns (google.protobuf.Empty);
+    rpc Events(EventsRequest) returns (stream Event);
+    rpc State(StateRequest) returns (StateResponse);
+}
+</code></pre>
+<p>With the GRPC service it allows us to decouple the shim&apos;s lifecycle from the
+containers, in the way that we get synchronous feedback if the container failed
+to create, start, or exec from shim errors.</p>
+<p>The overhead for adding GRPC to the shim is actually less than the initial
+implementation.  We already had a few pipes that allowed you to control
+resizing of the pty master and exit events, now all replaced by one unix
+socket.  Unix sockets are cheap and fast and we reduce our open fd count with
+way by not relying on multiple fifos.  </p>
+<p>We also added a subcommand to the <code>ctr</code> command for testing and interfacing
+with the shim.  You can interact with a shim directly via <code>ctr shim</code> and get
+events, start containers, start exec processes.</p>
+<h2 id="distribution-tool">Distribution Tool</h2>
+<ul>
+<li><a href="https://github.com/containerd/containerd/pull/452" target="_blank">https://github.com/containerd/containerd/pull/452</a></li>
+<li><a href="https://github.com/containerd/containerd/pull/472" target="_blank">https://github.com/containerd/containerd/pull/472</a></li>
+<li><a href="https://github.com/containerd/containerd/pull/474" target="_blank">https://github.com/containerd/containerd/pull/474</a></li>
+</ul>
+<p>Last week, @stevvooe committed the first parts of the distribution tool. The main
+component provided there was the <code>dist fetch</code> command. This has been followed
+up by several other low-level commands that interact with content resolution
+and local storage that can be used together to work with parts of images.</p>
+<p>With this change, we add the following commands to the dist tool:</p>
+<ul>
+<li><code>ingest</code>: verify and accept content into storage</li>
+<li><code>active</code>: display active ingest processes</li>
+<li><code>list</code>: list content in storage</li>
+<li><code>path</code>: provide a path to a blob by digest</li>
+<li><code>delete</code>: remove a piece of content from storage</li>
+<li><code>apply</code>: apply a layer to a directory</li>
+</ul>
+<p>When this is more solidified, we can roll these up into higher-level
+operations that can be orchestrated through the <code>dist</code> tool or via GRPC.</p>
+<p>As part of the <em>Development Report</em>, we thought it was a good idea to show
+these tools in depth. Specifically, we can show going from an image locator to
+a root filesystem with the current suite of commands.</p>
+<h3 id="fetching-image-resources">Fetching Image Resources</h3>
+<p>The first component added to the <code>dist</code> tool is the <code>fetch</code> command. It is a
+low-level command for fetching image resources, such as manifests and layers.
+It operates around the concept of <code>remotes</code>. Objects are fetched by providing a
+<code>locator</code> and an object identifier. The <code>locator</code>, roughly analogous to an
+image name or repository, is a schema-less URL. The following is an example of
+a <code>locator</code>:</p>
+<pre class="language-"><code>docker.io/library/redis
+</code></pre><p>When we say the <code>locator</code> is a &quot;schema-less URL&quot;, we mean that it starts with
+hostname and has a path, representing some image repository. While the hostname
+may represent an actual location, we can pass it through arbitrary resolution
+systems to get the actual location. In that sense, it acts like a namespace.</p>
+<p>In practice, the <code>locator</code> can be used to resolve a <code>remote</code>. Object
+identifiers are then passed to this remote, along with hints, which are then
+mapped to the specific protocol and retrieved.  By dispatching on this common
+identifier, we should be able to support almost any protocol and discovery
+mechanism imaginable.</p>
+<p>The actual <code>fetch</code> command currently provides anonymous access to Docker Hub
+images, keyed by the <code>locator</code> namespace <code>docker.io</code>. With a <code>locator</code>,
+<code>identifier</code> and <code>hint</code>, the correct protocol and endpoints are resolved and the
+resource is printed to stdout. As an example, one can fetch the manifest for
+<code>redis</code> with the following command:</p>
+<pre class="language-"><code>$ ./dist fetch docker.io/library/redis latest mediatype:application/vnd.docker.distribution.manifest.v2+json
+</code></pre><p>Note that we have provided a mediatype &quot;hint&quot;, nudging the fetch implementation
+to grab the correct endpoint. We can hash the output of that to fetch the same
+content by digest:</p>
+<pre class="language-"><code>$ ./dist fetch docker.io/library/redis sha256:$(./dist fetch docker.io/library/redis latest mediatype:application/vnd.docker.distribution.manifest.v2+json | shasum -a256)
+</code></pre><p>The hint now elided on the outer command, since we have affixed the content to
+a particular hash. The above shows us effectively fetches by tag, then by hash
+to demonstrate the equivalence when interacting with a remote.</p>
+<p>This is just the beginning. We should be able to centralize configuration
+around fetch to implement a number of distribution methodologies that have been
+challenging or impossible up to this point.</p>
+<p>Keep reading to see how this is used with the other commands to fetch complete
+images.</p>
+<h3 id="fetching-all-the-layers-of-an-image">Fetching all the layers of an image</h3>
+<p>If you are not yet entertained, let&apos;s bring <code>jq</code> and <code>xargs</code> into the mix for
+maximum fun. Our first task will be to collect the layers into a local content
+store with the <code>ingest</code> command.</p>
+<p>The following incantation fetches the manifest and downloads each layer:</p>
+<pre class="language-"><code>$ ./dist fetch docker.io/library/redis latest mediatype:application/vnd.docker.distribution.manifest.v2+json | \
+    jq -r &apos;.layers[] | &quot;./dist fetch docker.io/library/redis &quot;+.digest + &quot;| ./dist ingest --expected-digest &quot;+.digest+&quot; --expected-size &quot;+(.size | tostring) +&quot; docker.io/library/redis@&quot;+.digest&apos; | xargs -I{} -P10 -n1 sh -c &quot;{}&quot;
+</code></pre><p>The above fetches a manifest, pipes it to jq, which assembles a shell pipeline
+to ingest each layer into the content store. Because the transactions are keyed
+by their digest, concurrent downloads and downloads of repeated content are
+ignored. Each process is then executed parallel using xargs.  If you run the
+above command twice, it will not download the layers because those blobs are
+already present in the content store.</p>
+<p>What about status? Let&apos;s first remove our content so we can monitor a download.
+<code>dist list</code> can be combined with xargs and <code>dist delete</code> to remove that
+content:</p>
+<pre class="language-"><code>$ ./dist list -q | xargs ./dist delete
+</code></pre><p>In a separate shell session, could monitor the active downloads with the following:</p>
+<pre class="language-"><code>$ watch -n0.2 ./dist active
+</code></pre><p>For now, the content is downloaded into <code>.content</code> in the current working
+directory. To watch the contents of this directory, you can use the following:</p>
+<pre class="language-"><code>$ watch -n0.2 tree .content
+</code></pre><p>Now, run the fetch pipeline from above. You&apos;ll see the active downloads, keyed
+by locator and object, as well as the ingest transactions resulting blobs
+becoming available in the content store. This will help to understand what is
+going on internally.</p>
+<h3 id="getting-to-a-rootfs">Getting to a rootfs</h3>
+<p>While we haven&apos;t yet integrated full snapshot support for layer application, we
+can use the <code>dist apply</code> command to start building out rootfs for inspection
+and testing. We&apos;ll build up a similar pipeline to unpack the layers and get an
+actual image rootfs.</p>
+<p>To get access to the layers, you can use the path command: </p>
+<pre class="language-"><code>$./dist path sha256:010c454d55e53059beaba4044116ea4636f8dd8181e975d893931c7e7204fffa
+sha256:010c454d55e53059beaba4044116ea4636f8dd8181e975d893931c7e7204fffa /home/sjd/go/src/github.com/containerd/containerd/.content/blobs/sha256/010c454d55e53059beaba4044116ea4636f8dd8181e975d893931c7e7204fffa
+</code></pre><p>This returns the a direct path to the blob to facilitate fast access. We can
+incorporate this into the <code>apply</code> command to get to a rootfs for <code>redis</code>:</p>
+<pre class="language-"><code>$ mkdir redis-rootfs
+$ ./dist fetch docker.io/library/redis latest mediatype:application/vnd.docker.distribution.manifest.v2+json | \
+    jq -r &apos;.layers[] | &quot;sudo ./dist apply ./redis-rootfs &lt; $(./dist path -q &quot;+.digest+&quot;)&quot;&apos; | xargs -I{} -n1 sh -c &quot;{}&quot;
+</code></pre><p>The above fetches the manifest, then passes each layer into the <code>dist apply</code>
+command, resulting in the full redis container root filesystem. We do not do
+this in parallel, since each layer must be applied sequentially. Also, note
+that we have to run <code>apply</code> with <code>sudo</code>, since the layers typically have
+resources with root ownership.</p>
+<p>Alternatively, you can just read the manifest from the content store, rather
+than fetching it. We use fetch above to avoid having to lookup the manifest
+digest for our demo.</p>
+<p>Note that this is mostly a POC. This tool has a long way to go. Things like
+failed downloads and abandoned download cleanup aren&apos;t quite handled. We&apos;ll
+probably make adjustments around how content store transactions are handled to
+address this. We still need to incorporate snapshotting, as well as the ability
+to calculate the <code>ChainID</code> under subsequent unpacking. Once we have some tools
+to play around with snapshotting, we&apos;ll be able to incorporate our
+<code>rootfs.ApplyLayer</code> algorithm that will get us a lot closer to a production
+worthy system.</p>
+<p>From here, we&apos;ll build out full image pull and create tooling to get runtime
+bundles from the fetched content.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2017-01-20.html" class="navigation navigation-prev " aria-label="Previous page: 2017 01 20">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2017-02-10.html" class="navigation navigation-next " aria-label="Next page: 2017 02 10">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2017 01 27","level":"1.3.3.3","depth":3,"next":{"title":"2017 02 10","level":"1.3.3.4","depth":3,"path":"historical/reports/2017-02-10.md","ref":"historical/reports/2017-02-10.md","articles":[]},"previous":{"title":"2017 01 20","level":"1.3.3.2","depth":3,"path":"historical/reports/2017-01-20.md","ref":"historical/reports/2017-01-20.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"historical/reports/2017-01-27.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

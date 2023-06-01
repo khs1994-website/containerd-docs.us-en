@@ -1,0 +1,1076 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>NRI · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ops.html" />
+    
+    
+    <link rel="prev" href="namespaces.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="cri/architecture.html">
+            
+                <a href="cri/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="cri/config.html">
+            
+                <a href="cri/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="cri/crictl.html">
+            
+                <a href="cri/crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="cri/decryption.html">
+            
+                <a href="cri/decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="cri/installation.html">
+            
+                <a href="cri/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="cri/registry.html">
+            
+                <a href="cri/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="cri/testing.html">
+            
+                <a href="cri/testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="historical/cri/proposal.html">
+            
+                <a href="historical/cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="historical/design/architecture.html">
+            
+                <a href="historical/design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="historical/design/data-flow.html">
+            
+                <a href="historical/design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="historical/design/lifecycle.html">
+            
+                <a href="historical/design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="historical/design/mounts.html">
+            
+                <a href="historical/design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="historical/design/snapshots.html">
+            
+                <a href="historical/design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="historical/reports/2017-01-13.html">
+            
+                <a href="historical/reports/2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="historical/reports/2017-01-20.html">
+            
+                <a href="historical/reports/2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="historical/reports/2017-01-27.html">
+            
+                <a href="historical/reports/2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="historical/reports/2017-02-10.html">
+            
+                <a href="historical/reports/2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="historical/reports/2017-02-24.html">
+            
+                <a href="historical/reports/2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="historical/reports/2017-03-10.html">
+            
+                <a href="historical/reports/2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="historical/reports/2017-03-17.html">
+            
+                <a href="historical/reports/2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="historical/reports/2017-03-24.html">
+            
+                <a href="historical/reports/2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="historical/reports/2017-04-28.html">
+            
+                <a href="historical/reports/2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="historical/reports/2017-05-05.html">
+            
+                <a href="historical/reports/2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="historical/reports/2017-05-19.html">
+            
+                <a href="historical/reports/2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="historical/reports/2017-05-26.html">
+            
+                <a href="historical/reports/2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="historical/reports/2017-06-09.html">
+            
+                <a href="historical/reports/2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="historical/reports/2017-06-23.html">
+            
+                <a href="historical/reports/2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="man/containerd-config.8.html">
+            
+                <a href="man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="man/containerd-config.toml.5.html">
+            
+                <a href="man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="snapshotters/">
+            
+                <a href="snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="snapshotters/devmapper.html">
+            
+                <a href="snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="client-opts.html">
+            
+                <a href="client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="content-flow.html">
+            
+                <a href="content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="garbage-collection.html">
+            
+                <a href="garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="hosts.html">
+            
+                <a href="hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="managed-opt.html">
+            
+                <a href="managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="namespaces.html">
+            
+                <a href="namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="NRI.html">
+            
+                <a href="NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ops.html">
+            
+                <a href="ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="PLUGINS.html">
+            
+                <a href="PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="remote-snapshotter.html">
+            
+                <a href="remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="rootless.html">
+            
+                <a href="rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="RUNC.html">
+            
+                <a href="RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="stream_processors.html">
+            
+                <a href="stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="tracing.html">
+            
+                <a href="tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="transfer.html">
+            
+                <a href="transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >NRI</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="nri-support-in-containerd">NRI Support In Containerd</h1>
+<h2 id="node-resource-interface">Node Resource Interface</h2>
+<p>NRI, the Node Resource Interface, is a common framework for plugging
+extensions into OCI-compatible container runtimes. It provides basic
+mechanisms for plugins to track the state of containers and to make
+limited changes to their configuration.</p>
+<p>NRI itself is agnostic to the internal implementation details of any
+container runtime. It provides an adaptation library which runtimes
+use to integrate to and interact with NRI and plugins. In principle
+any NRI plugin should be able to work with NRI-enabled runtimes.</p>
+<p>For a detailed description of NRI and its capabilities please take a
+look at the <a href="https://github.com/containerd/nri" target="_blank">NRI repository</a>.</p>
+<h2 id="containerd-nri-integration">Containerd NRI Integration</h2>
+<details>
+<summary>see the containerd/NRI integration diagram</summary>
+<img src="containerd-nri-integration.png" title="Containerd/NRI Integration">
+</details>
+
+<p>NRI support in containerd is split into two parts both logically and
+physically. These parts are a common plugin (/nri/*) to integrate to
+NRI and CRI-specific bits (/pkg/cri/server/nri-api) which convert
+data between the runtime-agnostic NRI representation and the internal
+representation of the CRI plugin.</p>
+<h3 id="containerd-nri-plugin">Containerd NRI Plugin</h3>
+<p>The containerd common NRI plugin implements the core logic of integrating
+to and interacting with NRI. However, it does this without any knowledge
+about the internal representation of containers or pods within containerd.
+It defines an additional interface, Domain, which is used whenever the
+internal representation of a container or pod needs to be translated to
+the runtime agnostic NRI one, or when a configuration change requested by
+an external NRI plugin needs to be applied to a container within containerd. <code>Domain</code> can be considered as a short-cut name for Domain-Namespace as Domain implements the functions the generic NRI interface needs to deal with pods and containers from a particular containerd namespace. As a reminder, containerd namespaces isolate state between clients of containerd. E.g. &quot;k8s.io&quot; for the kubernetes CRI clients, &quot;moby&quot; for docker clients, ... and &quot;containerd&quot; as the default for containerd/ctr.</p>
+<h3 id="nri-support-for-cri-containers">NRI Support for CRI Containers</h3>
+<p>The containerd CRI plugin registers itself as an above mentioned NRI
+Domain for the &quot;k8s.io&quot; namespace, to allow container configuration to be customized by external
+NRI plugins. Currently this Domain interface is only implemented for
+the original CRI <code>pkg/cri/server</code> implementation. Implementing it for
+the more recent experimental <code>pkg/cri/sbserver</code> implementation is on
+the TODO list.</p>
+<h3 id="nri-support-for-other-container-domains">NRI Support for Other Container &apos;Domains&apos;</h3>
+<p>The main reason for this split of functionality is to allow
+ NRI plugins for other types of sandboxes and for other container clients other than just for CRI containers in the &quot;k8s.io&quot; namespace.</p>
+<h2 id="enabling-nri-support-in-containerd">Enabling NRI Support in Containerd</h2>
+<p>Enabling and disabling NRI support in containerd happens by enabling or
+disabling the common containerd NRI plugin. The plugin, and consequently
+NRI functionality, is disabled by default. It can be enabled by editing
+the <code>[plugins.&quot;io.containerd.nri.v1.nri&quot;]</code> section in the containerd
+configuration file, which by default is <code>/etc/containerd/config.toml</code>,
+and changing <code>disable = true</code> to <code>disable = false</code>. Once enabled, the
+NRI section should look something like this:</p>
+<pre class="language-"><code class="lang-toml">  <span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.nri.v1.nri&quot;</span><span class="token punctuation">]</span>
+    <span class="token comment"># Enable NRI support in containerd.</span>
+    <span class="token key property">disable</span> <span class="token punctuation">=</span> <span class="token boolean">false</span>
+    <span class="token comment"># Allow connections from externally launched NRI plugins.</span>
+    <span class="token key property">disable_connections</span> <span class="token punctuation">=</span> <span class="token boolean">false</span>
+    <span class="token comment"># plugin_config_path is the directory to search for plugin-specific configuration.</span>
+    <span class="token key property">plugin_config_path</span> <span class="token punctuation">=</span> <span class="token string">&quot;/etc/nri/conf.d&quot;</span>
+    <span class="token comment"># plugin_path is the directory to search for plugins to launch on startup.</span>
+    <span class="token key property">plugin_path</span> <span class="token punctuation">=</span> <span class="token string">&quot;/opt/nri/plugins&quot;</span>
+    <span class="token comment"># plugin_registration_timeout is the timeout for a plugin to register after connection.</span>
+    <span class="token key property">plugin_registration_timeout</span> <span class="token punctuation">=</span> <span class="token string">&quot;5s&quot;</span>
+    <span class="token comment"># plugin_requst_timeout is the timeout for a plugin to handle an event/request.</span>
+    <span class="token key property">plugin_request_timeout</span> <span class="token punctuation">=</span> <span class="token string">&quot;2s&quot;</span>
+    <span class="token comment"># socket_path is the path of the NRI socket to create for plugins to connect to.</span>
+    <span class="token key property">socket_path</span> <span class="token punctuation">=</span> <span class="token string">&quot;/var/run/nri/nri.sock&quot;</span>
+</code></pre>
+<p>There are two ways how an NRI plugin can be started. Plugins can be
+pre-registered in which case they are automatically started when the NRI
+adaptation is instantiated (or in our case when containerd is started).
+Plugins can also be started by external means, for instance by systemd.</p>
+<p>Pre-registering a plugin happens by placing a symbolic link to the plugin
+executable into a well-known NRI-specific directory, <code>/opt/nri/plugins</code>
+by default. A pre-registered plugin is started with a socket pre-connected
+to NRI. Externally launched plugins connect to a well-known NRI-specific
+socket, <code>/var/run/nri/nri.sock</code> by default, to register themselves. The only
+difference between pre-registered and externally launched plugins is how
+they get started and connected to NRI. Once a connection is established
+all plugins are identical.</p>
+<p>NRI can be configured to disable connections from externally launched
+plugins, in which case the well-known socket is not created at all. The
+configuration fragment shown above ensures that external connections are
+enabled regardless of the built-in NRI defaults. This is convenient for
+testing as it allows one to connect, disconnect and reconnect plugins at
+any time.</p>
+<p>Note that you can&apos;t run two NRI-enabled runtimes on a single node with the
+same default socket configuration. You need to either disable NRI or change
+the NRI socket path in one of the runtimes.</p>
+<h2 id="testing-nri-support-in-containerd">Testing NRI Support in Containerd</h2>
+<p>You can verify that NRI integration is properly enabled and functional by
+configuring containerd and NRI as described above, taking the NRI
+logger plugin from the <a href="https://github.com/containerd/nri/tree/main/plugins/logger" target="_blank">NRI repository</a>
+on github, compiling it and starting it up.</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">git</span> clone https://github.com/containerd/nri
+<span class="token builtin class-name">cd</span> nri
+<span class="token function">git</span> checkout pr/proto/draft
+<span class="token function">make</span>
+./build/bin/logger -idx 00
+</code></pre>
+<p>You should see the logger plugin receiving receiving a list of existing pods
+and containers. If you then create or remove further pods and containers
+using crictl or kubectl you should see detailed logs of the corresponding NRI
+events printed by the logger.</p>
+<h2 id="nri-compatibility-with-v010-plugins">NRI Compatibility With v0.1.0 Plugins</h2>
+<p>You can enable backward compatibility with NRI v0.1.0 plugins using the
+<a href="https://github.com/containerd/nri/tree/main/plugins/v010-adapter" target="_blank">v010-adapter plugin</a>.</p>
+<pre class="language-"><code class="lang-bash"><span class="token function">git</span> clone https://github.com/containerd/nri
+<span class="token builtin class-name">cd</span> nri
+<span class="token function">make</span>
+<span class="token function">sudo</span> <span class="token function">cp</span> build/bin/v010-adapter /usr/local/bin
+<span class="token function">sudo</span> <span class="token function">mkdir</span> -p /opt/nri/plugins
+<span class="token function">sudo</span> <span class="token function">ln</span> -s /usr/local/bin/v010-adapter /opt/nri/plugins/00-v010-adapter
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="namespaces.html" class="navigation navigation-prev " aria-label="Previous page: Namespaces">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ops.html" class="navigation navigation-next " aria-label="Next page: Ops">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"NRI","level":"1.13","depth":1,"next":{"title":"Ops","level":"1.14","depth":1,"path":"ops.md","ref":"ops.md","articles":[]},"previous":{"title":"Namespaces","level":"1.12","depth":1,"path":"namespaces.md","ref":"namespaces.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"NRI.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

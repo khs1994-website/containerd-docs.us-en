@@ -1,0 +1,1315 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Content Flow · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="garbage-collection.html" />
+    
+    
+    <link rel="prev" href="client-opts.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="cri/architecture.html">
+            
+                <a href="cri/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="cri/config.html">
+            
+                <a href="cri/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="cri/crictl.html">
+            
+                <a href="cri/crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="cri/decryption.html">
+            
+                <a href="cri/decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="cri/installation.html">
+            
+                <a href="cri/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="cri/registry.html">
+            
+                <a href="cri/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="cri/testing.html">
+            
+                <a href="cri/testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="historical/cri/proposal.html">
+            
+                <a href="historical/cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="historical/design/architecture.html">
+            
+                <a href="historical/design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="historical/design/data-flow.html">
+            
+                <a href="historical/design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="historical/design/lifecycle.html">
+            
+                <a href="historical/design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="historical/design/mounts.html">
+            
+                <a href="historical/design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="historical/design/snapshots.html">
+            
+                <a href="historical/design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="historical/reports/2017-01-13.html">
+            
+                <a href="historical/reports/2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="historical/reports/2017-01-20.html">
+            
+                <a href="historical/reports/2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="historical/reports/2017-01-27.html">
+            
+                <a href="historical/reports/2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="historical/reports/2017-02-10.html">
+            
+                <a href="historical/reports/2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="historical/reports/2017-02-24.html">
+            
+                <a href="historical/reports/2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="historical/reports/2017-03-10.html">
+            
+                <a href="historical/reports/2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="historical/reports/2017-03-17.html">
+            
+                <a href="historical/reports/2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="historical/reports/2017-03-24.html">
+            
+                <a href="historical/reports/2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="historical/reports/2017-04-28.html">
+            
+                <a href="historical/reports/2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="historical/reports/2017-05-05.html">
+            
+                <a href="historical/reports/2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="historical/reports/2017-05-19.html">
+            
+                <a href="historical/reports/2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="historical/reports/2017-05-26.html">
+            
+                <a href="historical/reports/2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="historical/reports/2017-06-09.html">
+            
+                <a href="historical/reports/2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="historical/reports/2017-06-23.html">
+            
+                <a href="historical/reports/2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="man/containerd-config.8.html">
+            
+                <a href="man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="man/containerd-config.toml.5.html">
+            
+                <a href="man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="snapshotters/">
+            
+                <a href="snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="snapshotters/devmapper.html">
+            
+                <a href="snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="client-opts.html">
+            
+                <a href="client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="content-flow.html">
+            
+                <a href="content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="garbage-collection.html">
+            
+                <a href="garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="hosts.html">
+            
+                <a href="hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="managed-opt.html">
+            
+                <a href="managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="namespaces.html">
+            
+                <a href="namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="NRI.html">
+            
+                <a href="NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ops.html">
+            
+                <a href="ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="PLUGINS.html">
+            
+                <a href="PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="remote-snapshotter.html">
+            
+                <a href="remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="rootless.html">
+            
+                <a href="rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="RUNC.html">
+            
+                <a href="RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="stream_processors.html">
+            
+                <a href="stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="tracing.html">
+            
+                <a href="tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="transfer.html">
+            
+                <a href="transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Content Flow</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="content-flow">Content Flow</h1>
+<p>A major goal of containerd is to create a system wherein content can be used for executing containers.
+In order to execute on that flow, containerd requires content and to manage it.</p>
+<p>This document describes how content flows into containerd, how it is managed, and where it exists
+at each stage in the process. We use an example of going from a known image
+<a href="https://hub.docker.com/layers/library/redis/5.0.9/images/sha256-9bb13890319dc01e5f8a4d3d0c4c72685654d682d568350fd38a02b1d70aee6b" target="_blank">docker.io/library/redis:5.0.9</a> to explore the
+flow of content.</p>
+<h2 id="content-areas">Content Areas</h2>
+<p>Content exists in several areas in the containerd lifecycle:</p>
+<ul>
+<li>OCI registry, for example <a href="https://hub.docker.com" target="_blank">hub.docker.com</a> or <a href="https://quay.io" target="_blank">quay.io</a></li>
+<li>containerd content store, under containerd&apos;s local storage space, for example, on a standard Linux installation at <code>/var/lib/containerd/io.containerd.content.v1.content</code></li>
+<li>snapshots, under containerd&apos;s local storage space, for example, on a standard Linux installation at <code>/var/lib/containerd/io.containerd.snapshotter.v1.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>type</span><span class="token punctuation">&gt;</span></span></code>. For an overlayfs snapshotter, that would be at <code>/var/lib/containerd/io.containerd.snapshotter.v1.overlayfs</code></li>
+</ul>
+<p>In order to create a container, the following must occur:</p>
+<ol>
+<li>The image and all its content must be loaded into the content store. This normally happens via download from the OCI registry, but you can load content in directly as well.</li>
+<li>Committed snapshots must be created from each layer of content for the image.</li>
+<li>An active snapshot must be created on top of the final layer of content for the image.</li>
+</ol>
+<p>A container now can be created, with its root filesystem as the active snapshot.</p>
+<p>The rest of this document looks at the content in each area in detail, and how they relate to one another.</p>
+<h3 id="image-format">Image Format</h3>
+<p>Images in a registry normally are stored in the following format. An &quot;image&quot; is comprised of a JSON document
+known as a descriptor. A descriptor always contains an element, <code>mediaType</code>, which tells us which type it is. It is one of two options:</p>
+<ul>
+<li>a &quot;manifest&quot;, which lists the hashes of the config file for running the image as a container, and the binary data layers that create the filesystem for the image</li>
+<li>an &quot;index&quot;, which lists the hashes of manifests, one per platform, where a platform is a combination of architecture (e.g. amd64 or arm64) and operating system (e.g. linux)</li>
+</ul>
+<p>The purpose of an index is to allow us to pick which manifest matches our target platform.</p>
+<p>To convert an image reference, such as <code>redis:5.0.9</code>, from a registry to actual on-disk storage, we:</p>
+<ol>
+<li>Retrieve the descriptor (JSON document) for the image</li>
+<li>Determine from the <code>mediaType</code> if the descriptor is a manifest or an index:<ul>
+<li>If the descriptor is an index, find in it the platform (architecture+os) that represents the platform on which we want to run the container, use that hash to retrieve the manifest</li>
+<li>If the descriptor already is a manifest, continue</li>
+</ul>
+</li>
+<li>For each element in the manifest - the config and one or more layers - use the hash listed to retrieve the components and save them</li>
+</ol>
+<p>We use our example image, <code>redis:5.0.9</code>, to clarify the process.</p>
+<p>When we first resolve <code>redis:5.0.9</code>, we get the following JSON document:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;manifests&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;digest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sha256:9bb13890319dc01e5f8a4d3d0c4c72685654d682d568350fd38a02b1d70aee6b&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.distribution.manifest.v2+json&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;platform&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;architecture&quot;</span><span class="token operator">:</span> <span class="token string">&quot;amd64&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;os&quot;</span><span class="token operator">:</span> <span class="token string">&quot;linux&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">1572</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;digest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sha256:aeb53f8db8c94d2cd63ca860d635af4307967aa11a2fdead98ae0ab3a329f470&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.distribution.manifest.v2+json&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;platform&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;architecture&quot;</span><span class="token operator">:</span> <span class="token string">&quot;arm&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;os&quot;</span><span class="token operator">:</span> <span class="token string">&quot;linux&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;variant&quot;</span><span class="token operator">:</span> <span class="token string">&quot;v5&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">1573</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;digest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sha256:17dc42e40d4af0a9e84c738313109f3a95e598081beef6c18a05abb57337aa5d&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.distribution.manifest.v2+json&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;platform&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;architecture&quot;</span><span class="token operator">:</span> <span class="token string">&quot;arm&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;os&quot;</span><span class="token operator">:</span> <span class="token string">&quot;linux&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;variant&quot;</span><span class="token operator">:</span> <span class="token string">&quot;v7&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">1573</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;digest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sha256:613f4797d2b6653634291a990f3e32378c7cfe3cdd439567b26ca340b8946013&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.distribution.manifest.v2+json&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;platform&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;architecture&quot;</span><span class="token operator">:</span> <span class="token string">&quot;arm64&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;os&quot;</span><span class="token operator">:</span> <span class="token string">&quot;linux&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;variant&quot;</span><span class="token operator">:</span> <span class="token string">&quot;v8&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">1573</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;digest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sha256:ee0e1f8d8d338c9506b0e487ce6c2c41f931d1e130acd60dc7794c3a246eb59e&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.distribution.manifest.v2+json&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;platform&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;architecture&quot;</span><span class="token operator">:</span> <span class="token string">&quot;386&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;os&quot;</span><span class="token operator">:</span> <span class="token string">&quot;linux&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">1572</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;digest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sha256:1072145f8eea186dcedb6b377b9969d121a00e65ae6c20e9cd631483178ea7ed&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.distribution.manifest.v2+json&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;platform&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;architecture&quot;</span><span class="token operator">:</span> <span class="token string">&quot;mips64le&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;os&quot;</span><span class="token operator">:</span> <span class="token string">&quot;linux&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">1572</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;digest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sha256:4b7860fcaea5b9bbd6249c10a3dc02a5b9fb339e8aef17a542d6126a6af84d96&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.distribution.manifest.v2+json&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;platform&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;architecture&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ppc64le&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;os&quot;</span><span class="token operator">:</span> <span class="token string">&quot;linux&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">1573</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;digest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sha256:d66dfc869b619cd6da5b5ae9d7b1cbab44c134b31d458de07f7d580a84b63f69&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.distribution.manifest.v2+json&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;platform&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token property">&quot;architecture&quot;</span><span class="token operator">:</span> <span class="token string">&quot;s390x&quot;</span><span class="token punctuation">,</span>
+                <span class="token property">&quot;os&quot;</span><span class="token operator">:</span> <span class="token string">&quot;linux&quot;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">1573</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.distribution.manifest.list.v2+json&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;schemaVersion&quot;</span><span class="token operator">:</span> <span class="token number">2</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The descriptor above, towards the end, shows that the <code>mediaType</code> is a &quot;manifest.list&quot;, or in OCI parlance, an index.
+It has an array field called <code>manifests</code>, each element of which lists one platform and the hash of the manifest for that platform.
+The &quot;platform&quot; is a combination of &quot;architecture&quot; and &quot;os&quot;. Since we will be running on the common
+linux on amd64, we look for an entry in <code>manifests</code> that has a <code>platform</code> entry as follows:</p>
+<pre class="language-"><code class="lang-json"><span class="token property">&quot;platform&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token property">&quot;architecture&quot;</span><span class="token operator">:</span> <span class="token string">&quot;amd64&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;os&quot;</span><span class="token operator">:</span> <span class="token string">&quot;linux&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>This is the first one in the list, and it has the hash of <code>sha256:9bb13890319dc01e5f8a4d3d0c4c72685654d682d568350fd38a02b1d70aee6b</code>.</p>
+<p>We then retrieve the item with that hash, specifically <code>docker.io/library/redis@sha256:9bb13890319dc01e5f8a4d3d0c4c72685654d682d568350fd38a02b1d70aee6b</code>
+This gives us the manifest for the image on linux/amd64:</p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;schemaVersion&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.distribution.manifest.v2+json&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;config&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.container.image.v1+json&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">7648</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;digest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sha256:987b553c835f01f46eb1859bc32f564119d5833801a27b25a0ca5c6b8b6e111a&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;layers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.image.rootfs.diff.tar.gzip&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">27092228</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;digest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sha256:bb79b6b2107fea8e8a47133a660b78e3a546998fcf0427be39ac9a0af4a97e90&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.image.rootfs.diff.tar.gzip&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">1732</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;digest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sha256:1ed3521a5dcbd05214eb7f35b952ecf018d5a6610c32ba4e315028c556f45e94&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.image.rootfs.diff.tar.gzip&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">1417672</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;digest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sha256:5999b99cee8f2875d391d64df20b6296b63f23951a7d41749f028375e887cd05&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.image.rootfs.diff.tar.gzip&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">7348264</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;digest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sha256:bfee6cb5fdad6b60ec46297f44542ee9d8ac8f01c072313a51cd7822df3b576f&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.image.rootfs.diff.tar.gzip&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">98</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;digest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sha256:fd36a1ebc6728807cbb1aa7ef24a1861343c6dc174657721c496613c7b53bd07&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;mediaType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;application/vnd.docker.image.rootfs.diff.tar.gzip&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;size&quot;</span><span class="token operator">:</span> <span class="token number">409</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;digest&quot;</span><span class="token operator">:</span> <span class="token string">&quot;sha256:97481c7992ebf6f22636f87e4d7b79e962f928cdbe6f2337670fa6c9a9636f04&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>The <code>mediaType</code> tell us that this is a &quot;manifest&quot;, and it fits the correct format:</p>
+<ul>
+<li>one <code>config</code>, whose hash is <code>sha256:987b553c835f01f46eb1859bc32f564119d5833801a27b25a0ca5c6b8b6e111a</code></li>
+<li>one or more <code>layers</code>; in this example, there are 6 layers</li>
+</ul>
+<p>Each of these elements - the index, the manifests, the config file and each of the layers - is stored
+separately in the registry, and is downloaded independently.</p>
+<h3 id="content-store">Content Store</h3>
+<p>When content is loaded into containerd&apos;s content store, it stores them very similarly to how the registry does.
+Each component is stored in a file whose name is the hash of it.</p>
+<p>Continuing our redis example, if we do <code>client.Pull()</code> or <code>ctr pull</code>, we will get the following in our
+content store:</p>
+<ul>
+<li><code>sha256:2a9865e55c37293b71df051922022898d8e4ec0f579c9b53a0caee1b170bc81c</code> - the index</li>
+<li><code>sha256:9bb13890319dc01e5f8a4d3d0c4c72685654d682d568350fd38a02b1d70aee6b</code> - the manifest for <code>linux/amd64</code></li>
+<li><code>sha256:987b553c835f01f46eb1859bc32f564119d5833801a27b25a0ca5c6b8b6e111a</code> - the config</li>
+<li><code>sha256:97481c7992ebf6f22636f87e4d7b79e962f928cdbe6f2337670fa6c9a9636f04</code> - layer 0</li>
+<li><code>sha256:5999b99cee8f2875d391d64df20b6296b63f23951a7d41749f028375e887cd05</code> - layer 1</li>
+<li><code>sha256:bfee6cb5fdad6b60ec46297f44542ee9d8ac8f01c072313a51cd7822df3b576f</code> - layer 2</li>
+<li><code>sha256:fd36a1ebc6728807cbb1aa7ef24a1861343c6dc174657721c496613c7b53bd07</code> - layer 3</li>
+<li><code>sha256:bb79b6b2107fea8e8a47133a660b78e3a546998fcf0427be39ac9a0af4a97e90</code> - layer 4</li>
+<li><code>sha256:1ed3521a5dcbd05214eb7f35b952ecf018d5a6610c32ba4e315028c556f45e94</code> - layer 5</li>
+</ul>
+<p>If we look in our content store, we see exactly these (I filtered and sorted to make it easier to read):</p>
+<pre class="language-"><code class="lang-console">$ tree /var/lib/containerd/io.containerd.content.v1.content/blobs
+/var/lib/containerd/io.containerd.content.v1.content/blobs
+&#x2514;&#x2500;&#x2500; sha256
+    &#x251C;&#x2500;&#x2500; 2a9865e55c37293b71df051922022898d8e4ec0f579c9b53a0caee1b170bc81c
+    &#x251C;&#x2500;&#x2500; 9bb13890319dc01e5f8a4d3d0c4c72685654d682d568350fd38a02b1d70aee6b
+    &#x251C;&#x2500;&#x2500; 987b553c835f01f46eb1859bc32f564119d5833801a27b25a0ca5c6b8b6e111a
+    &#x251C;&#x2500;&#x2500; 97481c7992ebf6f22636f87e4d7b79e962f928cdbe6f2337670fa6c9a9636f04
+    &#x251C;&#x2500;&#x2500; 5999b99cee8f2875d391d64df20b6296b63f23951a7d41749f028375e887cd05
+    &#x251C;&#x2500;&#x2500; bfee6cb5fdad6b60ec46297f44542ee9d8ac8f01c072313a51cd7822df3b576f
+    &#x251C;&#x2500;&#x2500; fd36a1ebc6728807cbb1aa7ef24a1861343c6dc174657721c496613c7b53bd07
+    &#x251C;&#x2500;&#x2500; bb79b6b2107fea8e8a47133a660b78e3a546998fcf0427be39ac9a0af4a97e90
+    &#x2514;&#x2500;&#x2500; 1ed3521a5dcbd05214eb7f35b952ecf018d5a6610c32ba4e315028c556f45e94
+</code></pre>
+<p>We can see the same thing if we use the containerd interface. Again, we sorted it for consistent easier viewing.</p>
+<pre class="language-"><code class="lang-console">$ ctr content ls
+DIGEST                                                                  SIZE    AGE             LABELS
+sha256:2a9865e55c37293b71df051922022898d8e4ec0f579c9b53a0caee1b170bc81c 1.862kB 20 minutes      containerd.io/distribution.source.docker.io=library/redis,containerd.io/gc.ref.content.m.0=sha256:9bb13890319dc01e5f8a4d3d0c4c72685654d682d568350fd38a02b1d70aee6b,containerd.io/gc.ref.content.m.1=sha256:aeb53f8db8c94d2cd63ca860d635af4307967aa11a2fdead98ae0ab3a329f470,containerd.io/gc.ref.content.m.2=sha256:17dc42e40d4af0a9e84c738313109f3a95e598081beef6c18a05abb57337aa5d,containerd.io/gc.ref.content.m.3=sha256:613f4797d2b6653634291a990f3e32378c7cfe3cdd439567b26ca340b8946013,containerd.io/gc.ref.content.m.4=sha256:ee0e1f8d8d338c9506b0e487ce6c2c41f931d1e130acd60dc7794c3a246eb59e,containerd.io/gc.ref.content.m.5=sha256:1072145f8eea186dcedb6b377b9969d121a00e65ae6c20e9cd631483178ea7ed,containerd.io/gc.ref.content.m.6=sha256:4b7860fcaea5b9bbd6249c10a3dc02a5b9fb339e8aef17a542d6126a6af84d96,containerd.io/gc.ref.content.m.7=sha256:d66dfc869b619cd6da5b5ae9d7b1cbab44c134b31d458de07f7d580a84b63f69
+sha256:9bb13890319dc01e5f8a4d3d0c4c72685654d682d568350fd38a02b1d70aee6b 1.572kB 20 minutes      containerd.io/distribution.source.docker.io=library/redis,containerd.io/gc.ref.content.config=sha256:987b553c835f01f46eb1859bc32f564119d5833801a27b25a0ca5c6b8b6e111a,containerd.io/gc.ref.content.l.0=sha256:bb79b6b2107fea8e8a47133a660b78e3a546998fcf0427be39ac9a0af4a97e90,containerd.io/gc.ref.content.l.1=sha256:1ed3521a5dcbd05214eb7f35b952ecf018d5a6610c32ba4e315028c556f45e94,containerd.io/gc.ref.content.l.2=sha256:5999b99cee8f2875d391d64df20b6296b63f23951a7d41749f028375e887cd05,containerd.io/gc.ref.content.l.3=sha256:bfee6cb5fdad6b60ec46297f44542ee9d8ac8f01c072313a51cd7822df3b576f,containerd.io/gc.ref.content.l.4=sha256:fd36a1ebc6728807cbb1aa7ef24a1861343c6dc174657721c496613c7b53bd07,containerd.io/gc.ref.content.l.5=sha256:97481c7992ebf6f22636f87e4d7b79e962f928cdbe6f2337670fa6c9a9636f04
+sha256:987b553c835f01f46eb1859bc32f564119d5833801a27b25a0ca5c6b8b6e111a 7.648kB 20 minutes      containerd.io/distribution.source.docker.io=library/redis,containerd.io/gc.ref.snapshot.overlayfs=sha256:33bd296ab7f37bdacff0cb4a5eb671bcb3a141887553ec4157b1e64d6641c1cd
+sha256:97481c7992ebf6f22636f87e4d7b79e962f928cdbe6f2337670fa6c9a9636f04 409B    20 minutes      containerd.io/distribution.source.docker.io=library/redis,containerd.io/uncompressed=sha256:d442ae63d423b4b1922875c14c3fa4e801c66c689b69bfd853758fde996feffb
+sha256:5999b99cee8f2875d391d64df20b6296b63f23951a7d41749f028375e887cd05 1.418MB 20 minutes      containerd.io/distribution.source.docker.io=library/redis,containerd.io/uncompressed=sha256:223b15010c47044b6bab9611c7a322e8da7660a8268949e18edde9c6e3ea3700
+sha256:bfee6cb5fdad6b60ec46297f44542ee9d8ac8f01c072313a51cd7822df3b576f 7.348MB 20 minutes      containerd.io/distribution.source.docker.io=library/redis,containerd.io/uncompressed=sha256:b96fedf8ee00e59bf69cf5bc8ed19e92e66ee8cf83f0174e33127402b650331d
+sha256:fd36a1ebc6728807cbb1aa7ef24a1861343c6dc174657721c496613c7b53bd07 98B     20 minutes      containerd.io/distribution.source.docker.io=library/redis,containerd.io/uncompressed=sha256:aff00695be0cebb8a114f8c5187fd6dd3d806273004797a00ad934ec9cd98212
+sha256:bb79b6b2107fea8e8a47133a660b78e3a546998fcf0427be39ac9a0af4a97e90 27.09MB 19 minutes      containerd.io/distribution.source.docker.io=library/redis,containerd.io/uncompressed=sha256:d0fe97fa8b8cefdffcef1d62b65aba51a6c87b6679628a2b50fc6a7a579f764c
+sha256:1ed3521a5dcbd05214eb7f35b952ecf018d5a6610c32ba4e315028c556f45e94 1.732kB 20 minutes      containerd.io/distribution.source.docker.io=library/redis,containerd.io/uncompressed=sha256:832f21763c8e6b070314e619ebb9ba62f815580da6d0eaec8a1b080bd01575f7
+</code></pre>
+<h4 id="labels">Labels</h4>
+<p>Note that each blob of content has several labels on it. This sub-section describes the labels.
+This is not intended to be a comprehensive overview of labels.</p>
+<h4 id="common-labels">Common Labels</h4>
+<p>For images pulled from remotes, the <code>containerd.io.distribution.source.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>registry</span><span class="token punctuation">&gt;</span></span>=[&lt;repo/1&gt;,&lt;repo/2&gt;]</code> label
+is added to each blob of the image to indicate its source.</p>
+<pre class="language-"><code>containerd.io/distribution.source.docker.io=library/redis
+</code></pre><p>If the blob is shared by different repos in the same registry, the repo name will be appended:</p>
+<pre class="language-"><code>containerd.io/distribution.source.docker.io=library/redis,myrepo/redis
+</code></pre><h5 id="layer-labels">Layer Labels</h5>
+<p>We start with the layers themselves. These have only one label: <code>containerd.io/uncompressed</code>. These files are
+gzipped tar files; the value of the label gives the hash of them when uncompressed. You can get the same value
+by doing:</p>
+<pre class="language-"><code class="lang-console">$ cat <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>file</span><span class="token punctuation">&gt;</span></span> | gunzip - | sha256sum -
+</code></pre>
+<p>For example:</p>
+<pre class="language-"><code class="lang-console">$ cat /var/lib/containerd/io.containerd.content.v1.content/blobs/sha256/1ed3521a5dcbd05214eb7f35b952ecf018d5a6610c32ba4e315028c556f45e94 | gunzip - | sha256sum -
+832f21763c8e6b070314e619ebb9ba62f815580da6d0eaec8a1b080bd01575f7
+</code></pre>
+<p>That aligns precisely with the last layer:</p>
+<pre class="language-"><code>sha256:1ed3521a5dcbd05214eb7f35b952ecf018d5a6610c32ba4e315028c556f45e94 1.732kB 20 minutes      containerd.io/distribution.source.docker.io=library/redis,containerd.io/uncompressed=sha256:832f21763c8e6b070314e619ebb9ba62f815580da6d0eaec8a1b080bd01575f7
+</code></pre><h5 id="config-labels">Config Labels</h5>
+<p>We have a single config layer, <code>sha256:987b553c835f01f46eb1859bc32f564119d5833801a27b25a0ca5c6b8b6e111a</code>. It has a label prefixed with <code>containerd.io/gc.ref.</code> indicating
+that it is a label that impacts garbage collection.</p>
+<p>In this case, the label is <code>containerd.io/gc.ref.snapshot.overlayfs</code> and has a value of <code>sha256:33bd296ab7f37bdacff0cb4a5eb671bcb3a141887553ec4157b1e64d6641c1cd</code>.</p>
+<p>This is used to connect this config to a snapshot. We will look at that shortly when we discuss snapshots.</p>
+<h5 id="manifest-labels">Manifest Labels</h5>
+<p>The labels on the manifest also begin with <code>containerd.io/gc.ref</code>, indicating that they are used to control
+garbage collection. A manifest has several &quot;children&quot;. These normally are the config and the layers. We want
+to ensure that as long as the image remains around, i.e. the manifest, the children do not get garbage collected.
+Thus, we have labels referencing each child:</p>
+<ul>
+<li><code>containerd.io/gc.ref.content.config</code> references the config</li>
+<li><code>containerd.io/gc.ref.content.l.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>index</span><span class="token punctuation">&gt;</span></span></code> reference the layers</li>
+</ul>
+<p>In our example, the manifest is <code>sha256:9bb13890319dc01e5f8a4d3d0c4c72685654d682d568350fd38a02b1d70aee6b</code>, and the labels are as follows.</p>
+<pre class="language-"><code>containerd.io/gc.ref.content.config=sha256:df57482065789980ee9445b1dd79ab1b7b3d1dc26b6867d94470af969a64c8e6
+containerd.io/gc.ref.content.l.0=sha256:97481c7992ebf6f22636f87e4d7b79e962f928cdbe6f2337670fa6c9a9636f04
+containerd.io/gc.ref.content.l.1=sha256:5999b99cee8f2875d391d64df20b6296b63f23951a7d41749f028375e887cd05
+containerd.io/gc.ref.content.l.2=sha256:bfee6cb5fdad6b60ec46297f44542ee9d8ac8f01c072313a51cd7822df3b576f
+containerd.io/gc.ref.content.l.3=sha256:fd36a1ebc6728807cbb1aa7ef24a1861343c6dc174657721c496613c7b53bd07
+containerd.io/gc.ref.content.l.4=sha256:bb79b6b2107fea8e8a47133a660b78e3a546998fcf0427be39ac9a0af4a97e90
+containerd.io/gc.ref.content.l.5=sha256:1ed3521a5dcbd05214eb7f35b952ecf018d5a6610c32ba4e315028c556f45e94
+</code></pre><p>These are precisely those children of the manifest - the config and layers - that are stored in our content store.</p>
+<h5 id="index-labels">Index Labels</h5>
+<p>The labels on the index also begin with <code>containerd.io/gc.ref</code>, indicating that they are used to control
+garbage collection. An index has several &quot;children&quot;, i.e. the manifests, one for each platform, as discussed above.
+We want to ensure that as long as the index remains around, the children do not get garbage collected.
+Thus, we have labels referencing each child, <code>containerd.io/gc.ref.content.m.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>index</span><span class="token punctuation">&gt;</span></span></code>.</p>
+<p>In our example, the index is <code>sha256:2a9865e55c37293b71df051922022898d8e4ec0f579c9b53a0caee1b170bc81c</code>, and the labels are as follows:</p>
+<pre class="language-"><code>containerd.io/gc.ref.content.m.0=sha256:9bb13890319dc01e5f8a4d3d0c4c72685654d682d568350fd38a02b1d70aee6b
+containerd.io/gc.ref.content.m.1=sha256:aeb53f8db8c94d2cd63ca860d635af4307967aa11a2fdead98ae0ab3a329f470
+containerd.io/gc.ref.content.m.2=sha256:17dc42e40d4af0a9e84c738313109f3a95e598081beef6c18a05abb57337aa5d
+containerd.io/gc.ref.content.m.3=sha256:613f4797d2b6653634291a990f3e32378c7cfe3cdd439567b26ca340b8946013
+containerd.io/gc.ref.content.m.4=sha256:ee0e1f8d8d338c9506b0e487ce6c2c41f931d1e130acd60dc7794c3a246eb59e
+containerd.io/gc.ref.content.m.5=sha256:1072145f8eea186dcedb6b377b9969d121a00e65ae6c20e9cd631483178ea7ed
+containerd.io/gc.ref.content.m.6=sha256:4b7860fcaea5b9bbd6249c10a3dc02a5b9fb339e8aef17a542d6126a6af84d96
+containerd.io/gc.ref.content.m.7=sha256:d66dfc869b619cd6da5b5ae9d7b1cbab44c134b31d458de07f7d580a84b63f69
+</code></pre><p>Notice that there are 8 children to the index, but all of them are for platforms other than ours, <code>linux/amd64</code>,
+and thus only one of them, <code>sha256:9bb13890319dc01e5f8a4d3d0c4c72685654d682d568350fd38a02b1d70aee6b</code> actually is
+in our content store. That doesn&apos;t hurt; it just means that the others will not be garbage collected either. Since
+they aren&apos;t there, they won&apos;t be removed.</p>
+<h3 id="snapshots">Snapshots</h3>
+<p>The content in the content store is immutable, but also in formats that often are unusable. For example,
+most container layers are in a tar-gzip format. One cannot simply mount a tar-gzip file. Even if one could,
+we want to leave our immutable content not only unchanged, but unchangeable, even by accident, i.e. immutable.</p>
+<p>In order to use it, we create snapshots of the content.</p>
+<p>The process is as follows:</p>
+<ol>
+<li>The snapshotter creates a snapshot from the parent. In the case of the first layer, that is blank. This is now an &quot;active&quot; snapshot.</li>
+<li>The diff applier, which has knowledge of the internal format of the layer blob, applies the layer blob to the active snapshot.</li>
+<li>The snapshotter commits the snapshot after the diff has been applied. This is now a &quot;committed&quot; snapshot.</li>
+<li>The committed snapshot is used as the parent for the next layer.</li>
+</ol>
+<p>Returning to our example, each layer will have a corresponding immutable snapshot layer. Recalling that
+our example has 6 layers, we expect to see 6 committed snapshots. The output has been sorted to make viewing
+easier; it matches the layers from the content store and manifest itself.</p>
+<pre class="language-"><code class="lang-console">$ ctr snapshot ls
+KEY                                                                     PARENT                                                                  KIND
+sha256:d0fe97fa8b8cefdffcef1d62b65aba51a6c87b6679628a2b50fc6a7a579f764c                                                                         Committed
+sha256:2ae5fa95c0fce5ef33fbb87a7e2f49f2a56064566a37a83b97d3f668c10b43d6 sha256:d0fe97fa8b8cefdffcef1d62b65aba51a6c87b6679628a2b50fc6a7a579f764c Committed
+sha256:a8f09c4919857128b1466cc26381de0f9d39a94171534f63859a662d50c396ca sha256:2ae5fa95c0fce5ef33fbb87a7e2f49f2a56064566a37a83b97d3f668c10b43d6 Committed
+sha256:aa4b58e6ece416031ce00869c5bf4b11da800a397e250de47ae398aea2782294 sha256:a8f09c4919857128b1466cc26381de0f9d39a94171534f63859a662d50c396ca Committed
+sha256:bc8b010e53c5f20023bd549d082c74ef8bfc237dc9bbccea2e0552e52bc5fcb1 sha256:aa4b58e6ece416031ce00869c5bf4b11da800a397e250de47ae398aea2782294 Committed
+sha256:33bd296ab7f37bdacff0cb4a5eb671bcb3a141887553ec4157b1e64d6641c1cd sha256:bc8b010e53c5f20023bd549d082c74ef8bfc237dc9bbccea2e0552e52bc5fcb1 Committed
+</code></pre>
+<h4 id="parents">Parents</h4>
+<p>Each snapshot has a parent, except for the root. It is a tree, or a stacked cake, starting with the first layer.
+This matches how the layers are built, as layers.</p>
+<h4 id="name">Name</h4>
+<p>The key, or name, for the snapshot does not match the hash from the content store. This is because the hash from the
+content store is the hash of the <em>original</em> content, in this case tar-gzipped. The snapshot expands it out into the
+filesystem to make it useful. It also does not match the uncompressed content, i.e. the tar file without gzip, and as
+given on the label <code>containerd.io/uncompressed</code>.</p>
+<p>Rather the name is the result of applying the layer to the previous one and hashing it. By that logic, the very root
+of the tree, the first layer, should have the same hash and name as the uncompressed value of the first layer blob.
+Indeed, it does. The root layer is <code>sha256:bb79b6b2107fea8e8a47133a660b78e3a546998fcf0427be39ac9a0af4a97e90</code>
+which, when uncompressed, has the value <code>sha256:d0fe97fa8b8cefdffcef1d62b65aba51a6c87b6679628a2b50fc6a7a579f764c</code>,
+which is the first layer in the snapshot, and also the label on that layer in the content store:</p>
+<pre class="language-"><code>sha256:bb79b6b2107fea8e8a47133a660b78e3a546998fcf0427be39ac9a0af4a97e90 27.09MB 19 minutes      containerd.io/distribution.source.docker.io=library/redis,containerd.io/uncompressed=sha256:d0fe97fa8b8cefdffcef1d62b65aba51a6c87b6679628a2b50fc6a7a579f764c
+</code></pre><h4 id="final-layer">Final Layer</h4>
+<p>The final, or top, layer, is the point at which you would want to create an active snapshot to start a container.
+Thus, we would need to track it. This is exactly the label that is placed on the config. In our example, the
+config is at <code>sha256:987b553c835f01f46eb1859bc32f564119d5833801a27b25a0ca5c6b8b6e111a</code> and had the label
+<code>containerd.io/gc.ref.snapshot.overlayfs=sha256:33bd296ab7f37bdacff0cb4a5eb671bcb3a141887553ec4157b1e64d6641c1cd</code>.</p>
+<p>Looking at our snapshots, the value of the final layer of the stack is, indeed, that:</p>
+<pre class="language-"><code>sha256:33bd296ab7f37bdacff0cb4a5eb671bcb3a141887553ec4157b1e64d6641c1cd sha256:bc8b010e53c5f20023bd549d082c74ef8bfc237dc9bbccea2e0552e52bc5fcb1 Committed
+</code></pre><p>Note as well, that the label on the config in the content store starts with <code>containerd.io/gc.ref</code>. This is
+a garbage collection label. It is this label that keeps the garbage collector from removing the snapshot.
+Because the config has a reference to it, the top layer is &quot;protected&quot; from garbage collection. This layer,
+in turn, depends on the next layer down, so it is protected from collection, and so on until the root or base layer.</p>
+<h3 id="container">Container</h3>
+<p>With the above in place, we know how to create an active snapshot that is useful for the container. We simply
+need to <a href="https://godoc.org/github.com/containerd/containerd/snapshots#Snapshotter" target="_blank">Prepare()</a> the active snapshot,
+passing it an ID and the parent, in this case the top layer of committed snapshots.</p>
+<p>Thus, the steps are:</p>
+<ol>
+<li>Get the content into the content store, either via <a href="https://godoc.org/github.com/containerd/containerd#Client.Pull" target="_blank">Pull()</a>, or via loading it in the <a href="https://godoc.org/github.com/containerd/containerd/content#Store" target="_blank">content.Store API</a></li>
+<li>Unpack the image to create committed snapshots for each layer, using <a href="https://godoc.org/github.com/containerd/containerd#Image" target="_blank">image.Unpack()</a>. Alternatively, if you use <a href="https://godoc.org/github.com/containerd/containerd#Client.Pull" target="_blank">Pull()</a>, you can pass it an option to unpack when pulling, using <a href="https://godoc.org/github.com/containerd/containerd#WithPullUnpack" target="_blank">WithPullUnpack()</a></li>
+<li>Create an active snapshot using <a href="https://godoc.org/github.com/containerd/containerd/snapshots#Snapshotter" target="_blank">Prepare()</a>. You can skip this step if you plan on creating a container, as you can pass it as an option to the next step.</li>
+<li>Create a container using <a href="https://godoc.org/github.com/containerd/containerd#Client.NewContainer" target="_blank">NewContainer()</a>, optionally telling it to create a snapshot with <a href="https://godoc.org/github.com/containerd/containerd#WithNewSnapshot" target="_blank">WithNewSnapshot()</a></li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="client-opts.html" class="navigation navigation-prev " aria-label="Previous page: Client Opts">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="garbage-collection.html" class="navigation navigation-next " aria-label="Next page: Garbage Collection">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Content Flow","level":"1.7","depth":1,"next":{"title":"Garbage Collection","level":"1.8","depth":1,"path":"garbage-collection.md","ref":"garbage-collection.md","articles":[]},"previous":{"title":"Client Opts","level":"1.6","depth":1,"path":"client-opts.md","ref":"client-opts.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"content-flow.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

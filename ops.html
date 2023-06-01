@@ -1,0 +1,1161 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Ops · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="PLUGINS.html" />
+    
+    
+    <link rel="prev" href="NRI.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="cri/architecture.html">
+            
+                <a href="cri/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="cri/config.html">
+            
+                <a href="cri/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="cri/crictl.html">
+            
+                <a href="cri/crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="cri/decryption.html">
+            
+                <a href="cri/decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="cri/installation.html">
+            
+                <a href="cri/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="cri/registry.html">
+            
+                <a href="cri/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="cri/testing.html">
+            
+                <a href="cri/testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="historical/cri/proposal.html">
+            
+                <a href="historical/cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="historical/design/architecture.html">
+            
+                <a href="historical/design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="historical/design/data-flow.html">
+            
+                <a href="historical/design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="historical/design/lifecycle.html">
+            
+                <a href="historical/design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="historical/design/mounts.html">
+            
+                <a href="historical/design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="historical/design/snapshots.html">
+            
+                <a href="historical/design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="historical/reports/2017-01-13.html">
+            
+                <a href="historical/reports/2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="historical/reports/2017-01-20.html">
+            
+                <a href="historical/reports/2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="historical/reports/2017-01-27.html">
+            
+                <a href="historical/reports/2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="historical/reports/2017-02-10.html">
+            
+                <a href="historical/reports/2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="historical/reports/2017-02-24.html">
+            
+                <a href="historical/reports/2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="historical/reports/2017-03-10.html">
+            
+                <a href="historical/reports/2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="historical/reports/2017-03-17.html">
+            
+                <a href="historical/reports/2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="historical/reports/2017-03-24.html">
+            
+                <a href="historical/reports/2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="historical/reports/2017-04-28.html">
+            
+                <a href="historical/reports/2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="historical/reports/2017-05-05.html">
+            
+                <a href="historical/reports/2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="historical/reports/2017-05-19.html">
+            
+                <a href="historical/reports/2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="historical/reports/2017-05-26.html">
+            
+                <a href="historical/reports/2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="historical/reports/2017-06-09.html">
+            
+                <a href="historical/reports/2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="historical/reports/2017-06-23.html">
+            
+                <a href="historical/reports/2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="man/containerd-config.8.html">
+            
+                <a href="man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="man/containerd-config.toml.5.html">
+            
+                <a href="man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="snapshotters/">
+            
+                <a href="snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="snapshotters/devmapper.html">
+            
+                <a href="snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="client-opts.html">
+            
+                <a href="client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="content-flow.html">
+            
+                <a href="content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="garbage-collection.html">
+            
+                <a href="garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="hosts.html">
+            
+                <a href="hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="managed-opt.html">
+            
+                <a href="managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="namespaces.html">
+            
+                <a href="namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="NRI.html">
+            
+                <a href="NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="ops.html">
+            
+                <a href="ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="PLUGINS.html">
+            
+                <a href="PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="remote-snapshotter.html">
+            
+                <a href="remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="rootless.html">
+            
+                <a href="rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="RUNC.html">
+            
+                <a href="RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="stream_processors.html">
+            
+                <a href="stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="tracing.html">
+            
+                <a href="tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="transfer.html">
+            
+                <a href="transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Ops</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="containerd-for-ops-and-admins">containerd for Ops and Admins</h1>
+<p>containerd is meant to be a simple daemon to run on any system.
+It provides a minimal config with knobs to configure the daemon and what plugins are used when necessary.</p>
+<pre class="language-"><code>NAME:
+   containerd -
+                    __        _                     __
+  _________  ____  / /_____ _(_)___  ___  _________/ /
+ / ___/ __ \/ __ \/ __/ __ `/ / __ \/ _ \/ ___/ __  /
+/ /__/ /_/ / / / / /_/ /_/ / / / / /  __/ /  / /_/ /
+\___/\____/_/ /_/\__/\__,_/_/_/ /_/\___/_/   \__,_/
+
+high performance container runtime
+
+
+USAGE:
+   containerd [global options] command [command options] [arguments...]
+
+VERSION:
+   v1.7.0-beta.0
+
+DESCRIPTION:
+
+containerd is a high performance container runtime whose daemon can be started
+by using this command. If none of the *config*, *publish*, *oci-hook*, or *help* commands
+are specified, the default action of the **containerd** command is to start the
+containerd daemon in the foreground.
+
+
+A default configuration is used if no TOML configuration is specified or located
+at the default file location. The *containerd config* command can be used to
+generate the default configuration for containerd. The output of that command
+can be used and modified as necessary as a custom configuration.
+
+COMMANDS:
+   config    information on the containerd config
+   publish   binary to publish events to containerd
+   oci-hook  provides a base for OCI runtime hooks to allow arguments to be injected.
+   help, h   Shows a list of commands or help for one command
+
+GLOBAL OPTIONS:
+   --config value, -c value     path to the configuration file (default: &quot;/etc/containerd/config.toml&quot;)
+   --log-level value, -l value  set the logging level [trace, debug, info, warn, error, fatal, panic]
+   --address value, -a value    address for containerd&apos;s GRPC server
+   --root value                 containerd root directory
+   --state value                containerd state directory
+   --help, -h                   show help
+   --version, -v                print the version
+</code></pre><p>While a few daemon level options can be set from CLI flags the majority of containerd&apos;s configuration is kept in the configuration file.
+The default path for the config file is located at <code>/etc/containerd/config.toml</code>.
+You can change this path via the <code>--config,-c</code> flags when booting the daemon.</p>
+<h2 id="systemd">systemd</h2>
+<p>If you are using systemd as your init system, which most modern linux OSs are, the service file requires a few modifications.</p>
+<pre class="language-"><code class="lang-systemd">[Unit]
+Description=containerd container runtime
+Documentation=https://containerd.io
+After=network.target
+
+[Service]
+ExecStartPre=-/sbin/modprobe overlay
+ExecStart=/usr/local/bin/containerd
+Delegate=yes
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<p><code>Delegate=yes</code> and <code>KillMode=process</code> are the two most important changes you need to make in the <code>[Service]</code> section.</p>
+<p><code>Delegate</code> allows containerd and its runtimes to manage the cgroups of the containers that it creates.
+Without setting this option, systemd will try to move the processes into its own cgroups, causing problems for containerd and its runtimes to properly account for resource usage with the containers.</p>
+<p><code>KillMode</code> handles when containerd is being shut down.
+By default, systemd will look in its named cgroup and kill every process that it knows about for the service.
+This is not what we want.
+As ops, we want to be able to upgrade containerd and allow existing containers to keep running without interruption.
+Setting <code>KillMode</code> to <code>process</code> ensures that systemd only kills the containerd daemon and not any child processes such as the shims and containers.</p>
+<p>The following <code>systemd-run</code> command starts containerd in a similar way:</p>
+<pre class="language-"><code>sudo systemd-run -p Delegate=yes -p KillMode=process /usr/local/bin/containerd
+</code></pre><h2 id="base-configuration">Base Configuration</h2>
+<p>In the containerd config file you will find settings for persistent and runtime storage locations as well as grpc, debug, and metrics addresses for the various APIs.</p>
+<p>There are a few settings that are important for ops.
+The first setting is the <code>oom_score</code>.  Because containerd will be managing multiple containers, we need to ensure that containers are killed before the containerd daemon gets into an out of memory condition.
+We also do not want to make containerd unkillable, but we want to lower its score to the level of other system daemons.</p>
+<p>containerd also exports its own metrics as well as container level metrics via the Prometheus metrics format under <code>/v1/metrics</code>.
+Currently, Prometheus only supports TCP endpoints, therefore, the metrics address should be a TCP address that your Prometheus infrastructure can scrape metrics from.</p>
+<p>containerd also has two different storage locations on a host system.
+One is for persistent data and the other is for runtime state.</p>
+<p><code>root</code> will be used to store any type of persistent data for containerd.
+Snapshots, content, metadata for containers and image, as well as any plugin data will be kept in this location.
+The root is also namespaced for plugins that containerd loads.
+Each plugin will have its own directory where it stores data.
+containerd itself does not actually have any persistent data that it needs to store, its functionality comes from the plugins that are loaded.</p>
+<pre class="language-"><code>/var/lib/containerd/
+&#x251C;&#x2500;&#x2500; io.containerd.content.v1.content
+&#x2502;   &#x251C;&#x2500;&#x2500; blobs
+&#x2502;   &#x2514;&#x2500;&#x2500; ingest
+&#x251C;&#x2500;&#x2500; io.containerd.metadata.v1.bolt
+&#x2502;   &#x2514;&#x2500;&#x2500; meta.db
+&#x251C;&#x2500;&#x2500; io.containerd.runtime.v2.task
+&#x2502;   &#x251C;&#x2500;&#x2500; default
+&#x2502;   &#x2514;&#x2500;&#x2500; example
+&#x251C;&#x2500;&#x2500; io.containerd.snapshotter.v1.btrfs
+&#x2514;&#x2500;&#x2500; io.containerd.snapshotter.v1.overlayfs
+    &#x251C;&#x2500;&#x2500; metadata.db
+    &#x2514;&#x2500;&#x2500; snapshots
+</code></pre><p><code>state</code> will be used to store any type of ephemeral data.
+Sockets, pids, runtime state, mount points, and other plugin data that must not persist between reboots are stored in this location.</p>
+<pre class="language-"><code>/run/containerd
+&#x251C;&#x2500;&#x2500; containerd.sock
+&#x251C;&#x2500;&#x2500; debug.sock
+&#x251C;&#x2500;&#x2500; io.containerd.runtime.v2.task
+&#x2502;   &#x2514;&#x2500;&#x2500; default
+&#x2502;       &#x2514;&#x2500;&#x2500; redis
+&#x2502;           &#x251C;&#x2500;&#x2500; config.json
+&#x2502;           &#x251C;&#x2500;&#x2500; init.pid
+&#x2502;           &#x251C;&#x2500;&#x2500; log.json
+&#x2502;           &#x2514;&#x2500;&#x2500; rootfs
+&#x2502;               &#x251C;&#x2500;&#x2500; bin
+&#x2502;               &#x251C;&#x2500;&#x2500; data
+&#x2502;               &#x251C;&#x2500;&#x2500; dev
+&#x2502;               &#x251C;&#x2500;&#x2500; etc
+&#x2502;               &#x251C;&#x2500;&#x2500; home
+&#x2502;               &#x251C;&#x2500;&#x2500; lib
+&#x2502;               &#x251C;&#x2500;&#x2500; media
+&#x2502;               &#x251C;&#x2500;&#x2500; mnt
+&#x2502;               &#x251C;&#x2500;&#x2500; proc
+&#x2502;               &#x251C;&#x2500;&#x2500; root
+&#x2502;               &#x251C;&#x2500;&#x2500; run
+&#x2502;               &#x251C;&#x2500;&#x2500; sbin
+&#x2502;               &#x251C;&#x2500;&#x2500; srv
+&#x2502;               &#x251C;&#x2500;&#x2500; sys
+&#x2502;               &#x251C;&#x2500;&#x2500; tmp
+&#x2502;               &#x251C;&#x2500;&#x2500; usr
+&#x2502;               &#x2514;&#x2500;&#x2500; var
+&#x2514;&#x2500;&#x2500; runc
+    &#x2514;&#x2500;&#x2500; default
+        &#x2514;&#x2500;&#x2500; redis
+            &#x2514;&#x2500;&#x2500; state.json
+</code></pre><p>Both the <code>root</code> and <code>state</code> directories are namespaced for plugins.
+Both directories are an implementation detail of containerd and its plugins.
+They should not be tampered with as corruption and bugs can and will happen.
+External apps reading or watching changes in these directories have been known to cause <code>EBUSY</code> and stale file handles when containerd and/or its plugins try to cleanup resources.</p>
+<pre class="language-"><code class="lang-toml"><span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token number">2</span>
+
+<span class="token comment"># persistent data location</span>
+<span class="token key property">root</span> <span class="token punctuation">=</span> <span class="token string">&quot;/var/lib/containerd&quot;</span>
+<span class="token comment"># runtime state information</span>
+<span class="token key property">state</span> <span class="token punctuation">=</span> <span class="token string">&quot;/run/containerd&quot;</span>
+<span class="token comment"># set containerd&apos;s OOM score</span>
+<span class="token key property">oom_score</span> <span class="token punctuation">=</span> <span class="token number">-999</span>
+
+<span class="token comment"># grpc configuration</span>
+<span class="token punctuation">[</span><span class="token table class-name">grpc</span><span class="token punctuation">]</span>
+  <span class="token key property">address</span> <span class="token punctuation">=</span> <span class="token string">&quot;/run/containerd/containerd.sock&quot;</span>
+  <span class="token comment"># socket uid</span>
+  <span class="token key property">uid</span> <span class="token punctuation">=</span> <span class="token number">0</span>
+  <span class="token comment"># socket gid</span>
+  <span class="token key property">gid</span> <span class="token punctuation">=</span> <span class="token number">0</span>
+
+<span class="token comment"># debug configuration</span>
+<span class="token punctuation">[</span><span class="token table class-name">debug</span><span class="token punctuation">]</span>
+  <span class="token key property">address</span> <span class="token punctuation">=</span> <span class="token string">&quot;/run/containerd/debug.sock&quot;</span>
+  <span class="token comment"># socket uid</span>
+  <span class="token key property">uid</span> <span class="token punctuation">=</span> <span class="token number">0</span>
+  <span class="token comment"># socket gid</span>
+  <span class="token key property">gid</span> <span class="token punctuation">=</span> <span class="token number">0</span>
+  <span class="token comment"># debug level</span>
+  <span class="token key property">level</span> <span class="token punctuation">=</span> <span class="token string">&quot;info&quot;</span>
+
+<span class="token comment"># metrics configuration</span>
+<span class="token punctuation">[</span><span class="token table class-name">metrics</span><span class="token punctuation">]</span>
+  <span class="token comment"># tcp address!</span>
+  <span class="token key property">address</span> <span class="token punctuation">=</span> <span class="token string">&quot;127.0.0.1:1234&quot;</span>
+</code></pre>
+<h2 id="plugin-configuration">Plugin Configuration</h2>
+<p>At the end of the day, containerd&apos;s core is very small.
+The real functionality comes from plugins.
+Everything from snapshotters, runtimes, and content are all plugins that are registered at runtime.
+Because these various plugins are so different we need a way to provide type safe configuration to the plugins.
+The only way we can do this is via the config file and not CLI flags.</p>
+<p>In the config file you can specify plugin level options for the set of plugins that you use via the <code>[plugins.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>name</span><span class="token punctuation">&gt;</span></span>]</code> sections.
+You will have to read the plugin specific docs to find the options that your plugin accepts.</p>
+<p>See <a href="PLUGINS.html">containerd&apos;s Plugin documentation</a></p>
+<h3 id="bolt-metadata-plugin">Bolt Metadata Plugin</h3>
+<p>The bolt metadata plugin allows configuration of the content sharing policy between namespaces.</p>
+<p>The default mode &quot;shared&quot; will make blobs available in all namespaces once it is pulled into any namespace.
+The blob will be pulled into the namespace if a writer is opened with the &quot;Expected&quot; digest that is already present in the backend.</p>
+<p>The alternative mode, &quot;isolated&quot; requires that clients prove they have access to the content by providing all of the content to the ingest before the blob is added to the namespace.</p>
+<p>Both modes share backing data, while &quot;shared&quot; will reduce total bandwidth across namespaces, at the cost of allowing access to any blob just by knowing its digest.</p>
+<p>The default is &quot;shared&quot;. While this is largely the most desired policy, one can change to &quot;isolated&quot; mode with the following configuration:</p>
+<pre class="language-"><code class="lang-toml"><span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token number">2</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.metadata.v1.bolt&quot;</span><span class="token punctuation">]</span>
+    <span class="token key property">content_sharing_policy</span> <span class="token punctuation">=</span> <span class="token string">&quot;isolated&quot;</span>
+</code></pre>
+<p>In &quot;isolated&quot; mode, it is also possible to share only the contents of a specific namespace by adding the label <code>containerd.io/namespace.shareable=true</code> to that namespace.
+This will make its blobs available in all other namespaces even if the content sharing policy is set to &quot;isolated&quot;.
+If the label value is set to anything other than <code>true</code>, the namespace content will not be shared.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="NRI.html" class="navigation navigation-prev " aria-label="Previous page: NRI">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="PLUGINS.html" class="navigation navigation-next " aria-label="Next page: PLUGINS">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Ops","level":"1.14","depth":1,"next":{"title":"PLUGINS","level":"1.15","depth":1,"path":"PLUGINS.md","ref":"PLUGINS.md","articles":[]},"previous":{"title":"NRI","level":"1.13","depth":1,"path":"NRI.md","ref":"NRI.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"ops.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

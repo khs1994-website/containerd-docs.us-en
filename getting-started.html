@@ -1,0 +1,1475 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Getting Started · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="hosts.html" />
+    
+    
+    <link rel="prev" href="garbage-collection.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="cri/architecture.html">
+            
+                <a href="cri/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="cri/config.html">
+            
+                <a href="cri/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="cri/crictl.html">
+            
+                <a href="cri/crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="cri/decryption.html">
+            
+                <a href="cri/decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="cri/installation.html">
+            
+                <a href="cri/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="cri/registry.html">
+            
+                <a href="cri/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="cri/testing.html">
+            
+                <a href="cri/testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="historical/cri/proposal.html">
+            
+                <a href="historical/cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="historical/design/architecture.html">
+            
+                <a href="historical/design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="historical/design/data-flow.html">
+            
+                <a href="historical/design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="historical/design/lifecycle.html">
+            
+                <a href="historical/design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="historical/design/mounts.html">
+            
+                <a href="historical/design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="historical/design/snapshots.html">
+            
+                <a href="historical/design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="historical/reports/2017-01-13.html">
+            
+                <a href="historical/reports/2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="historical/reports/2017-01-20.html">
+            
+                <a href="historical/reports/2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="historical/reports/2017-01-27.html">
+            
+                <a href="historical/reports/2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="historical/reports/2017-02-10.html">
+            
+                <a href="historical/reports/2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="historical/reports/2017-02-24.html">
+            
+                <a href="historical/reports/2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="historical/reports/2017-03-10.html">
+            
+                <a href="historical/reports/2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="historical/reports/2017-03-17.html">
+            
+                <a href="historical/reports/2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="historical/reports/2017-03-24.html">
+            
+                <a href="historical/reports/2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="historical/reports/2017-04-28.html">
+            
+                <a href="historical/reports/2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="historical/reports/2017-05-05.html">
+            
+                <a href="historical/reports/2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="historical/reports/2017-05-19.html">
+            
+                <a href="historical/reports/2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="historical/reports/2017-05-26.html">
+            
+                <a href="historical/reports/2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="historical/reports/2017-06-09.html">
+            
+                <a href="historical/reports/2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="historical/reports/2017-06-23.html">
+            
+                <a href="historical/reports/2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="man/containerd-config.8.html">
+            
+                <a href="man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="man/containerd-config.toml.5.html">
+            
+                <a href="man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="snapshotters/">
+            
+                <a href="snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="snapshotters/devmapper.html">
+            
+                <a href="snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="client-opts.html">
+            
+                <a href="client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="content-flow.html">
+            
+                <a href="content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="garbage-collection.html">
+            
+                <a href="garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="hosts.html">
+            
+                <a href="hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="managed-opt.html">
+            
+                <a href="managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="namespaces.html">
+            
+                <a href="namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="NRI.html">
+            
+                <a href="NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ops.html">
+            
+                <a href="ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="PLUGINS.html">
+            
+                <a href="PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="remote-snapshotter.html">
+            
+                <a href="remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="rootless.html">
+            
+                <a href="rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="RUNC.html">
+            
+                <a href="RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="stream_processors.html">
+            
+                <a href="stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="tracing.html">
+            
+                <a href="tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="transfer.html">
+            
+                <a href="transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Getting Started</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="getting-started-with-containerd">Getting started with containerd</h1>
+<h2 id="installing-containerd">Installing containerd</h2>
+<h3 id="option-1-from-the-official-binaries">Option 1: From the official binaries</h3>
+<p>The official binary releases of containerd are available for the <code>amd64</code> (also known as <code>x86_64</code>) and <code>arm64</code> (also known as <code>aarch64</code>) architectures.</p>
+<p>Typically, you will have to install <a href="https://github.com/opencontainers/runc/releases" target="_blank">runc</a> and <a href="https://github.com/containernetworking/plugins/releases" target="_blank">CNI plugins</a>
+from their official sites too.</p>
+<h4 id="step-1-installing-containerd">Step 1: Installing containerd</h4>
+<p>Download the <code>containerd-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>VERSION</span><span class="token punctuation">&gt;</span></span>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>OS</span><span class="token punctuation">&gt;</span></span>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ARCH</span><span class="token punctuation">&gt;</span></span>.tar.gz</code> archive from <a href="https://github.com/containerd/containerd/releases" target="_blank">https://github.com/containerd/containerd/releases</a> ,
+verify its sha256sum, and extract it under <code>/usr/local</code>:</p>
+<pre class="language-"><code class="lang-console">$ tar Cxzvf /usr/local containerd-1.6.2-linux-amd64.tar.gz
+bin/
+bin/containerd-shim-runc-v2
+bin/containerd-shim
+bin/ctr
+bin/containerd-shim-runc-v1
+bin/containerd
+bin/containerd-stress
+</code></pre>
+<p>The <code>containerd</code> binary is built dynamically for glibc-based Linux distributions such as Ubuntu and Rocky Linux.
+This binary may not work on musl-based distributions such as Alpine Linux.
+Users of such distributions may have to install containerd from the source or a third party package.</p>
+<blockquote>
+<p><strong>FAQ</strong>: For Kubernetes, do I need to download <code>cri-containerd-(cni-)<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>VERSION</span><span class="token punctuation">&gt;</span></span>-&lt;OS-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ARCH</span><span class="token punctuation">&gt;</span></span>.tar.gz</code> too?</p>
+<p><strong>Answer</strong>: No.</p>
+<p>As the Kubernetes CRI feature has been already included in <code>containerd-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>VERSION</span><span class="token punctuation">&gt;</span></span>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>OS</span><span class="token punctuation">&gt;</span></span>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ARCH</span><span class="token punctuation">&gt;</span></span>.tar.gz</code>,
+you do not need to download the <code>cri-containerd-....</code> archives to use CRI.</p>
+<p>The <code>cri-containerd-...</code> archives are <a href="https://github.com/containerd/containerd/blob/main/RELEASES.md#deprecated-features" target="_blank">deprecated</a>,
+do not work on old Linux distributions, and will be removed in containerd 2.0.</p>
+</blockquote>
+<h5 id="systemd">systemd</h5>
+<p>If you intend to start containerd via systemd, you should also download the <code>containerd.service</code> unit file from
+<a href="https://raw.githubusercontent.com/containerd/containerd/main/containerd.service" target="_blank">https://raw.githubusercontent.com/containerd/containerd/main/containerd.service</a> into <code>/usr/local/lib/systemd/system/containerd.service</code>,
+and run the following commands:</p>
+<pre class="language-"><code class="lang-bash">systemctl daemon-reload
+systemctl <span class="token builtin class-name">enable</span> --now containerd
+</code></pre>
+<h4 id="step-2-installing-runc">Step 2: Installing runc</h4>
+<p>Download the <code>runc.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ARCH</span><span class="token punctuation">&gt;</span></span></code> binary from <a href="https://github.com/opencontainers/runc/releases" target="_blank">https://github.com/opencontainers/runc/releases</a> ,
+verify its sha256sum, and install it as <code>/usr/local/sbin/runc</code>.</p>
+<pre class="language-"><code class="lang-console">$ install -m 755 runc.amd64 /usr/local/sbin/runc
+</code></pre>
+<p>The binary is built statically and should work on any Linux distribution.</p>
+<h4 id="step-3-installing-cni-plugins">Step 3: Installing CNI plugins</h4>
+<p>Download the <code>cni-plugins-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>OS</span><span class="token punctuation">&gt;</span></span>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ARCH</span><span class="token punctuation">&gt;</span></span>-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>VERSION</span><span class="token punctuation">&gt;</span></span>.tgz</code> archive from <a href="https://github.com/containernetworking/plugins/releases" target="_blank">https://github.com/containernetworking/plugins/releases</a> ,
+verify its sha256sum, and extract it under <code>/opt/cni/bin</code>:</p>
+<pre class="language-"><code class="lang-console">$ mkdir -p /opt/cni/bin
+$ tar Cxzvf /opt/cni/bin cni-plugins-linux-amd64-v1.1.1.tgz
+./
+./macvlan
+./static
+./vlan
+./portmap
+./host-local
+./vrf
+./bridge
+./tuning
+./firewall
+./host-device
+./sbr
+./loopback
+./dhcp
+./ptp
+./ipvlan
+./bandwidth
+</code></pre>
+<p>The binaries are built statically and should work on any Linux distribution.</p>
+<h3 id="option-2-from-apt-get-or-dnf">Option 2: From <code>apt-get</code> or <code>dnf</code></h3>
+<p>The <code>containerd.io</code> packages in DEB and RPM formats are distributed by Docker (not by the containerd project).
+See the Docker documentation for how to set up <code>apt-get</code> or <code>dnf</code> to install <code>containerd.io</code> packages:</p>
+<ul>
+<li><a href="https://docs.docker.com/engine/install/centos/" target="_blank">CentOS</a></li>
+<li><a href="https://docs.docker.com/engine/install/debian/" target="_blank">Debian</a></li>
+<li><a href="https://docs.docker.com/engine/install/fedora/" target="_blank">Fedora</a></li>
+<li><a href="https://docs.docker.com/engine/install/ubuntu/" target="_blank">Ubuntu</a></li>
+</ul>
+<p>The <code>containerd.io</code> package contains runc too, but does not contain CNI plugins.</p>
+<h3 id="option-3-from-source">Option 3: From source</h3>
+<p>To install containerd and its dependencies from the source, see <a href="BUILDING.md"><code>BUILDING.md</code></a>.</p>
+<h2 id="installing-containerd-on-windows">Installing containerd on Windows</h2>
+<p>From a PowerShell session run the following commands:</p>
+<pre class="language-"><code class="lang-PowerShell"># Download and extract desired containerd Windows binaries
+$Version=&quot;1.6.4&quot;
+curl.exe -L https://github.com/containerd/containerd/releases/download/v$Version/containerd-$Version-windows-amd64.tar.gz -o containerd-windows-amd64.tar.gz
+tar.exe xvf .\containerd-windows-amd64.tar.gz
+
+# Copy and configure
+Copy-Item -Path &quot;.\bin\*&quot; -Destination &quot;$Env:ProgramFiles\containerd&quot; -Recurse -Container:$false -Force
+cd $Env:ProgramFiles\containerd\
+.\containerd.exe config default | Out-File config.toml -Encoding ascii
+
+# Review the configuration. Depending on setup you may want to adjust:
+# - the sandbox_image (Kubernetes pause image)
+# - cni bin_dir and conf_dir locations
+Get-Content config.toml
+
+# Register and start service
+.\containerd.exe --register-service
+Start-Service containerd
+</code></pre>
+<h2 id="interacting-with-containerd-via-cli">Interacting with containerd via CLI</h2>
+<p>There are several command line interface (CLI) projects for interacting with containerd:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Community</th>
+<th>API</th>
+<th>Target</th>
+<th>Web site</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ctr</code></td>
+<td>containerd</td>
+<td>Native</td>
+<td>For debugging only</td>
+<td>(None, see <code>ctr --help</code> to learn the usage)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>nerdctl</code></td>
+<td>containerd (non-core)</td>
+<td>Native</td>
+<td>General-purpose</td>
+<td><a href="https://github.com/containerd/nerdctl" target="_blank">https://github.com/containerd/nerdctl</a></td>
+<td></td>
+</tr>
+<tr>
+<td><code>crictl</code></td>
+<td>Kubernetes SIG-node</td>
+<td>CRI</td>
+<td>For debugging only</td>
+<td><a href="https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md" target="_blank">https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>While the <code>ctr</code> tool is bundled together with containerd, it should be noted the <code>ctr</code> tool is solely made for debugging containerd.
+The <a href="https://github.com/containerd/nerdctl" target="_blank"><code>nerdctl</code></a> tool provides stable and human-friendly user experience.</p>
+<p>Example (<code>ctr</code>):</p>
+<pre class="language-"><code class="lang-bash">ctr images pull docker.io/library/redis:alpine
+ctr run docker.io/library/redis:alpine redis
+</code></pre>
+<p>Example (<code>nerdctl</code>):</p>
+<pre class="language-"><code class="lang-bash">nerdctl run --name redis redis:alpine
+</code></pre>
+<h2 id="setting-up-containerd-for-kubernetes">Setting up containerd for Kubernetes</h2>
+<p>containerd has built-in support for Kubernetes Container Runtime Interface (CRI).</p>
+<p>To set up containerd nodes for managed Kubernetes services, see the service providers&apos; documentations:</p>
+<ul>
+<li><a href="https://docs.aws.amazon.com/eks/latest/userguide/dockershim-deprecation.html" target="_blank">Amazon Elastic Kubernetes Service</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/aks/cluster-configuration" target="_blank">Azure Kubernetes Service</a></li>
+<li><a href="https://cloud.google.com/kubernetes-engine/docs/concepts/using-containerd" target="_blank">Google Kubernetes Engine</a></li>
+</ul>
+<p>For non-managed environments, see the following Kubernetes documentations:</p>
+<ul>
+<li><a href="https://kubernetes.io/docs/setup/production-environment/container-runtimes/" target="_blank">Getting started / Production environment / Container runtimes</a></li>
+<li><a href="https://kubernetes.io/docs/setup/production-environment/tools/" target="_blank">Getting started / Production environment / Installing Kubernetes with deployment tools</a></li>
+</ul>
+<hr>
+<h1 id="advanced-topics">Advanced topics</h1>
+<h2 id="customizing-containerd">Customizing containerd</h2>
+<p>containerd uses a configuration file located in <code>/etc/containerd/config.toml</code> for specifying daemon level options.
+A sample configuration file can be found <a href="docs/man/containerd-config.toml.5.md">here</a>.</p>
+<p>The default configuration can be generated via <code>containerd config default &gt; /etc/containerd/config.toml</code>.</p>
+<h2 id="implementing-your-own-containerd-client">Implementing your own containerd client</h2>
+<p>There are many different ways to use containerd.
+If you are a developer working on containerd you can use the <code>ctr</code> tool or the <code>nerdctl</code> tool to quickly test features and functionality without writing extra code.
+However, if you want to integrate containerd into your project we have an easy to use client package that allows you to work with containerd.</p>
+<p>In this guide we will pull and run a redis server with containerd using the client package.
+This project requires a recent version of Go.
+See the header of <a href="https://github.com/containerd/containerd/blob/main/go.mod" target="_blank"><code>go.mod</code></a> for the recommended Go version.</p>
+<h3 id="connecting-to-containerd">Connecting to containerd</h3>
+<p>We will start a new <code>main.go</code> file and import the containerd root package that contains the client.</p>
+<pre class="language-"><code class="lang-go"><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+    <span class="token string">&quot;log&quot;</span>
+
+    <span class="token string">&quot;github.com/containerd/containerd&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> err <span class="token operator">:=</span> <span class="token function">redisExample</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        log<span class="token punctuation">.</span><span class="token function">Fatal</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">redisExample</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>
+    client<span class="token punctuation">,</span> err <span class="token operator">:=</span> containerd<span class="token punctuation">.</span><span class="token function">New</span><span class="token punctuation">(</span><span class="token string">&quot;/run/containerd/containerd.sock&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+    <span class="token keyword">defer</span> client<span class="token punctuation">.</span><span class="token function">Close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>This will create a new client with the default containerd socket path.
+Because we are working with a daemon over GRPC we need to create a <code>context</code> for use with calls to client methods.
+containerd is also namespaced for callers of the API.
+We should also set a namespace for our guide after creating the context.</p>
+<pre class="language-"><code class="lang-go">    ctx <span class="token operator">:=</span> namespaces<span class="token punctuation">.</span><span class="token function">WithNamespace</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span><span class="token function">Background</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;example&quot;</span><span class="token punctuation">)</span>
+</code></pre>
+<p>Having a namespace for our usage ensures that containers, images, and other resources without containerd do not conflict with other users of a single daemon.</p>
+<h3 id="pulling-the-redis-image">Pulling the redis image</h3>
+<p>Now that we have a client to work with we need to pull an image.
+We can use the redis image based on Alpine Linux from the DockerHub.</p>
+<pre class="language-"><code class="lang-go">    image<span class="token punctuation">,</span> err <span class="token operator">:=</span> client<span class="token punctuation">.</span><span class="token function">Pull</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> <span class="token string">&quot;docker.io/library/redis:alpine&quot;</span><span class="token punctuation">,</span> containerd<span class="token punctuation">.</span>WithPullUnpack<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>The containerd client uses the <code>Opts</code> pattern for many of the method calls.
+We use the <code>containerd.WithPullUnpack</code> so that we not only fetch and download the content into containerd&apos;s content store but also unpack it into a snapshotter for use as a root filesystem.</p>
+<p>Let&apos;s put the code together that will pull the redis image based on alpine linux from Dockerhub and then print the name of the image on the console&apos;s output.</p>
+<pre class="language-"><code class="lang-go"><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+        <span class="token string">&quot;context&quot;</span>
+        <span class="token string">&quot;log&quot;</span>
+
+        <span class="token string">&quot;github.com/containerd/containerd&quot;</span>
+        <span class="token string">&quot;github.com/containerd/containerd/namespaces&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> err <span class="token operator">:=</span> <span class="token function">redisExample</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+                log<span class="token punctuation">.</span><span class="token function">Fatal</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">redisExample</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>
+        client<span class="token punctuation">,</span> err <span class="token operator">:=</span> containerd<span class="token punctuation">.</span><span class="token function">New</span><span class="token punctuation">(</span><span class="token string">&quot;/run/containerd/containerd.sock&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> err
+        <span class="token punctuation">}</span>
+        <span class="token keyword">defer</span> client<span class="token punctuation">.</span><span class="token function">Close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        ctx <span class="token operator">:=</span> namespaces<span class="token punctuation">.</span><span class="token function">WithNamespace</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span><span class="token function">Background</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;example&quot;</span><span class="token punctuation">)</span>
+        image<span class="token punctuation">,</span> err <span class="token operator">:=</span> client<span class="token punctuation">.</span><span class="token function">Pull</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> <span class="token string">&quot;docker.io/library/redis:alpine&quot;</span><span class="token punctuation">,</span> containerd<span class="token punctuation">.</span>WithPullUnpack<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> err
+        <span class="token punctuation">}</span>
+        log<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;Successfully pulled %s image\n&quot;</span><span class="token punctuation">,</span> image<span class="token punctuation">.</span><span class="token function">Name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<pre class="language-"><code class="lang-bash"><span class="token operator">&gt;</span> go build main.go
+<span class="token operator">&gt;</span> <span class="token function">sudo</span> ./main
+
+<span class="token number">2017</span>/08/13 <span class="token number">17</span>:43:21 Successfully pulled docker.io/library/redis:alpine image
+</code></pre>
+<h3 id="creating-an-oci-spec-and-container">Creating an OCI Spec and Container</h3>
+<p>Now that we have an image to base our container off of, we need to generate an OCI runtime specification that the container can be based off of as well as the new container.</p>
+<p>containerd provides reasonable defaults for generating OCI runtime specs.
+There is also an <code>Opt</code> for modifying the default config based on the image that we pulled.</p>
+<p>The container will be based off of the image, and we will:</p>
+<ol>
+<li>allocate a new read-write snapshot so the container can store any persistent information.</li>
+<li>create a new spec for the container.</li>
+</ol>
+<pre class="language-"><code class="lang-go">    container<span class="token punctuation">,</span> err <span class="token operator">:=</span> client<span class="token punctuation">.</span><span class="token function">NewContainer</span><span class="token punctuation">(</span>
+        ctx<span class="token punctuation">,</span>
+        <span class="token string">&quot;redis-server&quot;</span><span class="token punctuation">,</span>
+        containerd<span class="token punctuation">.</span><span class="token function">WithNewSnapshot</span><span class="token punctuation">(</span><span class="token string">&quot;redis-server-snapshot&quot;</span><span class="token punctuation">,</span> image<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        containerd<span class="token punctuation">.</span><span class="token function">WithNewSpec</span><span class="token punctuation">(</span>oci<span class="token punctuation">.</span><span class="token function">WithImageConfig</span><span class="token punctuation">(</span>image<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span>
+    <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+    <span class="token keyword">defer</span> container<span class="token punctuation">.</span><span class="token function">Delete</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> containerd<span class="token punctuation">.</span>WithSnapshotCleanup<span class="token punctuation">)</span>
+</code></pre>
+<p>If you have an existing OCI specification created you can use <code>containerd.WithSpec(spec)</code> to set it on the container.</p>
+<p>When creating a new snapshot for the container we need to provide a snapshot ID as well as the Image that the container will be based on.
+By providing a separate snapshot ID than the container ID we can easily reuse, existing snapshots across different containers.</p>
+<p>We also add a line to delete the container along with its snapshot after we are done with this example.</p>
+<p>Here is example code to pull the redis image based on alpine linux from Dockerhub, create an OCI spec, create a container based on the spec and finally delete the container.</p>
+<pre class="language-"><code class="lang-go"><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+        <span class="token string">&quot;context&quot;</span>
+        <span class="token string">&quot;log&quot;</span>
+
+        <span class="token string">&quot;github.com/containerd/containerd&quot;</span>
+        <span class="token string">&quot;github.com/containerd/containerd/oci&quot;</span>
+        <span class="token string">&quot;github.com/containerd/containerd/namespaces&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> err <span class="token operator">:=</span> <span class="token function">redisExample</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+                log<span class="token punctuation">.</span><span class="token function">Fatal</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">redisExample</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>
+        client<span class="token punctuation">,</span> err <span class="token operator">:=</span> containerd<span class="token punctuation">.</span><span class="token function">New</span><span class="token punctuation">(</span><span class="token string">&quot;/run/containerd/containerd.sock&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> err
+        <span class="token punctuation">}</span>
+        <span class="token keyword">defer</span> client<span class="token punctuation">.</span><span class="token function">Close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+        ctx <span class="token operator">:=</span> namespaces<span class="token punctuation">.</span><span class="token function">WithNamespace</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span><span class="token function">Background</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;example&quot;</span><span class="token punctuation">)</span>
+        image<span class="token punctuation">,</span> err <span class="token operator">:=</span> client<span class="token punctuation">.</span><span class="token function">Pull</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> <span class="token string">&quot;docker.io/library/redis:alpine&quot;</span><span class="token punctuation">,</span> containerd<span class="token punctuation">.</span>WithPullUnpack<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> err
+        <span class="token punctuation">}</span>
+        log<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;Successfully pulled %s image\n&quot;</span><span class="token punctuation">,</span> image<span class="token punctuation">.</span><span class="token function">Name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        container<span class="token punctuation">,</span> err <span class="token operator">:=</span> client<span class="token punctuation">.</span><span class="token function">NewContainer</span><span class="token punctuation">(</span>
+                ctx<span class="token punctuation">,</span>
+                <span class="token string">&quot;redis-server&quot;</span><span class="token punctuation">,</span>
+                containerd<span class="token punctuation">.</span><span class="token function">WithNewSnapshot</span><span class="token punctuation">(</span><span class="token string">&quot;redis-server-snapshot&quot;</span><span class="token punctuation">,</span> image<span class="token punctuation">)</span><span class="token punctuation">,</span>
+                containerd<span class="token punctuation">.</span><span class="token function">WithNewSpec</span><span class="token punctuation">(</span>oci<span class="token punctuation">.</span><span class="token function">WithImageConfig</span><span class="token punctuation">(</span>image<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span>
+        <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> err
+        <span class="token punctuation">}</span>
+        <span class="token keyword">defer</span> container<span class="token punctuation">.</span><span class="token function">Delete</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> containerd<span class="token punctuation">.</span>WithSnapshotCleanup<span class="token punctuation">)</span>
+        log<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;Successfully created container with ID %s and snapshot with ID redis-server-snapshot&quot;</span><span class="token punctuation">,</span> container<span class="token punctuation">.</span><span class="token function">ID</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+        <span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Let&apos;s see it in action.</p>
+<pre class="language-"><code class="lang-bash"><span class="token operator">&gt;</span> go build main.go
+<span class="token operator">&gt;</span> <span class="token function">sudo</span> ./main
+
+<span class="token number">2017</span>/08/13 <span class="token number">18</span>:01:35 Successfully pulled docker.io/library/redis:alpine image
+<span class="token number">2017</span>/08/13 <span class="token number">18</span>:01:35 Successfully created container with ID redis-server and snapshot with ID redis-server-snapshot
+</code></pre>
+<h3 id="creating-a-running-task">Creating a running Task</h3>
+<p>One thing that may be confusing at first for new containerd users is the separation between a <code>Container</code> and a <code>Task</code>.
+A container is a metadata object that resources are allocated and attached to.
+A task is a live, running process on the system.
+Tasks should be deleted after each run while a container can be used, updated, and queried multiple times.</p>
+<pre class="language-"><code class="lang-go">    task<span class="token punctuation">,</span> err <span class="token operator">:=</span> container<span class="token punctuation">.</span><span class="token function">NewTask</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> cio<span class="token punctuation">.</span><span class="token function">NewCreator</span><span class="token punctuation">(</span>cio<span class="token punctuation">.</span>WithStdio<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+    <span class="token keyword">defer</span> task<span class="token punctuation">.</span><span class="token function">Delete</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span>
+</code></pre>
+<p>The new task that we just created is actually a running process on your system.
+We use <code>cio.WithStdio</code> so that all IO from the container is sent to our <code>main.go</code> process.
+This is a <code>cio.Opt</code> that configures the <code>Streams</code> used by <code>NewCreator</code> to return a <code>cio.IO</code>
+for the new task.</p>
+<p>If you are familiar with the OCI runtime actions, the task is currently in the &quot;created&quot; state.
+This means that the namespaces, root filesystem, and various container level settings have been initialized but the user defined process, in this example &quot;redis-server&quot;, has not been started.
+This gives users a chance to setup network interfaces or attach different tools to monitor the container.
+containerd also takes this opportunity to monitor your container as well.
+Waiting on things like the container&apos;s exit status and cgroup metrics are setup at this point.</p>
+<p>If you are familiar with prometheus you can curl the containerd metrics endpoint (in the <code>config.toml</code> that we created) to see your container&apos;s metrics:</p>
+<pre class="language-"><code class="lang-bash"><span class="token operator">&gt;</span> <span class="token function">curl</span> <span class="token number">127.0</span>.0.1:1338/v1/metrics
+</code></pre>
+<p>Pretty cool right?</p>
+<h3 id="task-wait-and-start">Task Wait and Start</h3>
+<p>Now that we have a task in the created state we need to make sure that we wait on the task to exit.
+It is essential to wait for the task to finish so that we can close our example and cleanup the resources that we created.
+You always want to make sure you <code>Wait</code> before calling <code>Start</code> on a task.
+This makes sure that you do not encounter any races if the task has a simple program like <code>/bin/true</code> that exits promptly after calling start.</p>
+<pre class="language-"><code class="lang-go">    exitStatusC<span class="token punctuation">,</span> err <span class="token operator">:=</span> task<span class="token punctuation">.</span><span class="token function">Wait</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span> err <span class="token operator">:=</span> task<span class="token punctuation">.</span><span class="token function">Start</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>Now we should see the <code>redis-server</code> logs in our terminal when we run the <code>main.go</code> file.</p>
+<h3 id="killing-the-task">Killing the task</h3>
+<p>Since we are running a long running server we will need to kill the task in order to exit out of our example.
+To do this we will simply call <code>Kill</code> on the task after waiting a couple of seconds so we have a chance to see the redis-server logs.</p>
+<pre class="language-"><code class="lang-go">    time<span class="token punctuation">.</span><span class="token function">Sleep</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">*</span> time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span>
+
+    <span class="token keyword">if</span> err <span class="token operator">:=</span> task<span class="token punctuation">.</span><span class="token function">Kill</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> syscall<span class="token punctuation">.</span>SIGTERM<span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+
+    status <span class="token operator">:=</span> <span class="token operator">&lt;-</span>exitStatusC
+    code<span class="token punctuation">,</span> exitedAt<span class="token punctuation">,</span> err <span class="token operator">:=</span> status<span class="token punctuation">.</span><span class="token function">Result</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+    fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;redis-server exited with status: %d\n&quot;</span><span class="token punctuation">,</span> code<span class="token punctuation">)</span>
+</code></pre>
+<p>We wait on our exit status channel that we setup to ensure the task has fully exited and we get the exit status.
+If you have to reload containers or miss waiting on a task, <code>Delete</code> will also return the exit status when you finally delete the task.
+We got you covered.</p>
+<pre class="language-"><code class="lang-go">status<span class="token punctuation">,</span> err <span class="token operator">:=</span> task<span class="token punctuation">.</span><span class="token function">Delete</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span>
+</code></pre>
+<h3 id="full-example">Full Example</h3>
+<p>Here is the full example that we just put together.</p>
+<pre class="language-"><code class="lang-go"><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+    <span class="token string">&quot;context&quot;</span>
+    <span class="token string">&quot;fmt&quot;</span>
+    <span class="token string">&quot;log&quot;</span>
+    <span class="token string">&quot;syscall&quot;</span>
+    <span class="token string">&quot;time&quot;</span>
+
+    <span class="token string">&quot;github.com/containerd/containerd&quot;</span>
+    <span class="token string">&quot;github.com/containerd/containerd/cio&quot;</span>
+    <span class="token string">&quot;github.com/containerd/containerd/oci&quot;</span>
+    <span class="token string">&quot;github.com/containerd/containerd/namespaces&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> err <span class="token operator">:=</span> <span class="token function">redisExample</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        log<span class="token punctuation">.</span><span class="token function">Fatal</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">redisExample</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>
+    <span class="token comment">// create a new client connected to the default socket path for containerd</span>
+    client<span class="token punctuation">,</span> err <span class="token operator">:=</span> containerd<span class="token punctuation">.</span><span class="token function">New</span><span class="token punctuation">(</span><span class="token string">&quot;/run/containerd/containerd.sock&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+    <span class="token keyword">defer</span> client<span class="token punctuation">.</span><span class="token function">Close</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// create a new context with an &quot;example&quot; namespace</span>
+    ctx <span class="token operator">:=</span> namespaces<span class="token punctuation">.</span><span class="token function">WithNamespace</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span><span class="token function">Background</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">&quot;example&quot;</span><span class="token punctuation">)</span>
+
+    <span class="token comment">// pull the redis image from DockerHub</span>
+    image<span class="token punctuation">,</span> err <span class="token operator">:=</span> client<span class="token punctuation">.</span><span class="token function">Pull</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> <span class="token string">&quot;docker.io/library/redis:alpine&quot;</span><span class="token punctuation">,</span> containerd<span class="token punctuation">.</span>WithPullUnpack<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// create a container</span>
+    container<span class="token punctuation">,</span> err <span class="token operator">:=</span> client<span class="token punctuation">.</span><span class="token function">NewContainer</span><span class="token punctuation">(</span>
+        ctx<span class="token punctuation">,</span>
+        <span class="token string">&quot;redis-server&quot;</span><span class="token punctuation">,</span>
+        containerd<span class="token punctuation">.</span><span class="token function">WithImage</span><span class="token punctuation">(</span>image<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        containerd<span class="token punctuation">.</span><span class="token function">WithNewSnapshot</span><span class="token punctuation">(</span><span class="token string">&quot;redis-server-snapshot&quot;</span><span class="token punctuation">,</span> image<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        containerd<span class="token punctuation">.</span><span class="token function">WithNewSpec</span><span class="token punctuation">(</span>oci<span class="token punctuation">.</span><span class="token function">WithImageConfig</span><span class="token punctuation">(</span>image<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span>
+    <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+    <span class="token keyword">defer</span> container<span class="token punctuation">.</span><span class="token function">Delete</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> containerd<span class="token punctuation">.</span>WithSnapshotCleanup<span class="token punctuation">)</span>
+
+    <span class="token comment">// create a task from the container</span>
+    task<span class="token punctuation">,</span> err <span class="token operator">:=</span> container<span class="token punctuation">.</span><span class="token function">NewTask</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> cio<span class="token punctuation">.</span><span class="token function">NewCreator</span><span class="token punctuation">(</span>cio<span class="token punctuation">.</span>WithStdio<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+    <span class="token keyword">defer</span> task<span class="token punctuation">.</span><span class="token function">Delete</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span>
+
+    <span class="token comment">// make sure we wait before calling start</span>
+    exitStatusC<span class="token punctuation">,</span> err <span class="token operator">:=</span> task<span class="token punctuation">.</span><span class="token function">Wait</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// call start on the task to execute the redis server</span>
+    <span class="token keyword">if</span> err <span class="token operator">:=</span> task<span class="token punctuation">.</span><span class="token function">Start</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// sleep for a lil bit to see the logs</span>
+    time<span class="token punctuation">.</span><span class="token function">Sleep</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">*</span> time<span class="token punctuation">.</span>Second<span class="token punctuation">)</span>
+
+    <span class="token comment">// kill the process and get the exit status</span>
+    <span class="token keyword">if</span> err <span class="token operator">:=</span> task<span class="token punctuation">.</span><span class="token function">Kill</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> syscall<span class="token punctuation">.</span>SIGTERM<span class="token punctuation">)</span><span class="token punctuation">;</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// wait for the process to fully exit and print out the exit status</span>
+
+    status <span class="token operator">:=</span> <span class="token operator">&lt;-</span>exitStatusC
+    code<span class="token punctuation">,</span> <span class="token boolean">_</span><span class="token punctuation">,</span> err <span class="token operator">:=</span> status<span class="token punctuation">.</span><span class="token function">Result</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> err
+    <span class="token punctuation">}</span>
+    fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;redis-server exited with status: %d\n&quot;</span><span class="token punctuation">,</span> code<span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>We can build this example and run it as follows to see our hard work come together.</p>
+<pre class="language-"><code class="lang-bash"><span class="token operator">&gt;</span> go build main.go
+<span class="token operator">&gt;</span> <span class="token function">sudo</span> ./main
+
+<span class="token number">1</span>:C 04 Aug <span class="token number">20</span>:41:37.682 <span class="token comment"># oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo</span>
+<span class="token number">1</span>:C 04 Aug <span class="token number">20</span>:41:37.682 <span class="token comment"># Redis version=4.0.1, bits=64, commit=00000000, modified=0, pid=1, just started</span>
+<span class="token number">1</span>:C 04 Aug <span class="token number">20</span>:41:37.682 <span class="token comment"># Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf</span>
+<span class="token number">1</span>:M 04 Aug <span class="token number">20</span>:41:37.682 <span class="token comment"># You requested maxclients of 10000 requiring at least 10032 max file descriptors.</span>
+<span class="token number">1</span>:M 04 Aug <span class="token number">20</span>:41:37.682 <span class="token comment"># Server can&apos;t set maximum open files to 10032 because of OS error: Operation not permitted.</span>
+<span class="token number">1</span>:M 04 Aug <span class="token number">20</span>:41:37.682 <span class="token comment"># Current maximum open files is 1024. maxclients has been reduced to 992 to compensate for low ulimit. If you need higher maxclients increase &apos;ulimit -n&apos;.</span>
+<span class="token number">1</span>:M 04 Aug <span class="token number">20</span>:41:37.683 * Running <span class="token assign-left variable">mode</span><span class="token operator">=</span>standalone, <span class="token assign-left variable">port</span><span class="token operator">=</span><span class="token number">6379</span>.
+<span class="token number">1</span>:M 04 Aug <span class="token number">20</span>:41:37.683 <span class="token comment"># WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.</span>
+<span class="token number">1</span>:M 04 Aug <span class="token number">20</span>:41:37.684 <span class="token comment"># Server initialized</span>
+<span class="token number">1</span>:M 04 Aug <span class="token number">20</span>:41:37.684 <span class="token comment"># WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add &apos;vm.overcommit_memory = 1&apos; to /etc/sysctl.conf and then reboot or run the command &apos;sysctl vm.overcommit_memory=1&apos; for this to take effect.</span>
+<span class="token number">1</span>:M 04 Aug <span class="token number">20</span>:41:37.684 <span class="token comment"># WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command &apos;echo never &gt; /sys/kernel/mm/transparent_hugepage/enabled&apos; as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.</span>
+<span class="token number">1</span>:M 04 Aug <span class="token number">20</span>:41:37.684 * Ready to accept connections
+<span class="token number">1</span>:signal-handler <span class="token punctuation">(</span><span class="token number">1501879300</span><span class="token punctuation">)</span> Received SIGTERM scheduling shutdown<span class="token punctuation">..</span>.
+<span class="token number">1</span>:M 04 Aug <span class="token number">20</span>:41:40.791 <span class="token comment"># User requested shutdown...</span>
+<span class="token number">1</span>:M 04 Aug <span class="token number">20</span>:41:40.791 * Saving the final RDB snapshot before exiting.
+<span class="token number">1</span>:M 04 Aug <span class="token number">20</span>:41:40.794 * DB saved on disk
+<span class="token number">1</span>:M 04 Aug <span class="token number">20</span>:41:40.794 <span class="token comment"># Redis is now ready to exit, bye bye...</span>
+redis-server exited with status: <span class="token number">0</span>
+</code></pre>
+<p>In the end, we really did not write that much code when you use the client package.</p>
+<hr>
+<p>We hope this guide helped to get you up and running with containerd.
+Feel free to join the <code>#containerd</code> and <code>#containerd-dev</code> slack channels on Cloud Native Computing Foundation&apos;s (CNCF) slack - <code>cloud-native.slack.com</code> if you have any questions and like all things, if you want to help contribute to containerd or this guide, submit a pull request. <a href="https://slack.cncf.io" target="_blank">Get Invite to CNCF slack.</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="garbage-collection.html" class="navigation navigation-prev " aria-label="Previous page: Garbage Collection">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="hosts.html" class="navigation navigation-next " aria-label="Next page: Hosts">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Getting Started","level":"1.9","depth":1,"next":{"title":"Hosts","level":"1.10","depth":1,"path":"hosts.md","ref":"hosts.md","articles":[]},"previous":{"title":"Garbage Collection","level":"1.8","depth":1,"path":"garbage-collection.md","ref":"garbage-collection.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"getting-started.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

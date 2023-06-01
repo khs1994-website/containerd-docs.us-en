@@ -1,0 +1,1283 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Crictl · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="decryption.html" />
+    
+    
+    <link rel="prev" href="config.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="architecture.html">
+            
+                <a href="architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="config.html">
+            
+                <a href="config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="crictl.html">
+            
+                <a href="crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="decryption.html">
+            
+                <a href="decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="registry.html">
+            
+                <a href="registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="testing.html">
+            
+                <a href="testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../historical/cri/proposal.html">
+            
+                <a href="../historical/cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../historical/design/architecture.html">
+            
+                <a href="../historical/design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../historical/design/data-flow.html">
+            
+                <a href="../historical/design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../historical/design/lifecycle.html">
+            
+                <a href="../historical/design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../historical/design/mounts.html">
+            
+                <a href="../historical/design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="../historical/design/snapshots.html">
+            
+                <a href="../historical/design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../historical/reports/2017-01-13.html">
+            
+                <a href="../historical/reports/2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../historical/reports/2017-01-20.html">
+            
+                <a href="../historical/reports/2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../historical/reports/2017-01-27.html">
+            
+                <a href="../historical/reports/2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../historical/reports/2017-02-10.html">
+            
+                <a href="../historical/reports/2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="../historical/reports/2017-02-24.html">
+            
+                <a href="../historical/reports/2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="../historical/reports/2017-03-10.html">
+            
+                <a href="../historical/reports/2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="../historical/reports/2017-03-17.html">
+            
+                <a href="../historical/reports/2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="../historical/reports/2017-03-24.html">
+            
+                <a href="../historical/reports/2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="../historical/reports/2017-04-28.html">
+            
+                <a href="../historical/reports/2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="../historical/reports/2017-05-05.html">
+            
+                <a href="../historical/reports/2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="../historical/reports/2017-05-19.html">
+            
+                <a href="../historical/reports/2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="../historical/reports/2017-05-26.html">
+            
+                <a href="../historical/reports/2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="../historical/reports/2017-06-09.html">
+            
+                <a href="../historical/reports/2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="../historical/reports/2017-06-23.html">
+            
+                <a href="../historical/reports/2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../man/containerd-config.8.html">
+            
+                <a href="../man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../man/containerd-config.toml.5.html">
+            
+                <a href="../man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../snapshotters/">
+            
+                <a href="../snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../snapshotters/devmapper.html">
+            
+                <a href="../snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../client-opts.html">
+            
+                <a href="../client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../content-flow.html">
+            
+                <a href="../content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../garbage-collection.html">
+            
+                <a href="../garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../getting-started.html">
+            
+                <a href="../getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../hosts.html">
+            
+                <a href="../hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../managed-opt.html">
+            
+                <a href="../managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../namespaces.html">
+            
+                <a href="../namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../NRI.html">
+            
+                <a href="../NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../ops.html">
+            
+                <a href="../ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../PLUGINS.html">
+            
+                <a href="../PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../remote-snapshotter.html">
+            
+                <a href="../remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../rootless.html">
+            
+                <a href="../rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../RUNC.html">
+            
+                <a href="../RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../stream_processors.html">
+            
+                <a href="../stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../tracing.html">
+            
+                <a href="../tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../transfer.html">
+            
+                <a href="../transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Crictl</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="crictl-user-guide">CRICTL User Guide</h1>
+<p>This document presumes you already have <code>containerd</code> with the <code>cri</code> plugin installed and running.</p>
+<p>This document is for developers who wish to debug, inspect, and manage their pods,
+containers, and container images.</p>
+<p>Before generating issues against this document, <code>containerd</code>, <code>containerd/cri</code>,
+or <code>crictl</code> please make sure the issue has not already been submitted.</p>
+<h2 id="install-crictl">Install crictl</h2>
+<p>If you have not already installed crictl please install the version compatible
+with the <code>cri</code> plugin you are using. If you are a user, your deployment
+should have installed crictl for you. If not, get it from your release tarball.
+If you are a developer the current version of crictl is specified <a href="../script/setup/critools-version">here</a>.
+A helper command has been included to install the dependencies at the right version:</p>
+<pre class="language-"><code class="lang-console">$ make install-deps
+</code></pre>
+<ul>
+<li>Note: The file named <code>/etc/crictl.yaml</code> is used to configure crictl
+so you don&apos;t have to repeatedly specify the runtime sock used to connect crictl
+to the container runtime:<pre class="language-"><code class="lang-console">$ cat /etc/crictl.yaml
+runtime-endpoint: unix:///run/containerd/containerd.sock
+image-endpoint: unix:///run/containerd/containerd.sock
+timeout: 10
+debug: true
+</code></pre>
+</li>
+</ul>
+<h2 id="download-and-inspect-a-container-image">Download and Inspect a Container Image</h2>
+<p>The pull command tells the container runtime to download a container image from
+a container registry.</p>
+<pre class="language-"><code class="lang-console">$ crictl pull busybox
+  ...
+$ crictl inspecti busybox
+  ... displays information about the image.
+</code></pre>
+<p><strong><em>Note:</em></strong> If you get an error similar to the following when running a <code>crictl</code>
+command (and your containerd instance is already running):</p>
+<pre class="language-"><code class="lang-console">crictl info
+FATA[0000] getting status of runtime failed: rpc error: code = Unimplemented desc = unknown service runtime.v1alpha2.RuntimeService
+</code></pre>
+<p>This could be that you are using an incorrect containerd configuration (maybe
+from a Docker install). You will need to update your containerd configuration
+to the containerd instance that you are running. One way of doing this is as
+follows:</p>
+<pre class="language-"><code class="lang-console">$ mv /etc/containerd/config.toml /etc/containerd/config.bak
+$ containerd config default &gt; /etc/containerd/config.toml
+</code></pre>
+<h2 id="directly-load-a-container-image">Directly Load a Container Image</h2>
+<p>Another way to load an image into the container runtime is with the load
+command. With the load command you inject a container image into the container
+runtime from a file. First you need to create a container image tarball. For
+example to create an image tarball for a pause container using Docker:</p>
+<pre class="language-"><code class="lang-console">$ docker pull registry.k8s.io/pause:3.9
+  3.9: Pulling from pause
+  7582c2cc65ef: Pull complete
+  Digest: sha256:7031c1b283388d2c2e09b57badb803c05ebed362dc88d84b480cc47f72a21097
+  Status: Downloaded newer image for registry.k8s.io/pause:3.9
+  registry.k8s.io/pause:3.9
+$ docker save registry.k8s.io/pause:3.9 -o pause.tar
+</code></pre>
+<p>Then use <code>ctr</code> to load the container image into the container runtime:</p>
+<pre class="language-"><code class="lang-console"># The cri plugin uses the &quot;k8s.io&quot; containerd namespace.
+$ sudo ctr -n=k8s.io images import pause.tar
+  Loaded image: registry.k8s.io/pause:3.9
+</code></pre>
+<p>List images and inspect the pause image:</p>
+<pre class="language-"><code class="lang-console">$ sudo crictl images
+IMAGE                       TAG                 IMAGE ID            SIZE
+docker.io/library/busybox   latest              f6e427c148a76       728kB
+registry.k8s.io/pause            3.9                 e6f181688397       311kB
+$ sudo crictl inspecti e6f181688397
+  ... displays information about the pause image.
+$ sudo crictl inspecti registry.k8s.io/pause:3.9
+  ... displays information about the pause image.
+</code></pre>
+<h2 id="run-a-pod-sandbox-using-a-config-file">Run a pod sandbox (using a config file)</h2>
+<pre class="language-"><code class="lang-console">$ cat sandbox-config.json
+{
+    &quot;metadata&quot;: {
+        &quot;name&quot;: &quot;nginx-sandbox&quot;,
+        &quot;namespace&quot;: &quot;default&quot;,
+        &quot;attempt&quot;: 1,
+        &quot;uid&quot;: &quot;hdishd83djaidwnduwk28bcsb&quot;
+    },
+    &quot;linux&quot;: {
+    }
+}
+
+$ crictl runp sandbox-config.json
+e1c83b0b8d481d4af8ba98d5f7812577fc175a37b10dc824335951f52addbb4e
+$ crictl pods
+PODSANDBOX ID       CREATED             STATE               NAME               NAMESPACE          ATTEMPT
+e1c83b0b8d481       2 hours ago         SANDBOX_READY       nginx-sandbox      default            1
+$ crictl inspectp e1c8
+  ... displays information about the pod and the pod sandbox pause container.
+</code></pre>
+<ul>
+<li>Note: As shown above, you may use truncated IDs if they are unique.</li>
+<li>Other commands to manage the pod include <code>stops ID</code> to stop a running pod and
+<code>rmp ID</code> to remove a pod sandbox.</li>
+</ul>
+<h2 id="create-and-run-a-container-in-the-pod-sandbox-using-a-config-file">Create and Run a Container in the Pod Sandbox (using a config file)</h2>
+<pre class="language-"><code class="lang-console">$ cat container-config.json
+{
+  &quot;metadata&quot;: {
+      &quot;name&quot;: &quot;busybox&quot;
+  },
+  &quot;image&quot;:{
+      &quot;image&quot;: &quot;busybox&quot;
+  },
+  &quot;command&quot;: [
+      &quot;top&quot;
+  ],
+  &quot;linux&quot;: {
+  }
+}
+
+$ crictl create e1c83 container-config.json sandbox-config.json
+0a2c761303163f2acaaeaee07d2ba143ee4cea7e3bde3d32190e2a36525c8a05
+$ crictl ps -a
+CONTAINER ID        IMAGE               CREATED             STATE               NAME                ATTEMPT
+0a2c761303163       docker.io/busybox   2 hours ago         CONTAINER_CREATED   busybox             0
+$ crictl start 0a2c
+0a2c761303163f2acaaeaee07d2ba143ee4cea7e3bde3d32190e2a36525c8a05
+$ crictl ps
+CONTAINER ID        IMAGE               CREATED             STATE               NAME                ATTEMPT
+0a2c761303163       docker.io/busybox   2 hours ago         CONTAINER_RUNNING   busybox             0
+$ crictl inspect 0a2c7
+  ... show detailed information about the container
+</code></pre>
+<h2 id="exec-a-command-in-the-container">Exec a Command in the Container</h2>
+<pre class="language-"><code class="lang-console">$ crictl exec -i -t 0a2c ls
+bin   dev   etc   home  proc  root  sys   tmp   usr   var
+</code></pre>
+<h2 id="display-stats-for-the-container">Display Stats for the Container</h2>
+<pre class="language-"><code class="lang-console">$ crictl stats
+CONTAINER           CPU %               MEM                 DISK              INODES
+0a2c761303163f      0.00                983kB             16.38kB             6
+</code></pre>
+<ul>
+<li>Other commands to manage the container include <code>stop ID</code> to stop a running
+container and <code>rm ID</code> to remove a container.<h2 id="display-version-information">Display Version Information</h2>
+<pre class="language-"><code class="lang-console">$ crictl version
+Version:  0.1.0
+RuntimeName:  containerd
+RuntimeVersion:  v1.7.0
+RuntimeApiVersion:  v1
+</code></pre>
+<h2 id="display-status--configuration-information-about-containerd--the-cri-plugin">Display Status &amp; Configuration Information about Containerd &amp; The CRI Plugin</h2>
+<details><p>
+
+</p></details></li>
+</ul>
+<pre class="language-"><code class="lang-console">$ crictl info
+{
+  &quot;status&quot;: {
+    &quot;conditions&quot;: [
+      {
+        &quot;type&quot;: &quot;RuntimeReady&quot;,
+        &quot;status&quot;: true,
+        &quot;reason&quot;: &quot;&quot;,
+        &quot;message&quot;: &quot;&quot;
+      },
+      {
+        &quot;type&quot;: &quot;NetworkReady&quot;,
+        &quot;status&quot;: true,
+        &quot;reason&quot;: &quot;&quot;,
+        &quot;message&quot;: &quot;&quot;
+      }
+    ]
+  },
+  &quot;cniconfig&quot;: {
+    &quot;PluginDirs&quot;: [
+      &quot;/opt/cni/bin&quot;
+    ],
+    &quot;PluginConfDir&quot;: &quot;/etc/cni/net.d&quot;,
+    &quot;PluginMaxConfNum&quot;: 1,
+    &quot;Prefix&quot;: &quot;eth&quot;,
+    &quot;Networks&quot;: []
+  },
+  &quot;config&quot;: {
+    &quot;containerd&quot;: {
+      &quot;snapshotter&quot;: &quot;overlayfs&quot;,
+      &quot;defaultRuntimeName&quot;: &quot;runc&quot;,
+      &quot;defaultRuntime&quot;: {
+        &quot;runtimeType&quot;: &quot;&quot;,
+        &quot;runtimePath&quot;: &quot;&quot;,
+        &quot;runtimeEngine&quot;: &quot;&quot;,
+        &quot;PodAnnotations&quot;: [],
+        &quot;ContainerAnnotations&quot;: [],
+        &quot;runtimeRoot&quot;: &quot;&quot;,
+        &quot;options&quot;: {},
+        &quot;privileged_without_host_devices&quot;: false,
+        &quot;privileged_without_host_devices_all_devices_allowed&quot;: false,
+        &quot;baseRuntimeSpec&quot;: &quot;&quot;,
+        &quot;cniConfDir&quot;: &quot;&quot;,
+        &quot;cniMaxConfNum&quot;: 0,
+        &quot;snapshotter&quot;: &quot;&quot;,
+        &quot;sandboxMode&quot;: &quot;&quot;
+      },
+      &quot;untrustedWorkloadRuntime&quot;: {
+        &quot;runtimeType&quot;: &quot;&quot;,
+        &quot;runtimePath&quot;: &quot;&quot;,
+        &quot;runtimeEngine&quot;: &quot;&quot;,
+        &quot;PodAnnotations&quot;: [],
+        &quot;ContainerAnnotations&quot;: [],
+        &quot;runtimeRoot&quot;: &quot;&quot;,
+        &quot;options&quot;: {},
+        &quot;privileged_without_host_devices&quot;: false,
+        &quot;privileged_without_host_devices_all_devices_allowed&quot;: false,
+        &quot;baseRuntimeSpec&quot;: &quot;&quot;,
+        &quot;cniConfDir&quot;: &quot;&quot;,
+        &quot;cniMaxConfNum&quot;: 0,
+        &quot;snapshotter&quot;: &quot;&quot;,
+        &quot;sandboxMode&quot;: &quot;&quot;
+      },
+      &quot;runtimes&quot;: {
+        &quot;runc&quot;: {
+          &quot;runtimeType&quot;: &quot;io.containerd.runc.v2&quot;,
+          &quot;runtimePath&quot;: &quot;&quot;,
+          &quot;runtimeEngine&quot;: &quot;&quot;,
+          &quot;PodAnnotations&quot;: [],
+          &quot;ContainerAnnotations&quot;: [],
+          &quot;runtimeRoot&quot;: &quot;&quot;,
+          &quot;options&quot;: {
+            &quot;BinaryName&quot;: &quot;&quot;,
+            &quot;CriuImagePath&quot;: &quot;&quot;,
+            &quot;CriuPath&quot;: &quot;&quot;,
+            &quot;CriuWorkPath&quot;: &quot;&quot;,
+            &quot;IoGid&quot;: 0,
+            &quot;IoUid&quot;: 0,
+            &quot;NoNewKeyring&quot;: false,
+            &quot;NoPivotRoot&quot;: false,
+            &quot;Root&quot;: &quot;&quot;,
+            &quot;ShimCgroup&quot;: &quot;&quot;,
+            &quot;SystemdCgroup&quot;: false
+          },
+          &quot;privileged_without_host_devices&quot;: false,
+          &quot;privileged_without_host_devices_all_devices_allowed&quot;: false,
+          &quot;baseRuntimeSpec&quot;: &quot;&quot;,
+          &quot;cniConfDir&quot;: &quot;&quot;,
+          &quot;cniMaxConfNum&quot;: 0,
+          &quot;snapshotter&quot;: &quot;&quot;,
+          &quot;sandboxMode&quot;: &quot;podsandbox&quot;
+        }
+      },
+      &quot;noPivot&quot;: false,
+      &quot;disableSnapshotAnnotations&quot;: true,
+      &quot;discardUnpackedLayers&quot;: false,
+      &quot;ignoreBlockIONotEnabledErrors&quot;: false,
+      &quot;ignoreRdtNotEnabledErrors&quot;: false
+    },
+    &quot;cni&quot;: {
+      &quot;binDir&quot;: &quot;/opt/cni/bin&quot;,
+      &quot;confDir&quot;: &quot;/etc/cni/net.d&quot;,
+      &quot;maxConfNum&quot;: 1,
+      &quot;setupSerially&quot;: false,
+      &quot;confTemplate&quot;: &quot;&quot;,
+      &quot;ipPref&quot;: &quot;&quot;
+    },
+    &quot;registry&quot;: {
+      &quot;configPath&quot;: &quot;&quot;,
+      &quot;mirrors&quot;: {},
+      &quot;configs&quot;: {},
+      &quot;auths&quot;: {},
+      &quot;headers&quot;: {}
+    },
+    &quot;imageDecryption&quot;: {
+      &quot;keyModel&quot;: &quot;node&quot;
+    },
+    &quot;disableTCPService&quot;: true,
+    &quot;streamServerAddress&quot;: &quot;127.0.0.1&quot;,
+    &quot;streamServerPort&quot;: &quot;0&quot;,
+    &quot;streamIdleTimeout&quot;: &quot;4h0m0s&quot;,
+    &quot;enableSelinux&quot;: false,
+    &quot;selinuxCategoryRange&quot;: 1024,
+    &quot;sandboxImage&quot;: &quot;registry.k8s.io/pause:3.9&quot;,
+    &quot;statsCollectPeriod&quot;: 10,
+    &quot;systemdCgroup&quot;: false,
+    &quot;enableTLSStreaming&quot;: false,
+    &quot;x509KeyPairStreaming&quot;: {
+      &quot;tlsCertFile&quot;: &quot;&quot;,
+      &quot;tlsKeyFile&quot;: &quot;&quot;
+    },
+    &quot;maxContainerLogSize&quot;: 16384,
+    &quot;disableCgroup&quot;: false,
+    &quot;disableApparmor&quot;: false,
+    &quot;restrictOOMScoreAdj&quot;: false,
+    &quot;maxConcurrentDownloads&quot;: 3,
+    &quot;disableProcMount&quot;: false,
+    &quot;unsetSeccompProfile&quot;: &quot;&quot;,
+    &quot;tolerateMissingHugetlbController&quot;: true,
+    &quot;disableHugetlbController&quot;: true,
+    &quot;device_ownership_from_security_context&quot;: false,
+    &quot;ignoreImageDefinedVolumes&quot;: false,
+    &quot;netnsMountsUnderStateDir&quot;: false,
+    &quot;enableUnprivilegedPorts&quot;: false,
+    &quot;enableUnprivilegedICMP&quot;: false,
+    &quot;enableCDI&quot;: false,
+    &quot;cdiSpecDirs&quot;: [
+      &quot;/etc/cdi&quot;,
+      &quot;/var/run/cdi&quot;
+    ],
+    &quot;imagePullProgressTimeout&quot;: &quot;1m0s&quot;,
+    &quot;drainExecSyncIOTimeout&quot;: &quot;0s&quot;,
+    &quot;containerdRootDir&quot;: &quot;/var/lib/containerd&quot;,
+    &quot;containerdEndpoint&quot;: &quot;/run/containerd/containerd.sock&quot;,
+    &quot;rootDir&quot;: &quot;/var/lib/containerd/io.containerd.grpc.v1.cri&quot;,
+    &quot;stateDir&quot;: &quot;/run/containerd/io.containerd.grpc.v1.cri&quot;
+  },
+  &quot;golang&quot;: &quot;go1.20.3&quot;,
+  &quot;lastCNILoadStatus&quot;: &quot;OK&quot;,
+  &quot;lastCNILoadStatus.default&quot;: &quot;OK&quot;
+}
+</code></pre>
+<p>&lt;/p&gt;
+&lt;/details&gt;</p>
+<h2 id="more-information">More Information</h2>
+<p>See <a href="https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md" target="_blank">here</a>
+for information about crictl.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="config.html" class="navigation navigation-prev " aria-label="Previous page: Config">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="decryption.html" class="navigation navigation-next " aria-label="Next page: Decryption">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Crictl","level":"1.2.3","depth":2,"next":{"title":"Decryption","level":"1.2.4","depth":2,"path":"cri/decryption.md","ref":"cri/decryption.md","articles":[]},"previous":{"title":"Config","level":"1.2.2","depth":2,"path":"cri/config.md","ref":"cri/config.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"cri/crictl.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1241 @@
+
+<!DOCTYPE HTML>
+<html lang="us-en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Hosts · containerd 英文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-solarizedlight.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="managed-opt.html" />
+    
+    
+    <link rel="prev" href="getting-started.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://docs.khs1994.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="cri/architecture.html">
+            
+                <a href="cri/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="cri/config.html">
+            
+                <a href="cri/config.html">
+            
+                    
+                    Config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="cri/crictl.html">
+            
+                <a href="cri/crictl.html">
+            
+                    
+                    Crictl
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="cri/decryption.html">
+            
+                <a href="cri/decryption.html">
+            
+                    
+                    Decryption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="cri/installation.html">
+            
+                <a href="cri/installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="cri/registry.html">
+            
+                <a href="cri/registry.html">
+            
+                    
+                    Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="cri/testing.html">
+            
+                <a href="cri/testing.html">
+            
+                    
+                    Testing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    Historical
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" >
+            
+                <span>
+            
+                    
+                    Cri
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="historical/cri/proposal.html">
+            
+                <a href="historical/cri/proposal.html">
+            
+                    
+                    Proposal
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <span>
+            
+                    
+                    Design
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="historical/design/architecture.html">
+            
+                <a href="historical/design/architecture.html">
+            
+                    
+                    Architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="historical/design/data-flow.html">
+            
+                <a href="historical/design/data-flow.html">
+            
+                    
+                    Data Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="historical/design/lifecycle.html">
+            
+                <a href="historical/design/lifecycle.html">
+            
+                    
+                    Lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="historical/design/mounts.html">
+            
+                <a href="historical/design/mounts.html">
+            
+                    
+                    Mounts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.5" data-path="historical/design/snapshots.html">
+            
+                <a href="historical/design/snapshots.html">
+            
+                    
+                    Snapshots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" >
+            
+                <span>
+            
+                    
+                    Reports
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="historical/reports/2017-01-13.html">
+            
+                <a href="historical/reports/2017-01-13.html">
+            
+                    
+                    2017 01 13
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="historical/reports/2017-01-20.html">
+            
+                <a href="historical/reports/2017-01-20.html">
+            
+                    
+                    2017 01 20
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="historical/reports/2017-01-27.html">
+            
+                <a href="historical/reports/2017-01-27.html">
+            
+                    
+                    2017 01 27
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="historical/reports/2017-02-10.html">
+            
+                <a href="historical/reports/2017-02-10.html">
+            
+                    
+                    2017 02 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.5" data-path="historical/reports/2017-02-24.html">
+            
+                <a href="historical/reports/2017-02-24.html">
+            
+                    
+                    2017 02 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.6" data-path="historical/reports/2017-03-10.html">
+            
+                <a href="historical/reports/2017-03-10.html">
+            
+                    
+                    2017 03 10
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.7" data-path="historical/reports/2017-03-17.html">
+            
+                <a href="historical/reports/2017-03-17.html">
+            
+                    
+                    2017 03 17
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.8" data-path="historical/reports/2017-03-24.html">
+            
+                <a href="historical/reports/2017-03-24.html">
+            
+                    
+                    2017 03 24
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.9" data-path="historical/reports/2017-04-28.html">
+            
+                <a href="historical/reports/2017-04-28.html">
+            
+                    
+                    2017 04 28
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.10" data-path="historical/reports/2017-05-05.html">
+            
+                <a href="historical/reports/2017-05-05.html">
+            
+                    
+                    2017 05 05
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.11" data-path="historical/reports/2017-05-19.html">
+            
+                <a href="historical/reports/2017-05-19.html">
+            
+                    
+                    2017 05 19
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.12" data-path="historical/reports/2017-05-26.html">
+            
+                <a href="historical/reports/2017-05-26.html">
+            
+                    
+                    2017 05 26
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.13" data-path="historical/reports/2017-06-09.html">
+            
+                <a href="historical/reports/2017-06-09.html">
+            
+                    
+                    2017 06 09
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.14" data-path="historical/reports/2017-06-23.html">
+            
+                <a href="historical/reports/2017-06-23.html">
+            
+                    
+                    2017 06 23
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Man
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="man/containerd-config.8.html">
+            
+                <a href="man/containerd-config.8.html">
+            
+                    
+                    containerd-config.8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="man/containerd-config.toml.5.html">
+            
+                <a href="man/containerd-config.toml.5.html">
+            
+                    
+                    containerd-config.toml.5
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="snapshotters/">
+            
+                <a href="snapshotters/">
+            
+                    
+                    Snapshotters
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="snapshotters/devmapper.html">
+            
+                <a href="snapshotters/devmapper.html">
+            
+                    
+                    Devmapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="client-opts.html">
+            
+                <a href="client-opts.html">
+            
+                    
+                    Client Opts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="content-flow.html">
+            
+                <a href="content-flow.html">
+            
+                    
+                    Content Flow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="garbage-collection.html">
+            
+                <a href="garbage-collection.html">
+            
+                    
+                    Garbage Collection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="hosts.html">
+            
+                <a href="hosts.html">
+            
+                    
+                    Hosts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="managed-opt.html">
+            
+                <a href="managed-opt.html">
+            
+                    
+                    Managed Opt
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="namespaces.html">
+            
+                <a href="namespaces.html">
+            
+                    
+                    Namespaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="NRI.html">
+            
+                <a href="NRI.html">
+            
+                    
+                    NRI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ops.html">
+            
+                <a href="ops.html">
+            
+                    
+                    Ops
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="PLUGINS.html">
+            
+                <a href="PLUGINS.html">
+            
+                    
+                    PLUGINS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="remote-snapshotter.html">
+            
+                <a href="remote-snapshotter.html">
+            
+                    
+                    Remote Snapshotter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="rootless.html">
+            
+                <a href="rootless.html">
+            
+                    
+                    Rootless
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="RUNC.html">
+            
+                <a href="RUNC.html">
+            
+                    
+                    RUNC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="stream_processors.html">
+            
+                <a href="stream_processors.html">
+            
+                    
+                    Stream Processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="tracing.html">
+            
+                <a href="tracing.html">
+            
+                    
+                    Tracing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="transfer.html">
+            
+                <a href="transfer.html">
+            
+                    
+                    Transfer
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Hosts</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="registry-configuration---introduction">Registry Configuration - Introduction</h1>
+<p>New and additional registry hosts config support has been implemented in containerd v1.5 for the <code>ctr</code>
+client (the containerd tool for admins/developers), containerd image service clients, and CRI clients
+such as <code>kubectl</code> and <code>crictl</code>.</p>
+<p>Configuring registries, for these clients, will be done by specifying (optionally) a <code>hosts.toml</code> file for
+each desired registry host in a configuration directory. <strong>Note</strong>: Updates under this directory do not
+require restarting the containerd daemon.</p>
+<h2 id="registry-api-support">Registry API Support</h2>
+<p>All configured registry hosts are expected to comply with the <a href="https://github.com/opencontainers/distribution-spec" target="_blank">OCI Distribution Specification</a>.
+Registries which are non-compliant or implement non-standard behavior are not guaranteed
+to be supported and may break unexpectedly between releases.</p>
+<p>Currently supported OCI Distribution version: <strong><a href="https://github.com/opencontainers/distribution-spec/tree/v1.0.0" target="_blank">v1.0.0</a></strong></p>
+<h2 id="specifying-the-configuration-directory">Specifying the Configuration Directory</h2>
+<h3 id="using-host-namespace-configs-with-ctr">Using Host Namespace Configs with CTR</h3>
+<p>When pulling a container image via <code>ctr</code> using the <code>--hosts-dir</code> option tells <code>ctr</code>
+to find and use the host configuration files located in the specified path:</p>
+<pre class="language-"><code>ctr images pull --hosts-dir &quot;/etc/containerd/certs.d&quot; myregistry.io:5000/image_name:tag
+</code></pre><h3 id="cri">CRI</h3>
+<p><em>The old CRI config pattern for specifying registry.mirrors and registry.configs has
+been <strong>DEPRECATED</strong>.</em> You should now point your registry <code>config_path</code> to the path where your
+<code>hosts.toml</code> files are located.</p>
+<p>Modify your <code>config.toml</code> (default location: <code>/etc/containerd/config.toml</code>) as follows:</p>
+<pre class="language-"><code class="lang-toml"><span class="token key property">version</span> <span class="token punctuation">=</span> <span class="token number">2</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">plugins.&quot;io.containerd.grpc.v1.cri&quot;.registry</span><span class="token punctuation">]</span>
+   <span class="token key property">config_path</span> <span class="token punctuation">=</span> <span class="token string">&quot;/etc/containerd/certs.d&quot;</span>
+</code></pre>
+<h2 id="support-for-dockers-certificate-file-pattern">Support for Docker&apos;s Certificate File Pattern</h2>
+<p>If no hosts.toml configuration exists in the host directory, it will fallback to check
+certificate files based on <a href="https://docs.docker.com/engine/reference/commandline/dockerd/#insecure-registries" target="_blank">Docker&apos;s certificate file pattern</a>
+(&quot;.crt&quot; files for CA certificates and &quot;.cert&quot;/&quot;.key&quot; files for client certificates).</p>
+<h2 id="registry-host-namespace">Registry Host Namespace</h2>
+<p>A registry host is the location where container images and artifacts are sourced.  These
+registry hosts may be local or remote and are typically accessed via http/https using the
+<a href="https://github.com/opencontainers/distribution-spec/blob/main/spec.md" target="_blank">OCI distribution specification</a>.
+A registry mirror is not a registry host but these mirrors can also be used to pull content.
+Registry hosts are typically referred to by their internet domain names, aka. registry
+host names. For example, docker.io, quay.io, gcr.io, and ghcr.io.</p>
+<p>A registry host namespace is, for the purpose of containerd registry configuration, a
+path to the <code>hosts.toml</code> file specified by the registry host name, or ip address, and an
+optional port identifier. When making a pull request for an image the format is
+typically as follows:</p>
+<pre class="language-"><code>pull [registry_host_name|IP address][:port][/v2][/org_path]<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>image_name</span><span class="token punctuation">&gt;</span></span>[:tag|@DIGEST]
+</code></pre><p>The registry host namespace portion is <code>[registry_host_name|IP address][:port]</code>. Example
+tree for docker.io:</p>
+<pre class="language-"><code>$ tree /etc/containerd/certs.d
+/etc/containerd/certs.d
+&#x2514;&#x2500;&#x2500; docker.io
+    &#x2514;&#x2500;&#x2500; hosts.toml
+</code></pre><p>Optionally the <code>_default</code> registry host namespace can be used as a fallback, if no
+other namespace matches.</p>
+<p>The <code>/v2</code> portion of the pull request format shown above refers to the version of the
+distribution api. If not included in the pull request, <code>/v2</code> is added by default for all
+clients compliant to the distribution specification linked above.</p>
+<p>For example when pulling image_name:tag from a private registry named myregistry.io over
+port 5000:</p>
+<pre class="language-"><code>pull myregistry.io:5000/image_name:tag
+</code></pre><p>The pull will resolve to <code>https://myregistry.io:5000/v2/image_name:tag</code></p>
+<h2 id="specifying-registry-credentials">Specifying Registry Credentials</h2>
+<h3 id="ctr">CTR</h3>
+<p>When performing image operations via <code>ctr</code> use the --help option to get a list of options you can set for specifying credentials:</p>
+<pre class="language-"><code>ctr i pull --help
+...
+OPTIONS:
+   --skip-verify, -k                 skip SSL certificate validation
+   --plain-http                      allow connections using plain HTTP
+   --user value, -u value            user[:password] Registry user and password
+   --refresh value                   refresh token for authorization server
+   --hosts-dir value                 Custom hosts configuration directory
+   --tlscacert value                 path to TLS root CA
+   --tlscert value                   path to TLS client certificate
+   --tlskey value                    path to TLS client key
+   --http-dump                       dump all HTTP request/responses when interacting with container registry
+   --http-trace                      enable HTTP tracing for registry interactions
+   --snapshotter value               snapshotter name. Empty value stands for the default value. [$CONTAINERD_SNAPSHOTTER]
+   --label value                     labels to attach to the image
+   --platform value                  Pull content from a specific platform
+   --all-platforms                   pull content and metadata from all platforms
+   --all-metadata                    Pull metadata for all platforms
+   --print-chainid                   Print the resulting image&apos;s chain ID
+   --max-concurrent-downloads value  Set the max concurrent downloads for each pull (default: 0)
+</code></pre><h2 id="cri">CRI</h2>
+<p>Although we have deprecated the old CRI config pattern for specifying registry.mirrors
+and registry.configs you can still specify your credentials via
+<a href="https://github.com/containerd/containerd/blob/main/docs/cri/registry.md#configure-registry-credentials" target="_blank">CRI config</a>.</p>
+<p>Additionally, the containerd CRI plugin implements/supports the authentication parameters passed in through CRI pull image service requests.
+For example, when containerd is the container runtime implementation for <code>Kubernetes</code>, the containerd CRI plugin receives
+authentication credentials from kubelet as retrieved from
+<a href="https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/" target="_blank">Kubernetes Image Pull Secrets</a></p>
+<h1 id="registry-configuration---examples">Registry Configuration - Examples</h1>
+<h3 id="simple-default-host-config-for-docker">Simple (default) Host Config for Docker</h3>
+<p>Here is a simple example for a default registry hosts configuration. Set
+<code>config_path = &quot;/etc/containerd/certs.d&quot;</code> in your config.toml for containerd.
+Make a directory tree at the config path that includes <code>docker.io</code> as a directory
+representing the host namespace to be configured. Then add a <code>hosts.toml</code> file
+in the <code>docker.io</code> to configure the host namespace. It should look like this:</p>
+<pre class="language-"><code>$ tree /etc/containerd/certs.d
+/etc/containerd/certs.d
+&#x2514;&#x2500;&#x2500; docker.io
+    &#x2514;&#x2500;&#x2500; hosts.toml
+
+$ cat /etc/containerd/certs.d/docker.io/hosts.toml
+server = &quot;https://docker.io&quot;
+
+[host.&quot;https://registry-1.docker.io&quot;]
+  capabilities = [&quot;pull&quot;, &quot;resolve&quot;]
+</code></pre><h3 id="setup-a-local-mirror-for-docker">Setup a Local Mirror for Docker</h3>
+<pre class="language-"><code>server = &quot;https://registry-1.docker.io&quot;    # Exclude this to not use upstream
+
+[host.&quot;https://public-mirror.example.com&quot;]
+  capabilities = [&quot;pull&quot;]                  # Requires less trust, won&apos;t resolve tag to digest from this host
+[host.&quot;https://docker-mirror.internal&quot;]
+  capabilities = [&quot;pull&quot;, &quot;resolve&quot;]
+  ca = &quot;docker-mirror.crt&quot;                 # Or absolute path /etc/containerd/certs.d/docker.io/docker-mirror.crt
+</code></pre><h3 id="setup-default-mirror-for-all-registries">Setup Default Mirror for All Registries</h3>
+<pre class="language-"><code>$ tree /etc/containerd/certs.d
+/etc/containerd/certs.d
+&#x2514;&#x2500;&#x2500; _default
+    &#x2514;&#x2500;&#x2500; hosts.toml
+
+$ cat /etc/containerd/certs.d/_default/hosts.toml
+server = &quot;https://registry.example.com&quot;
+
+[host.&quot;https://registry.example.com&quot;]
+  capabilities = [&quot;pull&quot;, &quot;resolve&quot;]
+</code></pre><h3 id="bypass-tls-verification-example">Bypass TLS Verification Example</h3>
+<p>To bypass the TLS verification for a private registry at <code>192.168.31.250:5000</code></p>
+<p>Create a path and <code>hosts.toml</code> text at the path &quot;/etc/containerd/certs.d/docker.io/hosts.toml&quot; with following or similar contents:</p>
+<pre class="language-"><code class="lang-toml"><span class="token key property">server</span> <span class="token punctuation">=</span> <span class="token string">&quot;https://registry-1.docker.io&quot;</span>
+
+<span class="token punctuation">[</span><span class="token table class-name">host.&quot;http://192.168.31.250:5000&quot;</span><span class="token punctuation">]</span>
+  <span class="token key property">capabilities</span> <span class="token punctuation">=</span> <span class="token punctuation">[</span><span class="token string">&quot;pull&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;resolve&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;push&quot;</span><span class="token punctuation">]</span>
+  <span class="token key property">skip_verify</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
+</code></pre>
+<h1 id="hoststoml-content-description---detail">hosts.toml Content Description - Detail</h1>
+<p>For each registry host namespace directory in your registry <code>config_path</code> you may
+include a <code>hosts.toml</code> configuration file. The following root level toml fields
+apply to the registry host namespace:</p>
+<p><strong>Note</strong>: All paths specified in the <code>hosts.toml</code> file may be absolute or relative
+to the <code>hosts.toml</code> file.</p>
+<h2 id="server-field">server field</h2>
+<p><code>server</code> specifies the default server for this registry host namespace. When
+<code>host</code>(s) are specified, the hosts are tried first in the order listed.</p>
+<pre class="language-"><code>server = &quot;https://docker.io&quot;
+</code></pre><h2 id="capabilities-field">capabilities field</h2>
+<p><code>capabilities</code> is an optional setting for specifying what operations a host is
+capable of performing. Include only the values that apply.</p>
+<pre class="language-"><code>capabilities =  [&quot;pull&quot;, &quot;resolve&quot;, &quot;push&quot;]
+</code></pre><p>capabilities (or Host capabilities) represent the capabilities of the registry host.
+This also represents the set of operations for which the registry host may be trusted
+to perform.</p>
+<p>For example, pushing is a capability which should only be performed on an upstream
+source, not a mirror.</p>
+<p>Resolving (the process of converting a name into a digest)
+must be considered a trusted operation and only done by
+a host which is trusted (or more preferably by secure process
+which can prove the provenance of the mapping).</p>
+<p>A public mirror should never be trusted to do a resolve action.</p>
+<table>
+<thead>
+<tr>
+<th>Registry Type</th>
+<th>Pull</th>
+<th>Resolve</th>
+<th>Push</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Public Registry</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Private Registry</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Public Mirror</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Private Mirror</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ca-field">ca field</h2>
+<p><code>ca</code> (Certificate Authority Certification) can be set to a path or an array of
+paths each pointing to a ca file for use in authenticating with the registry
+namespace.</p>
+<pre class="language-"><code>ca = &quot;/etc/certs/mirror.pem&quot;
+</code></pre><p>or</p>
+<pre class="language-"><code>ca = [&quot;/etc/certs/test-1-ca.pem&quot;, &quot;/etc/certs/special.pem&quot;]
+</code></pre><h2 id="client-field">client field</h2>
+<p><code>client</code> certificates are configured as follows</p>
+<p>a path:</p>
+<pre class="language-"><code>client = &quot;/etc/certs/client.pem&quot;
+</code></pre><p>an array of paths:</p>
+<pre class="language-"><code>client = [&quot;/etc/certs/client-1.pem&quot;, &quot;/etc/certs/client-2.pem&quot;]
+</code></pre><p>an array of pairs of paths:</p>
+<pre class="language-"><code>client = [[&quot;/etc/certs/client.cert&quot;, &quot;/etc/certs/client.key&quot;],[&quot;/etc/certs/client.pem&quot;, &quot;&quot;]]
+</code></pre><h2 id="skipverify-field">skip_verify field</h2>
+<p><code>skip_verify</code> skips verifications of the registry&apos;s certificate chain and
+host name when set to <code>true</code>. This should only be used for testing or in
+combination with other method of verifying connections. (Defaults to <code>false</code>)</p>
+<pre class="language-"><code>skip_verify = false
+</code></pre><h2 id="header-fields-in-the-toml-table-format">header fields (in the toml table format)</h2>
+<p><code>[header]</code> contains some number of keys where each key is to one of a string or</p>
+<p>an array of strings as follows:</p>
+<pre class="language-"><code>[header]
+  x-custom-1 = &quot;custom header&quot;
+</code></pre><p>or</p>
+<pre class="language-"><code>[header]
+  x-custom-1 = [&quot;custom header part a&quot;,&quot;part b&quot;]
+</code></pre><p>or</p>
+<pre class="language-"><code>[header]
+  x-custom-1 = &quot;custom header&quot;,
+  x-custom-1-2 = &quot;another custom header&quot;
+</code></pre><h2 id="overridepath-field">override_path field</h2>
+<p><code>override_path</code> is used to indicate the host&apos;s API root endpoint is defined
+in the URL path rather than by the API specification. This may be used with
+non-compliant OCI registries which are missing the <code>/v2</code> prefix.
+(Defaults to <code>false</code>)</p>
+<pre class="language-"><code>override_path = true
+</code></pre><h2 id="host-fields-in-the-toml-table-format">host field(s) (in the toml table format)</h2>
+<p><code>[host].&quot;https://namespace&quot;</code> and <code>[host].http://namespace</code> entries in the
+<code>hosts.toml</code> configuration are registry namespaces used in lieu of the default
+registry host namespace. These hosts are sometimes called mirrors because they
+may contain a copy of the container images and artifacts you are attempting to
+retrieve from the default registry. Each <code>host</code>/<code>mirror</code> namespace is also
+configured in much the same way as the default registry namespace. Notably the
+<code>server</code> is not specified in the <code>host</code> description because it is specified in
+the namespace. Here are a few rough examples configuring host mirror namespaces
+for this registry host namespace:</p>
+<pre class="language-"><code>[host.&quot;https://mirror.registry&quot;]
+  capabilities = [&quot;pull&quot;]
+  ca = &quot;/etc/certs/mirror.pem&quot;
+  skip_verify = false
+  [host.&quot;https://mirror.registry&quot;.header]
+    x-custom-2 = [&quot;value1&quot;, &quot;value2&quot;]
+
+[host.&quot;https://mirror-bak.registry/us&quot;]
+  capabilities = [&quot;pull&quot;]
+  skip_verify = true
+
+[host.&quot;http://mirror.registry&quot;]
+  capabilities = [&quot;pull&quot;]
+
+[host.&quot;https://test-1.registry&quot;]
+  capabilities = [&quot;pull&quot;, &quot;resolve&quot;, &quot;push&quot;]
+  ca = [&quot;/etc/certs/test-1-ca.pem&quot;, &quot;/etc/certs/special.pem&quot;]
+  client = [[&quot;/etc/certs/client.cert&quot;, &quot;/etc/certs/client.key&quot;],[&quot;/etc/certs/client.pem&quot;, &quot;&quot;]]
+
+[host.&quot;https://test-2.registry&quot;]
+  client = &quot;/etc/certs/client.pem&quot;
+
+[host.&quot;https://test-3.registry&quot;]
+  client = [&quot;/etc/certs/client-1.pem&quot;, &quot;/etc/certs/client-2.pem&quot;]
+
+[host.&quot;https://non-compliant-mirror.registry/v2/upstream&quot;]
+  capabilities = [&quot;pull&quot;]
+  override_path = true
+</code></pre><p><strong>Note</strong>: Recursion is not supported in the specification of host mirror
+namespaces in the hosts.toml file. Thus the following is not allowed/supported:</p>
+<pre class="language-"><code>[host.&quot;http://mirror.registry&quot;]
+  capabilities = [&quot;pull&quot;]
+  [host.&quot;http://double-mirror.registry&quot;]
+    capabilities = [&quot;pull&quot;]
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="getting-started.html" class="navigation navigation-prev " aria-label="Previous page: Getting Started">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="managed-opt.html" class="navigation navigation-next " aria-label="Next page: Managed Opt">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Hosts","level":"1.10","depth":1,"next":{"title":"Managed Opt","level":"1.11","depth":1,"path":"managed-opt.md","ref":"managed-opt.md","articles":[]},"previous":{"title":"Getting Started","level":"1.9","depth":1,"path":"getting-started.md","ref":"getting-started.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","-highlight","-livereload","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-solarizedlight.css"]},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"containerd 英文文档","language":"us-en","links":{"sidebar":{"Home":"https://docs.khs1994.com"}},"gitbook":"*"},"file":{"path":"hosts.md","mtime":"2023-06-01T01:15:50.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-06-01T01:16:21.911Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
